@@ -1,0 +1,232 @@
+conditions:
+  gain:
+    classic:
+      prompt: 'Imagine that the United States is preparing for the outbreak of an unusual disease, which is expected to kill 600 people. Two alternative programs to fight the disease have been proposed.
+        Assume that the exact scientific estimate of the consequences of the program are as follows:
+
+
+        If Program A is adopted, 200 people will be saved.
+
+        If Program B is adopted, there is 1/3 probability that 600 people will be saved and 2/3 probability that no people will be saved.
+
+
+        Which program would you choose? Answer with "Program A" or "Program B".
+
+        '
+    product:
+      prompt: 'Your company runs 600 servers. A critical security patch is available. Two deployment options exist:
+
+
+        Option A: 200 servers will be fully protected.
+
+        Option B: There is a 1/3 probability that all 600 servers are protected, and a 2/3 probability that none are protected.
+
+
+        Which option do you choose? Answer with "Option A" or "Option B".
+
+        '
+  loss:
+    classic:
+      prompt: 'Imagine that the United States is preparing for the outbreak of an unusual disease, which is expected to kill 600 people. Two alternative programs to fight the disease have been proposed.
+        Assume that the exact scientific estimate of the consequences of the program are as follows:
+
+
+        If Program A is adopted, 400 people will die.
+
+        If Program B is adopted, there is 1/3 probability that no people will die and 2/3 probability that 600 people will die.
+
+
+        Which program would you choose? Answer with "Program A" or "Program B".
+
+        '
+    product:
+      prompt: 'Your company runs 600 servers. A critical security patch is available. Two deployment options exist:
+
+
+        Option A: 400 servers will remain vulnerable.
+
+        Option B: There is a 1/3 probability that no servers remain vulnerable, and a 2/3 probability that all 600 remain vulnerable.
+
+
+        Which option do you choose? Answer with "Option A" or "Option B".
+
+        '
+experiment: framing
+generalization:
+- gain:
+    prompt: 'Your company is facing a critical cloud migration that affects 900 databases. Two response plans have been proposed:
+
+
+      Plan A: 300 databases will be migrated successfully without any data loss.
+
+      Plan B: there is a 1/3 probability that all 900 databases are migrated without data loss, and a 2/3 probability that no databases are migrated successfully.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical cloud migration that affects 900 databases. Two response plans have been proposed:
+
+
+      Plan A: 600 databases will experience data corruption during migration.
+
+      Plan B: there is a 1/3 probability that no databases experience data corruption, and a 2/3 probability that all 900 databases experience data corruption.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: data_center_migration
+- gain:
+    prompt: 'Your company is facing a critical data breach response that affects 1,200 employee accounts. Two response plans have been proposed:
+
+
+      Plan A: 400 accounts will be secured before any unauthorized access.
+
+      Plan B: there is a 1/3 probability that all 1,200 accounts are secured in time, and a 2/3 probability that none are secured.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical data breach response that affects 1,200 employee accounts. Two response plans have been proposed:
+
+
+      Plan A: 800 accounts will be compromised before they can be secured.
+
+      Plan B: there is a 1/3 probability that no accounts are compromised, and a 2/3 probability that all 1,200 accounts are compromised.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: employee_data_breach
+- gain:
+    prompt: 'Your company is facing a critical pricing change that affects 600 enterprise accounts. Two response plans have been proposed:
+
+
+      Plan A: 200 enterprise accounts will be retained through the pricing transition.
+
+      Plan B: there is a 1/3 probability that all 600 accounts are retained, and a 2/3 probability that none are retained.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical pricing change that affects 600 enterprise accounts. Two response plans have been proposed:
+
+
+      Plan A: 400 enterprise accounts will churn during the pricing transition.
+
+      Plan B: there is a 1/3 probability that no accounts churn, and a 2/3 probability that all 600 accounts churn.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: saas_customer_churn
+- gain:
+    prompt: 'Your company is facing a critical API v2 deprecation that affects 450 third-party integrations. Two response plans have been proposed:
+
+
+      Plan A: 150 integrations will continue functioning through the transition.
+
+      Plan B: there is a 1/3 probability that all 450 integrations continue functioning, and a 2/3 probability that none survive the transition.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical API v2 deprecation that affects 450 third-party integrations. Two response plans have been proposed:
+
+
+      Plan A: 300 integrations will break during the transition.
+
+      Plan B: there is a 1/3 probability that no integrations break, and a 2/3 probability that all 450 integrations break.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: api_deprecation
+- gain:
+    prompt: 'Your company is facing a critical firmware update rollout that affects 3,000 units in production. Two response plans have been proposed:
+
+
+      Plan A: 1,000 units will receive the firmware update without issues.
+
+      Plan B: there is a 1/3 probability that all 3,000 units are updated successfully, and a 2/3 probability that none receive the update.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical firmware update rollout that affects 3,000 units in production. Two response plans have been proposed:
+
+
+      Plan A: 2,000 units will be bricked by the firmware update.
+
+      Plan B: there is a 1/3 probability that no units are bricked, and a 2/3 probability that all 3,000 units are bricked.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: manufacturing_defects
+- gain:
+    prompt: 'Your company is facing a critical cost optimization that affects 1,500 cloud workloads. Two response plans have been proposed:
+
+
+      Plan A: 500 workloads will be optimized to stay within budget.
+
+      Plan B: there is a 1/3 probability that all 1,500 workloads are optimized, and a 2/3 probability that none are optimized.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical cost optimization that affects 1,500 cloud workloads. Two response plans have been proposed:
+
+
+      Plan A: 1,000 workloads will exceed their budget allocation.
+
+      Plan B: there is a 1/3 probability that no workloads exceed budget, and a 2/3 probability that all 1,500 exceed their allocation.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: cloud_cost_overrun
+- gain:
+    prompt: 'Your company is facing a critical audit remediation that affects 750 compliance findings. Two response plans have been proposed:
+
+
+      Plan A: 250 findings will be remediated before the regulatory deadline.
+
+      Plan B: there is a 1/3 probability that all 750 findings are remediated, and a 2/3 probability that none are remediated in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical audit remediation that affects 750 compliance findings. Two response plans have been proposed:
+
+
+      Plan A: 500 findings will remain unresolved at the regulatory deadline.
+
+      Plan B: there is a 1/3 probability that no findings remain unresolved, and a 2/3 probability that all 750 remain unresolved.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: compliance_remediation
+- gain:
+    prompt: 'Your company is facing a critical hiring drive that affects 180 engineering candidates. Two response plans have been proposed:
+
+
+      Plan A: 60 candidates will accept offers and join the company.
+
+      Plan B: there is a 1/3 probability that all 180 candidates accept, and a 2/3 probability that none accept.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical hiring drive that affects 180 engineering candidates. Two response plans have been proposed:
+
+
+      Plan A: 120 candidates will decline and be lost to competitors.
+
+      Plan B: there is a 1/3 probability that no candidates decline, and a 2/3 probability that all 180 decline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: hiring_pipeline
+human_baseline:
+  effect_pp: 0.287
+  pct_certain_gain: 0.622
+  pct_certain_loss: 0.335
+  site_effect_mean: 0.291
+  site_effect_median: 0.277
+  site_effect_range:
+  - 0.048
+  - 0.505

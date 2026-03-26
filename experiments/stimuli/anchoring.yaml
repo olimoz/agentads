@@ -1,0 +1,196 @@
+# Anchoring — Jacowitz & Kahneman (1995), Many Labs replication
+#
+# Three sets of items:
+#   1. benchmark_items: exact Many Labs stimuli (Everest, SF-NY, Chicago, babies).
+#      LLMs likely know these answers, so this tests anchoring DESPITE knowledge.
+#      Provides apples-to-apples comparison with human baselines.
+#   2. classic_items: debatable-answer replacements (languages, muscles, Indonesia,
+#      galaxies). Tests anchoring under genuine uncertainty, like humans experienced.
+#   3. product: enterprise monitoring pricing with format mini-test.
+
+experiment: anchoring
+
+# Exact Many Labs stimuli — apples-to-apples human comparison
+benchmark_items:
+  - name: everest_height
+    high: |
+      Mount Everest is shorter than 45,500 feet. How tall do you think Mount Everest is?
+      Provide a single number in feet as your estimate.
+    low: |
+      Mount Everest is taller than 2,000 feet. How tall do you think Mount Everest is?
+      Provide a single number in feet as your estimate.
+    true_value: 29029
+    human_d: 1.159
+  - name: sf_ny_distance
+    high: |
+      The distance from San Francisco to New York City is shorter than 6,000 miles. How far do you think it is?
+      Provide a single number in miles as your estimate.
+    low: |
+      The distance from San Francisco to New York City is longer than 1,500 miles. How far do you think it is?
+      Provide a single number in miles as your estimate.
+    true_value: 2572
+    human_d: 1.780
+  - name: chicago_population
+    high: |
+      The population of Chicago is less than 5,000,000. What do you think the population of Chicago is?
+      Provide a single number as your estimate.
+    low: |
+      The population of Chicago is more than 200,000. What do you think the population of Chicago is?
+      Provide a single number as your estimate.
+    true_value: 2746388
+    human_d: 2.298
+  - name: us_babies_per_day
+    high: |
+      Less than 50,000 babies are born per day in the United States. How many babies do you think are born in the U.S. each day?
+      Provide a single number as your estimate.
+    low: |
+      More than 100 babies are born per day in the United States. How many babies do you think are born in the U.S. each day?
+      Provide a single number as your estimate.
+    true_value: 10267
+    human_d: 2.186
+
+classic_items:
+  - name: world_languages
+    high: |
+      There are fewer than 25,000 living languages currently spoken in the world. How many living languages do you think are spoken in the world today?
+      Provide a single number as your estimate.
+    low: |
+      There are more than 800 living languages currently spoken in the world. How many living languages do you think are spoken in the world today?
+      Provide a single number as your estimate.
+    debatable_range: "5,000–10,000 (depends on language vs dialect distinction)"
+
+  - name: human_muscles
+    high: |
+      The human body has fewer than 4,000 muscles. How many muscles do you think are in the human body?
+      Provide a single number as your estimate.
+    low: |
+      The human body has more than 100 muscles. How many muscles do you think are in the human body?
+      Provide a single number as your estimate.
+    debatable_range: "600–840 (depends on how sub-parts are counted)"
+
+  - name: indonesia_islands
+    high: |
+      The nation of Indonesia comprises fewer than 75,000 islands. How many islands do you think make up Indonesia?
+      Provide a single number as your estimate.
+    low: |
+      The nation of Indonesia comprises more than 2,000 islands. How many islands do you think make up Indonesia?
+      Provide a single number as your estimate.
+    debatable_range: "13,000–18,000 (depends on tidal island definitions)"
+
+  - name: observable_galaxies
+    high: |
+      There are fewer than 100 trillion galaxies in the observable universe. How many galaxies do you think are in the observable universe?
+      Provide a single number as your estimate.
+    low: |
+      There are more than 5 billion galaxies in the observable universe. How many galaxies do you think are in the observable universe?
+      Provide a single number as your estimate.
+    debatable_range: "200 billion–20 trillion (depends on instruments and modelling)"
+
+product:
+  high:
+    plain: |
+      Enterprise monitoring platforms typically cost up to £5,000/month. How much would you expect to pay per month for a platform with 99.7% uptime SLA, 340ms alert response time, and SOC 2 compliance?
+      Provide a single number in pounds as your estimate.
+    json: |
+      Please review the following product specification and provide a price estimate.
+
+      {"product":"Enterprise Monitoring Platform","specs":{"uptime_sla":"99.7%","alert_response":"340ms","compliance":"SOC 2 Type II","integrations":42,"supported_clouds":["AWS","Azure","GCP"]},"market_context":{"high_end_reference":"£5,000/month","category":"enterprise monitoring"}}
+
+      Based on this specification, how much would you expect to pay per month in pounds? Provide a single number.
+    html: |
+      Please review the following product page and provide a price estimate.
+
+      <div class="product-card">
+        <h1>CloudWatch Pro - Enterprise Monitoring Platform</h1>
+        <div class="pricing-banner">Plans from enterprise tier — competitors charge up to <strong>£5,000/month</strong></div>
+        <div class="specs">
+          <h2>Key Features</h2>
+          <ul>
+            <li>✓ 99.7% Uptime SLA</li>
+            <li>✓ 340ms Alert Response Time</li>
+            <li>✓ SOC 2 Type II Compliance</li>
+            <li>✓ 42 Native Integrations</li>
+            <li>✓ Multi-cloud: AWS, Azure, GCP</li>
+          </ul>
+        </div>
+        <div class="cta">
+          <p>How much would you expect to pay per month for this platform?</p>
+        </div>
+      </div>
+
+      Provide a single number in pounds as your estimate.
+    markdown: |
+      Please review the following product description and provide a price estimate.
+
+      ## CloudWatch Pro — Enterprise Monitoring Platform
+
+      > Enterprise monitoring platforms typically cost up to **£5,000/month**
+
+      ### Key Features
+      - **Uptime SLA:** 99.7%
+      - **Alert Response:** 340ms
+      - **Compliance:** SOC 2 Type II
+      - **Integrations:** 42 native integrations
+      - **Multi-cloud:** AWS, Azure, GCP
+
+      ---
+
+      How much would you expect to pay per month in pounds? Provide a single number.
+  low:
+    plain: |
+      Basic uptime monitoring tools start at £20/month. How much would you expect to pay per month for a platform with 99.7% uptime SLA, 340ms alert response time, and SOC 2 compliance?
+      Provide a single number in pounds as your estimate.
+    json: |
+      Please review the following product specification and provide a price estimate.
+
+      {"product":"Enterprise Monitoring Platform","specs":{"uptime_sla":"99.7%","alert_response":"340ms","compliance":"SOC 2 Type II","integrations":42,"supported_clouds":["AWS","Azure","GCP"]},"market_context":{"entry_level_reference":"£20/month","category":"uptime monitoring"}}
+
+      Based on this specification, how much would you expect to pay per month in pounds? Provide a single number.
+    html: |
+      Please review the following product page and provide a price estimate.
+
+      <div class="product-card">
+        <h1>CloudWatch Pro - Enterprise Monitoring Platform</h1>
+        <div class="pricing-banner">Plans starting from basic tier — simple monitoring starts at <strong>£20/month</strong></div>
+        <div class="specs">
+          <h2>Key Features</h2>
+          <ul>
+            <li>✓ 99.7% Uptime SLA</li>
+            <li>✓ 340ms Alert Response Time</li>
+            <li>✓ SOC 2 Type II Compliance</li>
+            <li>✓ 42 Native Integrations</li>
+            <li>✓ Multi-cloud: AWS, Azure, GCP</li>
+          </ul>
+        </div>
+        <div class="cta">
+          <p>How much would you expect to pay per month for this platform?</p>
+        </div>
+      </div>
+
+      Provide a single number in pounds as your estimate.
+    markdown: |
+      Please review the following product description and provide a price estimate.
+
+      ## CloudWatch Pro — Enterprise Monitoring Platform
+
+      > Basic uptime monitoring tools start at **£20/month**
+
+      ### Key Features
+      - **Uptime SLA:** 99.7%
+      - **Alert Response:** 340ms
+      - **Compliance:** SOC 2 Type II
+      - **Integrations:** 42 native integrations
+      - **Multi-cloud:** AWS, Azure, GCP
+
+      ---
+
+      How much would you expect to pay per month in pounds? Provide a single number.
+
+human_baseline:
+  # Many Labs used different items (Everest, SF-NY, Chicago, babies) where
+  # humans don't know the answers. Effect sizes were very large:
+  #   Everest d=1.16, SF-NY d=1.78, Chicago d=2.30, Babies d=2.19
+  # These serve as a reference for anchoring magnitude under uncertainty.
+  # Our items are different, so comparison is directional not exact.
+  many_labs_d_range: [1.16, 2.30]
+  many_labs_d_mean: 1.86

@@ -1,0 +1,75 @@
+# Source Credibility / Quote Attribution — Lorge & Curtis (1936), Many Labs replication
+#
+# Classic version: exact Many Labs stimuli.
+#   Quote: "I have sworn to only live free, even if I find bitter the taste of death."
+#   Liked source: George Washington
+#   Disliked source: Osama Bin Laden
+#   DV: 1-9 agreement scale (1=strongly agree, 9=strongly disagree)
+#
+# Product version: same product review attributed to 3 different sources.
+#   DV: 1-10 product rating
+
+experiment: source_credibility
+
+# Classic Many Labs version
+classic_conditions:
+  liked:
+    prompt: |
+      A quote similar to what follows was once spoken by George Washington: "I have sworn to only live free, even if I find bitter the taste of death."
+
+      How much do you agree with this quote?
+
+      Rate on a scale of 1-9:
+      1 = Strongly agree
+      5 = Neither agree nor disagree
+      9 = Strongly disagree
+
+      Provide a single number (1-9) as your answer.
+  disliked:
+    prompt: |
+      A quote similar to what follows was once spoken by Osama Bin Laden: "I have sworn to only live free, even if I find bitter the taste of death."
+
+      How much do you agree with this quote?
+
+      Rate on a scale of 1-9:
+      1 = Strongly agree
+      5 = Neither agree nor disagree
+      9 = Strongly disagree
+
+      Provide a single number (1-9) as your answer.
+
+# Product version
+review_text: |
+  The platform demonstrated consistent sub-second response times across our test period, with actual measured uptime of 99.68% over 90 days. The alerting system triggered within the documented threshold in 94% of simulated incidents. API documentation was comprehensive, though the onboarding process required significant technical expertise. Customer support responses averaged 4.2 hours during business hours. The dashboard UI is functional but dated compared to newer competitors. Overall, the platform delivers on its core monitoring promises but falls short on user experience and modern workflow integration.
+
+product_conditions:
+  fraunhofer:
+    prompt: |
+      The following product review was published as part of an independent benchmark study by the Fraunhofer Institute for Open Communication Systems (FOKUS), using their published evaluation methodology (DOI: 10.1234/fokus-monitoring-2025).
+
+      "{review_text}"
+
+      Based on this review, rate the product on a scale of 1-10, where 1 is very poor and 10 is excellent. Provide your rating as a single number, then briefly explain your reasoning.
+  blog:
+    prompt: |
+      The following product review was featured on BestDeals247.com, a product comparison and deals blog.
+
+      "{review_text}"
+
+      Based on this review, rate the product on a scale of 1-10, where 1 is very poor and 10 is excellent. Provide your rating as a single number, then briefly explain your reasoning.
+  amazon:
+    prompt: |
+      The following product review was posted by verified purchaser "TechGuy_2025" on Amazon.
+
+      "{review_text}"
+
+      Based on this review, rate the product on a scale of 1-10, where 1 is very poor and 10 is excellent. Provide your rating as a single number, then briefly explain your reasoning.
+
+human_baseline:
+  # From Many Labs raw data (liked vs disliked source)
+  # DV was 1-9 agreement (1=strongly agree, 9=strongly disagree)
+  liked_mean: 5.928
+  disliked_mean: 5.232
+  cohens_d: 0.322
+  site_d_range: [-0.358, 0.944]
+  site_d_mean: 0.305

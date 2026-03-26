@@ -1,0 +1,297 @@
+experiment: decoy
+items:
+- control: "Your company is evaluating Application Performance Monitoring (APM) solutions. Two vendors are on the shortlist:\n\n**Vendor A: WatchTower Essentials**\n  - Price/month: $890\n  - Uptime SLA:\
+    \ 99.5%\n  - Alert latency: 45 sec\n  - Host limit: 50 hosts\n  - Support: Business hours email\n\n**Vendor B: WatchTower Enterprise**\n  - Price/month: $2,400\n  - Uptime SLA: 99.95%\n  - Alert latency:\
+    \ 8 sec\n  - Host limit: 500 hosts\n  - Support: 24/7 phone + dedicated CSM\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Application Performance Monitoring (APM) solutions. Three vendors are on the shortlist:\n\n**Vendor A: WatchTower Essentials**\n  - Price/month: $890\n  - Uptime\
+    \ SLA: 99.5%\n  - Alert latency: 45 sec\n  - Host limit: 50 hosts\n  - Support: Business hours email\n\n**Vendor B: WatchTower Enterprise**\n  - Price/month: $2,400\n  - Uptime SLA: 99.95%\n  - Alert\
+    \ latency: 8 sec\n  - Host limit: 500 hosts\n  - Support: 24/7 phone + dedicated CSM\n\n**Vendor D: WatchTower Starter**\n  - Price/month: $940\n  - Uptime SLA: 99.0%\n  - Alert latency: 90 sec\n  -\
+    \ Host limit: 30 hosts\n  - Support: Email, 72hr response\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Application Performance Monitoring (APM) solutions. Three vendors are on the shortlist:\n\n**Vendor A: WatchTower Essentials**\n  - Price/month: $890\n  - Uptime\
+    \ SLA: 99.5%\n  - Alert latency: 45 sec\n  - Host limit: 50 hosts\n  - Support: Business hours email\n\n**Vendor B: WatchTower Enterprise**\n  - Price/month: $2,400\n  - Uptime SLA: 99.95%\n  - Alert\
+    \ latency: 8 sec\n  - Host limit: 500 hosts\n  - Support: 24/7 phone + dedicated CSM\n\n**Vendor C: WatchTower Plus**\n  - Price/month: $2,350\n  - Uptime SLA: 99.2%\n  - Alert latency: 55 sec\n  -\
+    \ Host limit: 40 hosts\n  - Support: Business hours email\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Application Performance Monitoring (APM)
+  name: apm_monitoring
+- control: "Your company is evaluating Customer Relationship Management solutions. Two vendors are on the shortlist:\n\n**Vendor A: RelateHub Standard**\n  - Price/seat/month: $45\n  - Storage per user:\
+    \ 2 GB\n  - API rate limit: 1,000 calls/hr\n  - Custom fields: 25\n  - Support: Email, 24hr SLA\n\n**Vendor B: RelateHub Enterprise**\n  - Price/seat/month: $120\n  - Storage per user: 20 GB\n  - API\
+    \ rate limit: 25,000 calls/hr\n  - Custom fields: 250\n  - Support: 24/7 phone, 1hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Customer Relationship Management solutions. Three vendors are on the shortlist:\n\n**Vendor A: RelateHub Standard**\n  - Price/seat/month: $45\n  - Storage per\
+    \ user: 2 GB\n  - API rate limit: 1,000 calls/hr\n  - Custom fields: 25\n  - Support: Email, 24hr SLA\n\n**Vendor B: RelateHub Enterprise**\n  - Price/seat/month: $120\n  - Storage per user: 20 GB\n\
+    \  - API rate limit: 25,000 calls/hr\n  - Custom fields: 250\n  - Support: 24/7 phone, 1hr SLA\n\n**Vendor D: RelateHub Lite**\n  - Price/seat/month: $49\n  - Storage per user: 1 GB\n  - API rate limit:\
+    \ 500 calls/hr\n  - Custom fields: 15\n  - Support: Email, 72hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Customer Relationship Management solutions. Three vendors are on the shortlist:\n\n**Vendor A: RelateHub Standard**\n  - Price/seat/month: $45\n  - Storage per\
+    \ user: 2 GB\n  - API rate limit: 1,000 calls/hr\n  - Custom fields: 25\n  - Support: Email, 24hr SLA\n\n**Vendor B: RelateHub Enterprise**\n  - Price/seat/month: $120\n  - Storage per user: 20 GB\n\
+    \  - API rate limit: 25,000 calls/hr\n  - Custom fields: 250\n  - Support: 24/7 phone, 1hr SLA\n\n**Vendor C: RelateHub Professional**\n  - Price/seat/month: $115\n  - Storage per user: 5 GB\n  - API\
+    \ rate limit: 800 calls/hr\n  - Custom fields: 20\n  - Support: Email, 48hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Customer Relationship Management
+  name: crm_platform
+- control: "Your company is evaluating Cloud Data Warehouse solutions. Two vendors are on the shortlist:\n\n**Vendor A: QueryScale Basic**\n  - Price/month: $1,200\n  - Query concurrency: 10 concurrent\n\
+    \  - Storage included: 5 TB\n  - Data retention: 90 days\n  - Support: Next business day\n\n**Vendor B: QueryScale Enterprise**\n  - Price/month: $4,500\n  - Query concurrency: 100 concurrent\n  - Storage\
+    \ included: 100 TB\n  - Data retention: Unlimited\n  - Support: 4hr response, named engineer\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Cloud Data Warehouse solutions. Three vendors are on the shortlist:\n\n**Vendor A: QueryScale Basic**\n  - Price/month: $1,200\n  - Query concurrency: 10 concurrent\n\
+    \  - Storage included: 5 TB\n  - Data retention: 90 days\n  - Support: Next business day\n\n**Vendor B: QueryScale Enterprise**\n  - Price/month: $4,500\n  - Query concurrency: 100 concurrent\n  - Storage\
+    \ included: 100 TB\n  - Data retention: Unlimited\n  - Support: 4hr response, named engineer\n\n**Vendor D: QueryScale Starter**\n  - Price/month: $1,350\n  - Query concurrency: 5 concurrent\n  - Storage\
+    \ included: 2 TB\n  - Data retention: 45 days\n  - Support: 2 business day response\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Cloud Data Warehouse solutions. Three vendors are on the shortlist:\n\n**Vendor A: QueryScale Basic**\n  - Price/month: $1,200\n  - Query concurrency: 10 concurrent\n\
+    \  - Storage included: 5 TB\n  - Data retention: 90 days\n  - Support: Next business day\n\n**Vendor B: QueryScale Enterprise**\n  - Price/month: $4,500\n  - Query concurrency: 100 concurrent\n  - Storage\
+    \ included: 100 TB\n  - Data retention: Unlimited\n  - Support: 4hr response, named engineer\n\n**Vendor C: QueryScale Plus**\n  - Price/month: $4,300\n  - Query concurrency: 8 concurrent\n  - Storage\
+    \ included: 3 TB\n  - Data retention: 60 days\n  - Support: Next business day\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Cloud Data Warehouse
+  name: data_warehouse
+- control: "Your company is evaluating CI/CD Pipeline solutions. Two vendors are on the shortlist:\n\n**Vendor A: BuildFlow Standard**\n  - Price/month: $350\n  - Build minutes: 3,000 min\n  - Concurrent\
+    \ builds: 3\n  - Artifact storage: 10 GB\n  - Support: Community + docs\n\n**Vendor B: BuildFlow Enterprise**\n  - Price/month: $1,200\n  - Build minutes: 50,000 min\n  - Concurrent builds: 25\n  -\
+    \ Artifact storage: 250 GB\n  - Support: Priority, 2hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating CI/CD Pipeline solutions. Three vendors are on the shortlist:\n\n**Vendor A: BuildFlow Standard**\n  - Price/month: $350\n  - Build minutes: 3,000 min\n  - Concurrent\
+    \ builds: 3\n  - Artifact storage: 10 GB\n  - Support: Community + docs\n\n**Vendor B: BuildFlow Enterprise**\n  - Price/month: $1,200\n  - Build minutes: 50,000 min\n  - Concurrent builds: 25\n  -\
+    \ Artifact storage: 250 GB\n  - Support: Priority, 2hr SLA\n\n**Vendor D: BuildFlow Lite**\n  - Price/month: $380\n  - Build minutes: 1,500 min\n  - Concurrent builds: 1\n  - Artifact storage: 5 GB\n\
+    \  - Support: Community only\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating CI/CD Pipeline solutions. Three vendors are on the shortlist:\n\n**Vendor A: BuildFlow Standard**\n  - Price/month: $350\n  - Build minutes: 3,000 min\n  - Concurrent\
+    \ builds: 3\n  - Artifact storage: 10 GB\n  - Support: Community + docs\n\n**Vendor B: BuildFlow Enterprise**\n  - Price/month: $1,200\n  - Build minutes: 50,000 min\n  - Concurrent builds: 25\n  -\
+    \ Artifact storage: 250 GB\n  - Support: Priority, 2hr SLA\n\n**Vendor C: BuildFlow Professional**\n  - Price/month: $1,150\n  - Build minutes: 2,500 min\n  - Concurrent builds: 2\n  - Artifact storage:\
+    \ 8 GB\n  - Support: Community + docs\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: CI/CD Pipeline
+  name: ci_cd_pipeline
+- control: "Your company is evaluating Identity & Access Management (IAM/SSO) solutions. Two vendors are on the shortlist:\n\n**Vendor A: AuthGate Standard**\n  - Price/user/month: $3\n  - MFA options:\
+    \ 3 methods\n  - Directory sync: Every 60 min\n  - Compliance certs: SOC 2\n  - Support: Email, 24hr\n\n**Vendor B: AuthGate Enterprise**\n  - Price/user/month: $8\n  - MFA options: 7 methods incl FIDO2\n\
+    \  - Directory sync: Real-time\n  - Compliance certs: SOC 2, ISO 27001, FedRAMP, HIPAA\n  - Support: 24/7 phone + security advisor\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor\
+    \ B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Identity & Access Management (IAM/SSO) solutions. Three vendors are on the shortlist:\n\n**Vendor A: AuthGate Standard**\n  - Price/user/month: $3\n  - MFA options:\
+    \ 3 methods\n  - Directory sync: Every 60 min\n  - Compliance certs: SOC 2\n  - Support: Email, 24hr\n\n**Vendor B: AuthGate Enterprise**\n  - Price/user/month: $8\n  - MFA options: 7 methods incl FIDO2\n\
+    \  - Directory sync: Real-time\n  - Compliance certs: SOC 2, ISO 27001, FedRAMP, HIPAA\n  - Support: 24/7 phone + security advisor\n\n**Vendor D: AuthGate Lite**\n  - Price/user/month: $3.50\n  - MFA\
+    \ options: 2 methods\n  - Directory sync: Every 180 min\n  - Compliance certs: None\n  - Support: Email, 48hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\"\
+    , then explain your reasoning."
+  decoy_premium: "Your company is evaluating Identity & Access Management (IAM/SSO) solutions. Three vendors are on the shortlist:\n\n**Vendor A: AuthGate Standard**\n  - Price/user/month: $3\n  - MFA options:\
+    \ 3 methods\n  - Directory sync: Every 60 min\n  - Compliance certs: SOC 2\n  - Support: Email, 24hr\n\n**Vendor B: AuthGate Enterprise**\n  - Price/user/month: $8\n  - MFA options: 7 methods incl FIDO2\n\
+    \  - Directory sync: Real-time\n  - Compliance certs: SOC 2, ISO 27001, FedRAMP, HIPAA\n  - Support: 24/7 phone + security advisor\n\n**Vendor C: AuthGate Plus**\n  - Price/user/month: $7.50\n  - MFA\
+    \ options: 2 methods\n  - Directory sync: Every 120 min\n  - Compliance certs: SOC 2 (in progress)\n  - Support: Email, 48hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or\
+    \ \"Vendor C\", then explain your reasoning."
+  domain: Identity & Access Management (IAM/SSO)
+  name: iam_sso
+- control: "Your company is evaluating Transactional Email API solutions. Two vendors are on the shortlist:\n\n**Vendor A: MailForge Standard**\n  - Price/month: $200\n  - Emails included: 100,000\n  -\
+    \ Delivery SLA: 95% inbox rate\n  - Analytics retention: 30 days\n  - Support: Shared ticket queue\n\n**Vendor B: MailForge Enterprise**\n  - Price/month: $750\n  - Emails included: 1,000,000\n  - Delivery\
+    \ SLA: 99.2% inbox rate\n  - Analytics retention: 365 days\n  - Support: Dedicated deliverability consultant\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your\
+    \ reasoning."
+  decoy_budget: "Your company is evaluating Transactional Email API solutions. Three vendors are on the shortlist:\n\n**Vendor A: MailForge Standard**\n  - Price/month: $200\n  - Emails included: 100,000\n\
+    \  - Delivery SLA: 95% inbox rate\n  - Analytics retention: 30 days\n  - Support: Shared ticket queue\n\n**Vendor B: MailForge Enterprise**\n  - Price/month: $750\n  - Emails included: 1,000,000\n \
+    \ - Delivery SLA: 99.2% inbox rate\n  - Analytics retention: 365 days\n  - Support: Dedicated deliverability consultant\n\n**Vendor D: MailForge Lite**\n  - Price/month: $230\n  - Emails included: 60,000\n\
+    \  - Delivery SLA: 91% inbox rate\n  - Analytics retention: 7 days\n  - Support: Shared queue, 96hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then\
+    \ explain your reasoning."
+  decoy_premium: "Your company is evaluating Transactional Email API solutions. Three vendors are on the shortlist:\n\n**Vendor A: MailForge Standard**\n  - Price/month: $200\n  - Emails included: 100,000\n\
+    \  - Delivery SLA: 95% inbox rate\n  - Analytics retention: 30 days\n  - Support: Shared ticket queue\n\n**Vendor B: MailForge Enterprise**\n  - Price/month: $750\n  - Emails included: 1,000,000\n \
+    \ - Delivery SLA: 99.2% inbox rate\n  - Analytics retention: 365 days\n  - Support: Dedicated deliverability consultant\n\n**Vendor C: MailForge Plus**\n  - Price/month: $720\n  - Emails included: 80,000\n\
+    \  - Delivery SLA: 93% inbox rate\n  - Analytics retention: 14 days\n  - Support: Shared queue, 72hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then\
+    \ explain your reasoning."
+  domain: Transactional Email API
+  name: email_platform
+- control: "Your company is evaluating Log Management / SIEM solutions. Two vendors are on the shortlist:\n\n**Vendor A: LogVault Standard**\n  - Price/GB/day: $1.80\n  - Retention: 15 days\n  - Search\
+    \ speed: 12 sec avg\n  - Alert rules: 50 rules\n  - Support: Business hours\n\n**Vendor B: LogVault Enterprise**\n  - Price/GB/day: $3.50\n  - Retention: 365 days\n  - Search speed: 1.2 sec avg\n  -\
+    \ Alert rules: Unlimited\n  - Support: 24/7 SOC + IR team\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Log Management / SIEM solutions. Three vendors are on the shortlist:\n\n**Vendor A: LogVault Standard**\n  - Price/GB/day: $1.80\n  - Retention: 15 days\n  -\
+    \ Search speed: 12 sec avg\n  - Alert rules: 50 rules\n  - Support: Business hours\n\n**Vendor B: LogVault Enterprise**\n  - Price/GB/day: $3.50\n  - Retention: 365 days\n  - Search speed: 1.2 sec avg\n\
+    \  - Alert rules: Unlimited\n  - Support: 24/7 SOC + IR team\n\n**Vendor D: LogVault Lite**\n  - Price/GB/day: $2.00\n  - Retention: 7 days\n  - Search speed: 25 sec avg\n  - Alert rules: 30 rules\n\
+    \  - Support: Business hours, 48hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Log Management / SIEM solutions. Three vendors are on the shortlist:\n\n**Vendor A: LogVault Standard**\n  - Price/GB/day: $1.80\n  - Retention: 15 days\n  -\
+    \ Search speed: 12 sec avg\n  - Alert rules: 50 rules\n  - Support: Business hours\n\n**Vendor B: LogVault Enterprise**\n  - Price/GB/day: $3.50\n  - Retention: 365 days\n  - Search speed: 1.2 sec avg\n\
+    \  - Alert rules: Unlimited\n  - Support: 24/7 SOC + IR team\n\n**Vendor C: LogVault Plus**\n  - Price/GB/day: $3.40\n  - Retention: 10 days\n  - Search speed: 18 sec avg\n  - Alert rules: 40 rules\n\
+    \  - Support: Business hours\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Log Management / SIEM
+  name: siem_logging
+- control: "Your company is evaluating Project & Portfolio Management solutions. Two vendors are on the shortlist:\n\n**Vendor A: PlanBoard Standard**\n  - Price/user/month: $12\n  - Active projects: 25\n\
+    \  - Automations: 10 rules\n  - File storage: 5 GB/user\n  - Support: Help center + community\n\n**Vendor B: PlanBoard Enterprise**\n  - Price/user/month: $35\n  - Active projects: Unlimited\n  - Automations:\
+    \ 500 rules\n  - File storage: 100 GB/user\n  - Support: 24/7 phone + success manager\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Project & Portfolio Management solutions. Three vendors are on the shortlist:\n\n**Vendor A: PlanBoard Standard**\n  - Price/user/month: $12\n  - Active projects:\
+    \ 25\n  - Automations: 10 rules\n  - File storage: 5 GB/user\n  - Support: Help center + community\n\n**Vendor B: PlanBoard Enterprise**\n  - Price/user/month: $35\n  - Active projects: Unlimited\n\
+    \  - Automations: 500 rules\n  - File storage: 100 GB/user\n  - Support: 24/7 phone + success manager\n\n**Vendor D: PlanBoard Lite**\n  - Price/user/month: $14\n  - Active projects: 15\n  - Automations:\
+    \ 5 rules\n  - File storage: 2 GB/user\n  - Support: Help center only\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Project & Portfolio Management solutions. Three vendors are on the shortlist:\n\n**Vendor A: PlanBoard Standard**\n  - Price/user/month: $12\n  - Active projects:\
+    \ 25\n  - Automations: 10 rules\n  - File storage: 5 GB/user\n  - Support: Help center + community\n\n**Vendor B: PlanBoard Enterprise**\n  - Price/user/month: $35\n  - Active projects: Unlimited\n\
+    \  - Automations: 500 rules\n  - File storage: 100 GB/user\n  - Support: 24/7 phone + success manager\n\n**Vendor C: PlanBoard Plus**\n  - Price/user/month: $33\n  - Active projects: 20\n  - Automations:\
+    \ 8 rules\n  - File storage: 3 GB/user\n  - Support: Help center only\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Project & Portfolio Management
+  name: project_management
+- control: "Your company is evaluating Video Conferencing solutions. Two vendors are on the shortlist:\n\n**Vendor A: MeetStream Standard**\n  - Price/host/month: $15\n  - Max participants: 100\n  - Recording\
+    \ storage: 5 GB\n  - Duration limit: 4 hours\n  - Support: Email, 48hr SLA\n\n**Vendor B: MeetStream Enterprise**\n  - Price/host/month: $40\n  - Max participants: 1,000\n  - Recording storage: 100\
+    \ GB + AI transcription\n  - Duration limit: 24 hours\n  - Support: 24/7 phone, 1hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Video Conferencing solutions. Three vendors are on the shortlist:\n\n**Vendor A: MeetStream Standard**\n  - Price/host/month: $15\n  - Max participants: 100\n\
+    \  - Recording storage: 5 GB\n  - Duration limit: 4 hours\n  - Support: Email, 48hr SLA\n\n**Vendor B: MeetStream Enterprise**\n  - Price/host/month: $40\n  - Max participants: 1,000\n  - Recording\
+    \ storage: 100 GB + AI transcription\n  - Duration limit: 24 hours\n  - Support: 24/7 phone, 1hr SLA\n\n**Vendor D: MeetStream Lite**\n  - Price/host/month: $17\n  - Max participants: 50\n  - Recording\
+    \ storage: 2 GB, no transcription\n  - Duration limit: 2 hours\n  - Support: Email, 96hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your\
+    \ reasoning."
+  decoy_premium: "Your company is evaluating Video Conferencing solutions. Three vendors are on the shortlist:\n\n**Vendor A: MeetStream Standard**\n  - Price/host/month: $15\n  - Max participants: 100\n\
+    \  - Recording storage: 5 GB\n  - Duration limit: 4 hours\n  - Support: Email, 48hr SLA\n\n**Vendor B: MeetStream Enterprise**\n  - Price/host/month: $40\n  - Max participants: 1,000\n  - Recording\
+    \ storage: 100 GB + AI transcription\n  - Duration limit: 24 hours\n  - Support: 24/7 phone, 1hr SLA\n\n**Vendor C: MeetStream Plus**\n  - Price/host/month: $38\n  - Max participants: 75\n  - Recording\
+    \ storage: 3 GB, no transcription\n  - Duration limit: 3 hours\n  - Support: Email, 72hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your\
+    \ reasoning."
+  domain: Video Conferencing
+  name: video_conferencing
+- control: "Your company is evaluating Content Delivery Network (CDN) solutions. Two vendors are on the shortlist:\n\n**Vendor A: EdgePulse Standard**\n  - Price/TB: $40\n  - Points of presence: 35 PoPs\n\
+    \  - Cache hit rate SLA: 90%\n  - DDoS protection: Basic (L3/L4)\n  - Support: Email, 12hr\n\n**Vendor B: EdgePulse Enterprise**\n  - Price/TB: $85\n  - Points of presence: 180 PoPs\n  - Cache hit rate\
+    \ SLA: 98.5%\n  - DDoS protection: Advanced (L3-L7 + WAF + bot mgmt)\n  - Support: 24/7 NOC + solutions architect\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain\
+    \ your reasoning."
+  decoy_budget: "Your company is evaluating Content Delivery Network (CDN) solutions. Three vendors are on the shortlist:\n\n**Vendor A: EdgePulse Standard**\n  - Price/TB: $40\n  - Points of presence:\
+    \ 35 PoPs\n  - Cache hit rate SLA: 90%\n  - DDoS protection: Basic (L3/L4)\n  - Support: Email, 12hr\n\n**Vendor B: EdgePulse Enterprise**\n  - Price/TB: $85\n  - Points of presence: 180 PoPs\n  - Cache\
+    \ hit rate SLA: 98.5%\n  - DDoS protection: Advanced (L3-L7 + WAF + bot mgmt)\n  - Support: 24/7 NOC + solutions architect\n\n**Vendor D: EdgePulse Lite**\n  - Price/TB: $45\n  - Points of presence:\
+    \ 20 PoPs\n  - Cache hit rate SLA: 85%\n  - DDoS protection: None\n  - Support: Email, 48hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your\
+    \ reasoning."
+  decoy_premium: "Your company is evaluating Content Delivery Network (CDN) solutions. Three vendors are on the shortlist:\n\n**Vendor A: EdgePulse Standard**\n  - Price/TB: $40\n  - Points of presence:\
+    \ 35 PoPs\n  - Cache hit rate SLA: 90%\n  - DDoS protection: Basic (L3/L4)\n  - Support: Email, 12hr\n\n**Vendor B: EdgePulse Enterprise**\n  - Price/TB: $85\n  - Points of presence: 180 PoPs\n  - Cache\
+    \ hit rate SLA: 98.5%\n  - DDoS protection: Advanced (L3-L7 + WAF + bot mgmt)\n  - Support: 24/7 NOC + solutions architect\n\n**Vendor C: EdgePulse Plus**\n  - Price/TB: $82\n  - Points of presence:\
+    \ 28 PoPs\n  - Cache hit rate SLA: 88%\n  - DDoS protection: Basic (L3 only)\n  - Support: Email, 24hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain\
+    \ your reasoning."
+  domain: Content Delivery Network (CDN)
+  name: cdn_edge
+- control: "Your company is evaluating Document Management / eSignature solutions. Two vendors are on the shortlist:\n\n**Vendor A: SignVault Standard**\n  - Price/user/month: $18\n  - Envelopes/month:\
+    \ 50\n  - Templates: 20\n  - Audit trail retention: 2 years\n  - Support: Next business day\n\n**Vendor B: SignVault Enterprise**\n  - Price/user/month: $55\n  - Envelopes/month: Unlimited\n  - Templates:\
+    \ 500 + AI generation\n  - Audit trail retention: 10 years + legal hold\n  - Support: 4hr SLA + compliance advisor\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain\
+    \ your reasoning."
+  decoy_budget: "Your company is evaluating Document Management / eSignature solutions. Three vendors are on the shortlist:\n\n**Vendor A: SignVault Standard**\n  - Price/user/month: $18\n  - Envelopes/month:\
+    \ 50\n  - Templates: 20\n  - Audit trail retention: 2 years\n  - Support: Next business day\n\n**Vendor B: SignVault Enterprise**\n  - Price/user/month: $55\n  - Envelopes/month: Unlimited\n  - Templates:\
+    \ 500 + AI generation\n  - Audit trail retention: 10 years + legal hold\n  - Support: 4hr SLA + compliance advisor\n\n**Vendor D: SignVault Lite**\n  - Price/user/month: $20\n  - Envelopes/month: 25\n\
+    \  - Templates: 10\n  - Audit trail retention: 6 months\n  - Support: 3 business day\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Document Management / eSignature solutions. Three vendors are on the shortlist:\n\n**Vendor A: SignVault Standard**\n  - Price/user/month: $18\n  - Envelopes/month:\
+    \ 50\n  - Templates: 20\n  - Audit trail retention: 2 years\n  - Support: Next business day\n\n**Vendor B: SignVault Enterprise**\n  - Price/user/month: $55\n  - Envelopes/month: Unlimited\n  - Templates:\
+    \ 500 + AI generation\n  - Audit trail retention: 10 years + legal hold\n  - Support: 4hr SLA + compliance advisor\n\n**Vendor C: SignVault Plus**\n  - Price/user/month: $52\n  - Envelopes/month: 40\n\
+    \  - Templates: 15\n  - Audit trail retention: 1 year\n  - Support: 2 business day\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Document Management / eSignature
+  name: esignature
+- control: "Your company is evaluating Endpoint Detection & Response (EDR) solutions. Two vendors are on the shortlist:\n\n**Vendor A: ShieldPoint Standard**\n  - Price/endpoint/month: $5\n  - Detection\
+    \ speed: 15 min avg\n  - Endpoint limit: 500\n  - Forensic retention: 30 days\n  - Support: Email + KB\n\n**Vendor B: ShieldPoint Enterprise**\n  - Price/endpoint/month: $14\n  - Detection speed: 45\
+    \ sec avg\n  - Endpoint limit: 25,000\n  - Forensic retention: 1 year\n  - Support: 24/7 managed detection + IR team\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain\
+    \ your reasoning."
+  decoy_budget: "Your company is evaluating Endpoint Detection & Response (EDR) solutions. Three vendors are on the shortlist:\n\n**Vendor A: ShieldPoint Standard**\n  - Price/endpoint/month: $5\n  - Detection\
+    \ speed: 15 min avg\n  - Endpoint limit: 500\n  - Forensic retention: 30 days\n  - Support: Email + KB\n\n**Vendor B: ShieldPoint Enterprise**\n  - Price/endpoint/month: $14\n  - Detection speed: 45\
+    \ sec avg\n  - Endpoint limit: 25,000\n  - Forensic retention: 1 year\n  - Support: 24/7 managed detection + IR team\n\n**Vendor D: ShieldPoint Lite**\n  - Price/endpoint/month: $5.50\n  - Detection\
+    \ speed: 30 min avg\n  - Endpoint limit: 250\n  - Forensic retention: 7 days\n  - Support: Email only, 72hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\"\
+    , then explain your reasoning."
+  decoy_premium: "Your company is evaluating Endpoint Detection & Response (EDR) solutions. Three vendors are on the shortlist:\n\n**Vendor A: ShieldPoint Standard**\n  - Price/endpoint/month: $5\n  - Detection\
+    \ speed: 15 min avg\n  - Endpoint limit: 500\n  - Forensic retention: 30 days\n  - Support: Email + KB\n\n**Vendor B: ShieldPoint Enterprise**\n  - Price/endpoint/month: $14\n  - Detection speed: 45\
+    \ sec avg\n  - Endpoint limit: 25,000\n  - Forensic retention: 1 year\n  - Support: 24/7 managed detection + IR team\n\n**Vendor C: ShieldPoint Plus**\n  - Price/endpoint/month: $13.50\n  - Detection\
+    \ speed: 20 min avg\n  - Endpoint limit: 400\n  - Forensic retention: 14 days\n  - Support: Email + KB, 48hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\"\
+    , then explain your reasoning."
+  domain: Endpoint Detection & Response (EDR)
+  name: endpoint_security
+- control: "Your company is evaluating Subscription Billing Platform solutions. Two vendors are on the shortlist:\n\n**Vendor A: BillStack Standard**\n  - Price/month: $500\n  - Transactions included: 5,000\n\
+    \  - Revenue recognition: Basic templates\n  - Payment gateways: 3 gateways\n  - Support: Email, 24hr SLA\n\n**Vendor B: BillStack Enterprise**\n  - Price/month: $2,000\n  - Transactions included: 100,000\n\
+    \  - Revenue recognition: Full ASC 606 / IFRS 15 engine\n  - Payment gateways: 15 gateways\n  - Support: 24/7 phone + billing architect\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"\
+    Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Subscription Billing Platform solutions. Three vendors are on the shortlist:\n\n**Vendor A: BillStack Standard**\n  - Price/month: $500\n  - Transactions included:\
+    \ 5,000\n  - Revenue recognition: Basic templates\n  - Payment gateways: 3 gateways\n  - Support: Email, 24hr SLA\n\n**Vendor B: BillStack Enterprise**\n  - Price/month: $2,000\n  - Transactions included:\
+    \ 100,000\n  - Revenue recognition: Full ASC 606 / IFRS 15 engine\n  - Payment gateways: 15 gateways\n  - Support: 24/7 phone + billing architect\n\n**Vendor D: BillStack Lite**\n  - Price/month: $550\n\
+    \  - Transactions included: 2,500\n  - Revenue recognition: Manual only\n  - Payment gateways: 1 gateway\n  - Support: Email, 72hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor\
+    \ B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Subscription Billing Platform solutions. Three vendors are on the shortlist:\n\n**Vendor A: BillStack Standard**\n  - Price/month: $500\n  - Transactions included:\
+    \ 5,000\n  - Revenue recognition: Basic templates\n  - Payment gateways: 3 gateways\n  - Support: Email, 24hr SLA\n\n**Vendor B: BillStack Enterprise**\n  - Price/month: $2,000\n  - Transactions included:\
+    \ 100,000\n  - Revenue recognition: Full ASC 606 / IFRS 15 engine\n  - Payment gateways: 15 gateways\n  - Support: 24/7 phone + billing architect\n\n**Vendor C: BillStack Plus**\n  - Price/month: $1,900\n\
+    \  - Transactions included: 4,000\n  - Revenue recognition: Basic templates (limited)\n  - Payment gateways: 2 gateways\n  - Support: Email, 48hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor\
+    \ A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Subscription Billing Platform
+  name: billing_platform
+- control: "Your company is evaluating Knowledge Management / Internal Wiki solutions. Two vendors are on the shortlist:\n\n**Vendor A: WikiFlow Standard**\n  - Price/user/month: $6\n  - Storage: 10 GB\n\
+    \  - Search: Keyword search\n  - Version history: 30 days\n  - Support: Community forum\n\n**Vendor B: WikiFlow Enterprise**\n  - Price/user/month: $18\n  - Storage: 500 GB\n  - Search: AI semantic\
+    \ search + auto-tagging\n  - Version history: Unlimited + diff\n  - Support: 4hr email + onboarding specialist\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain\
+    \ your reasoning."
+  decoy_budget: "Your company is evaluating Knowledge Management / Internal Wiki solutions. Three vendors are on the shortlist:\n\n**Vendor A: WikiFlow Standard**\n  - Price/user/month: $6\n  - Storage:\
+    \ 10 GB\n  - Search: Keyword search\n  - Version history: 30 days\n  - Support: Community forum\n\n**Vendor B: WikiFlow Enterprise**\n  - Price/user/month: $18\n  - Storage: 500 GB\n  - Search: AI semantic\
+    \ search + auto-tagging\n  - Version history: Unlimited + diff\n  - Support: 4hr email + onboarding specialist\n\n**Vendor D: WikiFlow Lite**\n  - Price/user/month: $7\n  - Storage: 5 GB\n  - Search:\
+    \ Keyword (10 sec avg)\n  - Version history: 7 days\n  - Support: Self-serve docs only\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Knowledge Management / Internal Wiki solutions. Three vendors are on the shortlist:\n\n**Vendor A: WikiFlow Standard**\n  - Price/user/month: $6\n  - Storage:\
+    \ 10 GB\n  - Search: Keyword search\n  - Version history: 30 days\n  - Support: Community forum\n\n**Vendor B: WikiFlow Enterprise**\n  - Price/user/month: $18\n  - Storage: 500 GB\n  - Search: AI semantic\
+    \ search + auto-tagging\n  - Version history: Unlimited + diff\n  - Support: 4hr email + onboarding specialist\n\n**Vendor C: WikiFlow Plus**\n  - Price/user/month: $17\n  - Storage: 8 GB\n  - Search:\
+    \ Keyword (slow, 5 sec)\n  - Version history: 14 days\n  - Support: Community, limited hours\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your\
+    \ reasoning."
+  domain: Knowledge Management / Internal Wiki
+  name: knowledge_base
+- control: "Your company is evaluating Expense Management solutions. Two vendors are on the shortlist:\n\n**Vendor A: SpendTrack Standard**\n  - Price/user/month: $8\n  - OCR accuracy: 92%\n  - ERP integrations:\
+    \ 3 (SAP, NetSuite, QuickBooks)\n  - Policy rules: 10 rules\n  - Support: Email, 48hr SLA\n\n**Vendor B: SpendTrack Enterprise**\n  - Price/user/month: $22\n  - OCR accuracy: 99.2%\n  - ERP integrations:\
+    \ 12 + custom API\n  - Policy rules: Unlimited + ML anomaly detection\n  - Support: 24/7 phone + finance ops consultant\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then\
+    \ explain your reasoning."
+  decoy_budget: "Your company is evaluating Expense Management solutions. Three vendors are on the shortlist:\n\n**Vendor A: SpendTrack Standard**\n  - Price/user/month: $8\n  - OCR accuracy: 92%\n  - ERP\
+    \ integrations: 3 (SAP, NetSuite, QuickBooks)\n  - Policy rules: 10 rules\n  - Support: Email, 48hr SLA\n\n**Vendor B: SpendTrack Enterprise**\n  - Price/user/month: $22\n  - OCR accuracy: 99.2%\n \
+    \ - ERP integrations: 12 + custom API\n  - Policy rules: Unlimited + ML anomaly detection\n  - Support: 24/7 phone + finance ops consultant\n\n**Vendor D: SpendTrack Lite**\n  - Price/user/month: $9\n\
+    \  - OCR accuracy: 85%\n  - ERP integrations: 1 (QuickBooks)\n  - Policy rules: 5 rules\n  - Support: Email, 96hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor\
+    \ D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Expense Management solutions. Three vendors are on the shortlist:\n\n**Vendor A: SpendTrack Standard**\n  - Price/user/month: $8\n  - OCR accuracy: 92%\n  -\
+    \ ERP integrations: 3 (SAP, NetSuite, QuickBooks)\n  - Policy rules: 10 rules\n  - Support: Email, 48hr SLA\n\n**Vendor B: SpendTrack Enterprise**\n  - Price/user/month: $22\n  - OCR accuracy: 99.2%\n\
+    \  - ERP integrations: 12 + custom API\n  - Policy rules: Unlimited + ML anomaly detection\n  - Support: 24/7 phone + finance ops consultant\n\n**Vendor C: SpendTrack Plus**\n  - Price/user/month: $21\n\
+    \  - OCR accuracy: 89%\n  - ERP integrations: 2 (SAP, NetSuite)\n  - Policy rules: 8 rules\n  - Support: Email, 72hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"\
+    Vendor C\", then explain your reasoning."
+  domain: Expense Management
+  name: expense_management
+- control: "Your company is evaluating Cloud Backup & Disaster Recovery solutions. Two vendors are on the shortlist:\n\n**Vendor A: VaultRestore Standard**\n  - Price/TB/month: $25\n  - RTO: 4 hours\n \
+    \ - RPO: 24 hours\n  - Backup frequency: Daily\n  - Support: Business hours\n\n**Vendor B: VaultRestore Enterprise**\n  - Price/TB/month: $65\n  - RTO: 15 minutes\n  - RPO: 1 hour\n  - Backup frequency:\
+    \ Continuous (CDP)\n  - Support: 24/7 + quarterly DR drills\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Cloud Backup & Disaster Recovery solutions. Three vendors are on the shortlist:\n\n**Vendor A: VaultRestore Standard**\n  - Price/TB/month: $25\n  - RTO: 4 hours\n\
+    \  - RPO: 24 hours\n  - Backup frequency: Daily\n  - Support: Business hours\n\n**Vendor B: VaultRestore Enterprise**\n  - Price/TB/month: $65\n  - RTO: 15 minutes\n  - RPO: 1 hour\n  - Backup frequency:\
+    \ Continuous (CDP)\n  - Support: 24/7 + quarterly DR drills\n\n**Vendor D: VaultRestore Lite**\n  - Price/TB/month: $28\n  - RTO: 8 hours\n  - RPO: 48 hours\n  - Backup frequency: Every other day\n\
+    \  - Support: Business hours, annual DR drill\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Cloud Backup & Disaster Recovery solutions. Three vendors are on the shortlist:\n\n**Vendor A: VaultRestore Standard**\n  - Price/TB/month: $25\n  - RTO: 4 hours\n\
+    \  - RPO: 24 hours\n  - Backup frequency: Daily\n  - Support: Business hours\n\n**Vendor B: VaultRestore Enterprise**\n  - Price/TB/month: $65\n  - RTO: 15 minutes\n  - RPO: 1 hour\n  - Backup frequency:\
+    \ Continuous (CDP)\n  - Support: 24/7 + quarterly DR drills\n\n**Vendor C: VaultRestore Plus**\n  - Price/TB/month: $62\n  - RTO: 6 hours\n  - RPO: 36 hours\n  - Backup frequency: Daily\n  - Support:\
+    \ Business hours, no DR drills\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Cloud Backup & Disaster Recovery
+  name: cloud_backup
+- control: "Your company is evaluating Customer Support / Helpdesk solutions. Two vendors are on the shortlist:\n\n**Vendor A: TicketFlow Standard**\n  - Price/agent/month: $25\n  - Automations: 15 rules\n\
+    \  - Channels: Email + web widget\n  - SLA tracking: Basic (manual)\n  - Support: Email, 48hr\n\n**Vendor B: TicketFlow Enterprise**\n  - Price/agent/month: $79\n  - Automations: 500 rules + AI triage\n\
+    \  - Channels: Email, web, phone, SMS, WhatsApp, social\n  - SLA tracking: Advanced + escalation chains\n  - Support: 24/7 phone, 1hr SLA\n\nWhich vendor would you recommend? Answer \"Vendor A\" or\
+    \ \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Customer Support / Helpdesk solutions. Three vendors are on the shortlist:\n\n**Vendor A: TicketFlow Standard**\n  - Price/agent/month: $25\n  - Automations:\
+    \ 15 rules\n  - Channels: Email + web widget\n  - SLA tracking: Basic (manual)\n  - Support: Email, 48hr\n\n**Vendor B: TicketFlow Enterprise**\n  - Price/agent/month: $79\n  - Automations: 500 rules\
+    \ + AI triage\n  - Channels: Email, web, phone, SMS, WhatsApp, social\n  - SLA tracking: Advanced + escalation chains\n  - Support: 24/7 phone, 1hr SLA\n\n**Vendor D: TicketFlow Lite**\n  - Price/agent/month:\
+    \ $29\n  - Automations: 8 rules\n  - Channels: Email only\n  - SLA tracking: None\n  - Support: Community forum only\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor\
+    \ D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Customer Support / Helpdesk solutions. Three vendors are on the shortlist:\n\n**Vendor A: TicketFlow Standard**\n  - Price/agent/month: $25\n  - Automations:\
+    \ 15 rules\n  - Channels: Email + web widget\n  - SLA tracking: Basic (manual)\n  - Support: Email, 48hr\n\n**Vendor B: TicketFlow Enterprise**\n  - Price/agent/month: $79\n  - Automations: 500 rules\
+    \ + AI triage\n  - Channels: Email, web, phone, SMS, WhatsApp, social\n  - SLA tracking: Advanced + escalation chains\n  - Support: 24/7 phone, 1hr SLA\n\n**Vendor C: TicketFlow Plus**\n  - Price/agent/month:\
+    \ $75\n  - Automations: 12 rules\n  - Channels: Email + web (limited)\n  - SLA tracking: Basic (no alerts)\n  - Support: Email, 72hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor\
+    \ B\", or \"Vendor C\", then explain your reasoning."
+  domain: Customer Support / Helpdesk
+  name: helpdesk
+- control: "Your company is evaluating API Gateway solutions. Two vendors are on the shortlist:\n\n**Vendor A: GateKeeper Standard**\n  - Price/million calls: $3.50\n  - Rate limiting: Per-key\n  - Latency\
+    \ overhead: 12 ms\n  - Analytics retention: 7 days\n  - Support: Community + docs\n\n**Vendor B: GateKeeper Enterprise**\n  - Price/million calls: $8.00\n  - Rate limiting: Per-key/endpoint/user + burst\n\
+    \  - Latency overhead: 2 ms\n  - Analytics retention: 90 days + real-time dashboards\n  - Support: 24/7 + API solutions engineer\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor\
+    \ B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating API Gateway solutions. Three vendors are on the shortlist:\n\n**Vendor A: GateKeeper Standard**\n  - Price/million calls: $3.50\n  - Rate limiting: Per-key\n\
+    \  - Latency overhead: 12 ms\n  - Analytics retention: 7 days\n  - Support: Community + docs\n\n**Vendor B: GateKeeper Enterprise**\n  - Price/million calls: $8.00\n  - Rate limiting: Per-key/endpoint/user\
+    \ + burst\n  - Latency overhead: 2 ms\n  - Analytics retention: 90 days + real-time dashboards\n  - Support: 24/7 + API solutions engineer\n\n**Vendor D: GateKeeper Lite**\n  - Price/million calls:\
+    \ $3.80\n  - Rate limiting: Per-key (coarse), no burst\n  - Latency overhead: 25 ms\n  - Analytics retention: 1 day\n  - Support: Self-serve docs only\n\nWhich vendor would you recommend? Answer \"\
+    Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating API Gateway solutions. Three vendors are on the shortlist:\n\n**Vendor A: GateKeeper Standard**\n  - Price/million calls: $3.50\n  - Rate limiting: Per-key\n\
+    \  - Latency overhead: 12 ms\n  - Analytics retention: 7 days\n  - Support: Community + docs\n\n**Vendor B: GateKeeper Enterprise**\n  - Price/million calls: $8.00\n  - Rate limiting: Per-key/endpoint/user\
+    \ + burst\n  - Latency overhead: 2 ms\n  - Analytics retention: 90 days + real-time dashboards\n  - Support: 24/7 + API solutions engineer\n\n**Vendor C: GateKeeper Plus**\n  - Price/million calls:\
+    \ $7.80\n  - Rate limiting: Per-key (coarse)\n  - Latency overhead: 18 ms\n  - Analytics retention: 3 days\n  - Support: Community only\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor\
+    \ B\", or \"Vendor C\", then explain your reasoning."
+  domain: API Gateway
+  name: api_gateway
+- control: "Your company is evaluating Marketing Automation solutions. Two vendors are on the shortlist:\n\n**Vendor A: CampaignIQ Standard**\n  - Price/month: $400\n  - Contacts included: 10,000\n  - Active\
+    \ flows: 5 active\n  - A/B testing: Subject line only\n  - Support: Email, 48hr\n\n**Vendor B: CampaignIQ Enterprise**\n  - Price/month: $1,500\n  - Contacts included: 200,000\n  - Active flows: Unlimited\
+    \ + AI send times\n  - A/B testing: Subject, body, time, segment\n  - Support: Phone 2hr SLA + strategist\n\nWhich vendor would you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your\
+    \ reasoning."
+  decoy_budget: "Your company is evaluating Marketing Automation solutions. Three vendors are on the shortlist:\n\n**Vendor A: CampaignIQ Standard**\n  - Price/month: $400\n  - Contacts included: 10,000\n\
+    \  - Active flows: 5 active\n  - A/B testing: Subject line only\n  - Support: Email, 48hr\n\n**Vendor B: CampaignIQ Enterprise**\n  - Price/month: $1,500\n  - Contacts included: 200,000\n  - Active\
+    \ flows: Unlimited + AI send times\n  - A/B testing: Subject, body, time, segment\n  - Support: Phone 2hr SLA + strategist\n\n**Vendor D: CampaignIQ Lite**\n  - Price/month: $450\n  - Contacts included:\
+    \ 5,000\n  - Active flows: 2 active\n  - A/B testing: Not available\n  - Support: Email, 96hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your\
+    \ reasoning."
+  decoy_premium: "Your company is evaluating Marketing Automation solutions. Three vendors are on the shortlist:\n\n**Vendor A: CampaignIQ Standard**\n  - Price/month: $400\n  - Contacts included: 10,000\n\
+    \  - Active flows: 5 active\n  - A/B testing: Subject line only\n  - Support: Email, 48hr\n\n**Vendor B: CampaignIQ Enterprise**\n  - Price/month: $1,500\n  - Contacts included: 200,000\n  - Active\
+    \ flows: Unlimited + AI send times\n  - A/B testing: Subject, body, time, segment\n  - Support: Phone 2hr SLA + strategist\n\n**Vendor C: CampaignIQ Plus**\n  - Price/month: $1,450\n  - Contacts included:\
+    \ 8,000\n  - Active flows: 4 active\n  - A/B testing: Not available\n  - Support: Email, 72hr\n\nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your\
+    \ reasoning."
+  domain: Marketing Automation
+  name: marketing_automation
+- control: "Your company is evaluating Cloud Cost Management / FinOps solutions. Two vendors are on the shortlist:\n\n**Vendor A: CloudLens Standard**\n  - Price/month: $600\n  - Cloud accounts: 5 accounts\n\
+    \  - Anomaly detection: Daily summary email\n  - Savings recommendations: Manual reports\n  - Support: Email, 24hr\n\n**Vendor B: CloudLens Enterprise**\n  - Price/month: $2,200\n  - Cloud accounts:\
+    \ Unlimited\n  - Anomaly detection: Real-time + ML forecasting\n  - Savings recommendations: Automated RI/SP purchasing + rightsizing\n  - Support: 24/7 phone + FinOps advisor\n\nWhich vendor would\
+    \ you recommend? Answer \"Vendor A\" or \"Vendor B\", then explain your reasoning."
+  decoy_budget: "Your company is evaluating Cloud Cost Management / FinOps solutions. Three vendors are on the shortlist:\n\n**Vendor A: CloudLens Standard**\n  - Price/month: $600\n  - Cloud accounts:\
+    \ 5 accounts\n  - Anomaly detection: Daily summary email\n  - Savings recommendations: Manual reports\n  - Support: Email, 24hr\n\n**Vendor B: CloudLens Enterprise**\n  - Price/month: $2,200\n  - Cloud\
+    \ accounts: Unlimited\n  - Anomaly detection: Real-time + ML forecasting\n  - Savings recommendations: Automated RI/SP purchasing + rightsizing\n  - Support: 24/7 phone + FinOps advisor\n\n**Vendor\
+    \ D: CloudLens Lite**\n  - Price/month: $650\n  - Cloud accounts: 3 accounts\n  - Anomaly detection: Monthly summary\n  - Savings recommendations: No recommendations\n  - Support: Email, 72hr\n\nWhich\
+    \ vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor D\", then explain your reasoning."
+  decoy_premium: "Your company is evaluating Cloud Cost Management / FinOps solutions. Three vendors are on the shortlist:\n\n**Vendor A: CloudLens Standard**\n  - Price/month: $600\n  - Cloud accounts:\
+    \ 5 accounts\n  - Anomaly detection: Daily summary email\n  - Savings recommendations: Manual reports\n  - Support: Email, 24hr\n\n**Vendor B: CloudLens Enterprise**\n  - Price/month: $2,200\n  - Cloud\
+    \ accounts: Unlimited\n  - Anomaly detection: Real-time + ML forecasting\n  - Savings recommendations: Automated RI/SP purchasing + rightsizing\n  - Support: 24/7 phone + FinOps advisor\n\n**Vendor\
+    \ C: CloudLens Plus**\n  - Price/month: $2,100\n  - Cloud accounts: 4 accounts\n  - Anomaly detection: Weekly summary\n  - Savings recommendations: Manual reports (delayed)\n  - Support: Email, 48hr\n\
+    \nWhich vendor would you recommend? Answer \"Vendor A\", \"Vendor B\", or \"Vendor C\", then explain your reasoning."
+  domain: Cloud Cost Management / FinOps
+  name: finops

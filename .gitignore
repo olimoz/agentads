@@ -1,0 +1,25 @@
+# Secrets
+.env
+
+# Runtime data
+results.db
+outputs/
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.DS_Store
+uv.lock
+
+# Large data files (download from OSF: osf.io/wx7ck)
+data/many_labs/Data/
+data/many_labs/Datasets.zip
+data/many_labs/FullOutput.xlsx
+
+# Agent framework (installed from PyPI, local copy is reference only)
+agent-framework/
+
+# IDE / tools
+.claude/
+.idea/
+.vscode/

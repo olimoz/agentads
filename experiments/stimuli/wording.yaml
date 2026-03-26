@@ -1,0 +1,43 @@
+# Wording Effects (Allowed/Forbidden) — Rugg (1941), Many Labs replication
+# Classic stimuli: exact wording from Many Labs US version (OSF: osf.io/wx7ck)
+
+experiment: wording
+conditions:
+  allow:
+    classic:
+      prompt: |
+        Do you think the United States should allow public speeches against democracy?
+        Answer "Yes" or "No".
+    product:
+      prompt: |
+        A security audit of a SaaS platform has returned the following findings:
+
+        POSITIVE: Data encrypted at rest (AES-256) and in transit (TLS 1.3). SOC 2 Type II certified. 99.9% uptime over last 12 months. Regular penetration testing by third party.
+
+        CONCERNS: Admin access logs retained for only 30 days. No support for customer-managed encryption keys. Data residency limited to US-East region. Subprocessor list updated quarterly (not real-time).
+
+        Based on this audit, would you recommend the company allow employees to use this SaaS platform for processing client data?
+        Answer "Yes" or "No".
+  forbid:
+    classic:
+      prompt: |
+        Do you think the United States should forbid public speeches against democracy?
+        Answer "Yes" or "No".
+    product:
+      prompt: |
+        A security audit of a SaaS platform has returned the following findings:
+
+        POSITIVE: Data encrypted at rest (AES-256) and in transit (TLS 1.3). SOC 2 Type II certified. 99.9% uptime over last 12 months. Regular penetration testing by third party.
+
+        CONCERNS: Admin access logs retained for only 30 days. No support for customer-managed encryption keys. Data residency limited to US-East region. Subprocessor list updated quarterly (not real-time).
+
+        Based on this audit, would you recommend the company forbid employees from using this SaaS platform for processing client data?
+        Answer "Yes" or "No".
+
+human_baseline:
+  # From Many Labs raw data (n=6,292 across 36 sites)
+  pct_yes_allow: 0.763
+  pct_yes_forbid: 0.072
+  # Wording effect: sum deviates from 1.0 → gap = 0.165
+  sum_pct_yes: 0.835
+  site_effect_range: [-0.510, -0.050]

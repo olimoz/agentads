@@ -1,0 +1,42 @@
+# Sunk Cost — Many Labs replication (Oppenheimer et al., 2009 variant)
+# Classic stimuli: exact wording from Many Labs US version (OSF: osf.io/wx7ck)
+# Many Labs was between-subjects: each participant saw EITHER paid OR free.
+# We run both conditions on each model to compute a within-model effect.
+
+experiment: sunk_cost
+
+versions:
+  classic_paid:
+    condition: paid
+    prompt: |
+      Imagine that your favorite football team is playing an important game. You have a ticket to the game that you have paid handsomely for. However, on the day of the game, it happens to be freezing cold. What do you do?
+
+      Rate on a scale of 1-9:
+      1 = Definitely stay at home
+      9 = Definitely go to the game
+
+      Provide a single number (1-9) as your answer.
+  classic_free:
+    condition: free
+    prompt: |
+      Imagine that your favorite football team is playing an important game. You have a ticket to the game that you have received for free from a friend. However, on the day of the game, it happens to be freezing cold. What do you do?
+
+      Rate on a scale of 1-9:
+      1 = Definitely stay at home
+      9 = Definitely go to the game
+
+      Provide a single number (1-9) as your answer.
+  product:
+    condition: default
+    prompt: |
+      Your company invested £45,000 in Vendor A's CRM platform 18 months ago, including licensing, customisation, and staff training. A new evaluation shows Vendor B scores higher on every criterion — user satisfaction, feature completeness, integration quality, and support responsiveness. Switching to Vendor B would cost £30,000 (migration, retraining, new licences). Staying with Vendor A requires a £20,000 upgrade to remain on a supported version.
+
+      Do you recommend switching to Vendor B or staying with Vendor A? Answer with "Switch to Vendor B" or "Stay with Vendor A".
+
+human_baseline:
+  # From Many Labs raw data (between-subjects: paid vs free ticket)
+  paid_mean: 7.85
+  free_mean: 7.24
+  cohens_d: 0.272
+  site_d_range: [-0.081, 0.680]
+  site_d_mean: 0.305
