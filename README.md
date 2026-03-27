@@ -8,7 +8,7 @@ This repository contains the code, stimuli, and results for an experimental stud
 
 As at 27 March 2026
 
-| Bias | Transfers to AI? | Effect vs Humans | Models Affected |
+| Bias | Transfers to AI? | Effect on AI vs Humans | Models Affected |
 |---|---|---|---|
 | **Price Anchoring** | Yes | *Stronger* (d = 1.5-4.0) | All 5 models |
 | **Decoy Effect** | Yes | Comparable (30-40 pp shift) | 3/4 tested |
