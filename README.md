@@ -1,4 +1,4 @@
-# Agent Ads: Do AI Agents Fall for the Same Persuasion Techniques as Humans?
+# Do AI Agents Fall for the Same Persuasion Techniques as Humans?
 
 **3 out of 5 frontier AI models approved a product they had just rejected — using the same specs, different ad copy.**
 
@@ -17,7 +17,7 @@ As at 27 March 2026
 | **Sunk Cost** | Context-dependent | 0-4x human (personal) / zero (professional) | 2/5 |
 | **Wording** | No | Mostly immune | 0/5 |
 
-Read the full experiment report: **[docs/02_ExperimentReport.md](docs/02_ExperimentReport.md)**
+Read the full experiment report: **[docs/02_ExperimentReport.pdf](docs/02_ExperimentReport.pdf)**
 
 ## The Tailored Ad Test
 
