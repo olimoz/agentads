@@ -152,8 +152,8 @@ If you use this work, please cite:
 
 ```
 @misc{agentads2026,
-  title={Agent Ads: Do AI Agents Fall for the Same Advertising Tricks as Humans?},
-  author={AI Uplift},
+  title={Susceptibility of Frontier LLM's to Common Persuasion Techniques},
+  author={Oliver Morris, agentico.ai},
   year={2026},
   url={https://github.com/olimoz/agentads}
 }
