@@ -27,6 +27,24 @@ RATE_LIMITS = {
     "together": 5,
 }
 
+# Per-model concurrency limits (each model gets its own semaphore)
+MODEL_CONCURRENCY = {
+    "claude-opus-4.6": 3,
+    "gpt-5.4": 5,
+    "gemini-3.1-pro": 5,
+    "glm-5": 5,
+    "kimi-k2.5": 5,
+}
+
+# Per-model daily call budgets (None = unlimited)
+CALL_BUDGETS = {
+    "claude-opus-4.6": None,
+    "gpt-5.4": None,
+    "gemini-3.1-pro": int(os.getenv("GEMINI_BUDGET", "250")),
+    "glm-5": None,
+    "kimi-k2.5": None,
+}
+
 # Map model names to providers (for rate limiting)
 MODEL_PROVIDERS = {
     "claude-opus-4.6": "anthropic",

@@ -5,18 +5,21 @@ import random
 import time
 from datetime import datetime, timezone
 
-from .config import MODEL_PROVIDERS, RATE_LIMITS, REPS, SEED
+from collections import defaultdict
+
+from .config import CALL_BUDGETS, MODEL_CONCURRENCY, MODEL_PROVIDERS, REPS, SEED
 from .db import get_completed_trials, insert_trial
 from .parsing import parse_response
 from .stimuli import TrialSpec
 
-# Semaphores created at run time
+# Per-model semaphores (created at run time)
 _semaphores: dict[str, asyncio.Semaphore] = {}
 
 
-def _init_semaphores() -> None:
-    for provider, limit in RATE_LIMITS.items():
-        _semaphores[provider] = asyncio.Semaphore(limit)
+def _init_semaphores(model_names: list[str]) -> None:
+    for model_name in model_names:
+        limit = MODEL_CONCURRENCY.get(model_name, 5)
+        _semaphores[model_name] = asyncio.Semaphore(limit)
 
 
 async def run_single_trial(
@@ -27,8 +30,7 @@ async def run_single_trial(
     conn,
 ) -> dict:
     """Run one trial: call model, parse, store."""
-    provider = MODEL_PROVIDERS[model_name]
-    sem = _semaphores[provider]
+    sem = _semaphores[model_name]
 
     # Retry with exponential backoff
     last_error = None
@@ -109,13 +111,18 @@ async def run_all_trials(
     if n_reps is None:
         n_reps = REPS
 
-    _init_semaphores()
+    _init_semaphores(list(agents.keys()))
 
     # Check what's already done (resume support)
     completed = get_completed_trials(conn)
 
-    # Build task list
-    tasks = []
+    # Build task list, applying per-model call budgets
+    unlimited_tasks = []
+    # For budget-limited models, group by experiment for round-robin
+    budgeted_by_experiment: dict[str, dict[str, list]] = defaultdict(
+        lambda: defaultdict(list)
+    )
+
     for spec in specs:
         for model_name, agent in agents.items():
             for rep in range(n_reps):
@@ -123,7 +130,45 @@ async def run_all_trials(
                        spec.format, spec.item, model_name, rep)
                 if key in completed:
                     continue
-                tasks.append((agent, model_name, spec, rep))
+                budget = CALL_BUDGETS.get(model_name)
+                if budget is None:
+                    unlimited_tasks.append((agent, model_name, spec, rep))
+                else:
+                    budgeted_by_experiment[model_name][spec.experiment].append(
+                        (agent, model_name, spec, rep)
+                    )
+
+    # Round-robin selection for budget-limited models
+    budgeted_tasks = []
+    for model_name, by_experiment in budgeted_by_experiment.items():
+        budget = CALL_BUDGETS[model_name]
+        # Shuffle within each experiment for variety
+        rng = random.Random(SEED)
+        queues = {}
+        for exp, exp_tasks in by_experiment.items():
+            rng.shuffle(exp_tasks)
+            queues[exp] = list(exp_tasks)
+
+        # Round-robin across experiments until budget exhausted
+        selected = []
+        experiment_names = sorted(queues.keys())
+        idx = 0
+        while len(selected) < budget and any(queues.values()):
+            exp = experiment_names[idx % len(experiment_names)]
+            if queues.get(exp):
+                selected.append(queues[exp].pop(0))
+            idx += 1
+            # Remove exhausted experiments
+            experiment_names = [e for e in experiment_names if queues.get(e)]
+            if not experiment_names:
+                break
+
+        skipped = sum(len(q) for q in queues.values())
+        print(f"  {model_name}: {len(selected)} trials selected "
+              f"(budget={budget}, {skipped} deferred)")
+        budgeted_tasks.extend(selected)
+
+    tasks = unlimited_tasks + budgeted_tasks
 
     if not tasks:
         print("All trials already completed. Nothing to run.")
@@ -134,19 +179,44 @@ async def run_all_trials(
     rng.shuffle(tasks)
 
     total = len(tasks)
+
+    # Count planned trials per model
+    model_planned = defaultdict(int)
+    for _, model_name, _, _ in tasks:
+        model_planned[model_name] += 1
     print(f"Running {total} trials ({len(completed)} already completed)...")
+    for m, n in sorted(model_planned.items()):
+        budget_info = f" (budget: {CALL_BUDGETS[m]})" if CALL_BUDGETS.get(m) else ""
+        print(f"  {m}: {n} trials{budget_info}")
+
+    # Per-model progress tracking
+    model_ok = defaultdict(int)
+    model_err = defaultdict(int)
+    done_count = 0
 
     # Create coroutines and gather
-    async def _run(idx, agent, model_name, spec, rep):
+    async def _run(agent, model_name, spec, rep):
+        nonlocal done_count
         result = await run_single_trial(agent, model_name, spec, rep, conn)
-        if (idx + 1) % 50 == 0 or (idx + 1) == total:
-            errors = "error" if result.get("error") else "ok"
-            print(f"  [{idx + 1}/{total}] {spec.experiment}/{model_name} rep={rep} — {errors}")
+        done_count += 1
+
+        if result.get("error"):
+            model_err[model_name] += 1
+        else:
+            model_ok[model_name] += 1
+
+        if done_count % 10 == 0 or done_count == total:
+            status = " | ".join(
+                f"{m}: {model_ok[m]}/{model_planned[m]}"
+                + (f" ({model_err[m]} err)" if model_err[m] else "")
+                for m in sorted(model_planned)
+            )
+            print(f"  [{done_count}/{total}] {status}")
         return result
 
     coros = [
-        _run(i, agent, model_name, spec, rep)
-        for i, (agent, model_name, spec, rep) in enumerate(tasks)
+        _run(agent, model_name, spec, rep)
+        for agent, model_name, spec, rep in tasks
     ]
 
     results = await asyncio.gather(*coros, return_exceptions=True)
@@ -156,5 +226,7 @@ async def run_all_trials(
     failed = sum(1 for r in results if isinstance(r, dict) and r.get("error"))
     exceptions = sum(1 for r in results if isinstance(r, Exception))
     print(f"\nDone: {ok} succeeded, {failed} API errors, {exceptions} exceptions")
+    for m in sorted(model_planned):
+        print(f"  {m}: {model_ok[m]} ok, {model_err[m]} errors")
 
     return [r for r in results if isinstance(r, dict)]

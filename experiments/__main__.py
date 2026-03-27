@@ -7,13 +7,15 @@ import sys
 from .analysis import analyze_all, print_summary
 from .db import get_trials_df, init_db
 from .plots import plot_all
-from .stimuli import get_all_trial_specs, get_trial_specs
+from .stimuli import get_all_trial_specs, get_generalization_specs, get_trial_specs
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Cognitive bias experiment harness")
     parser.add_argument("--pilot", action="store_true",
                         help="Run 1 rep of framing only (8 trials) to verify setup")
+    parser.add_argument("--generalization", action="store_true",
+                        help="Run generalization stimuli (new YAML files, 1 rep each)")
     parser.add_argument("--analyze", action="store_true",
                         help="Skip trials; run analysis on existing results.db")
     parser.add_argument("--reps", type=int, default=None,
@@ -21,7 +23,11 @@ def parse_args():
     return parser.parse_args()
 
 
-async def run_trials(pilot: bool = False, reps: int | None = None):
+async def run_trials(
+    pilot: bool = False,
+    generalization: bool = False,
+    reps: int | None = None,
+):
     """Run experiment trials."""
     from .models import create_agents
     from .runner import run_all_trials
@@ -35,6 +41,10 @@ async def run_trials(pilot: bool = False, reps: int | None = None):
     if pilot:
         print("\n--- PILOT MODE: framing experiment, 1 rep ---")
         specs = get_trial_specs("framing")
+        n_reps = 1
+    elif generalization:
+        print("\n--- GENERALIZATION MODE: new stimuli, 1 rep each ---")
+        specs = get_generalization_specs()
         n_reps = 1
     else:
         specs = get_all_trial_specs()
@@ -78,7 +88,11 @@ def main():
     if args.analyze:
         run_analysis()
     else:
-        asyncio.run(run_trials(pilot=args.pilot, reps=args.reps))
+        asyncio.run(run_trials(
+            pilot=args.pilot,
+            generalization=args.generalization,
+            reps=args.reps,
+        ))
         # Auto-analyze after running
         print("\n--- Running analysis ---")
         run_analysis()

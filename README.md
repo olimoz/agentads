@@ -1,10 +1,12 @@
-# Agent Ads: Do AI Agents Fall for the Same Advertising Tricks as Humans?
+# Agent Ads: Do AI Agents Fall for the Same Persuasion Techniques as Humans?
 
 **3 out of 5 frontier AI models approved a product they had just rejected — using the same specs, different ad copy.**
 
 This repository contains the code, stimuli, and results for an experimental study testing whether large language models exhibit the same cognitive biases that decades of behavioural research have documented in humans. We replicated five classic experiments from the [Many Labs 1](https://osf.io/wx7ck/) project, added the **decoy effect** (the foundation of every SaaS pricing page), and demonstrated that experimentally identified weaknesses can be exploited with tailored ad copy.
 
 ## Key Findings
+
+As at 27 March 2026
 
 | Bias | Transfers to AI? | Effect vs Humans | Models Affected |
 |---|---|---|---|
@@ -48,7 +50,7 @@ cp .env.example .env
 # Run a smoke test (8 trials, framing only)
 uv run python -m experiments --pilot
 
-# Run the full experiment suite (~2,400 trials, ~$7)
+# Run the full experiment suite (~5,400 trials)
 uv run python -m experiments
 
 # Analyze existing results without re-running
@@ -88,17 +90,26 @@ agentads/
 │   ├── demo_tailored_ads.py           # Tailored ad demonstration
 │   ├── demo_persuasion.py             # Earlier persuasion prototype
 │   └── stimuli/
-│       ├── framing.yaml               # Gain/loss + 8 B2B generalization
-│       ├── anchoring.yaml             # Benchmark + debatable + product pricing
-│       ├── sunk_cost.yaml             # Paid/free ticket + CRM vendor
-│       ├── source_credibility.yaml    # Washington/Bin Laden + product review
-│       ├── wording.yaml               # Allow/forbid + SaaS audit
-│       └── decoy.yaml                 # 20 B2B product triads
+│       ├── framing.yaml                       # Gain/loss + 8 B2B generalization
+│       ├── framing_generalization_new.yaml    # 62 generalization scenarios
+│       ├── anchoring.yaml                     # Benchmark + debatable + product pricing
+│       ├── anchoring_new.yaml                 # 52 generalization scenarios
+│       ├── sunk_cost.yaml                     # Paid/free ticket + CRM vendor
+│       ├── sunk_cost_new.yaml                 # 62 generalization scenarios
+│       ├── source_credibility.yaml            # Washington/Bin Laden + product review
+│       ├── source_credibility_new.yaml        # 62 generalization scenarios
+│       ├── wording.yaml                       # Allow/forbid + SaaS audit
+│       ├── wording_new.yaml                   # 62 generalization scenarios
+│       └── decoy.yaml                         # 20 B2B product triads + 50 generalization
+│       └── decoy_new.yaml                     # 50 generalization triads
 │
 └── data/
     └── many_labs/
-        ├── ML_Summary_Statistics.xlsx  # Published summary stats
-        └── Measures_US_Version.docx    # Original stimuli wording
+        ├── Data/                        # Raw dataset (tab-delimited, n=6,344)
+        ├── Datasets.zip                 # Complete dataset archive
+        ├── FullOutput.xlsx              # Summary statistics
+        ├── ML_Summary_Statistics.xlsx   # Published summary stats
+        └── Measures_US_Version.docx     # Original stimuli wording
 ```
 
 ## Models Tested
@@ -131,9 +142,9 @@ cd data/many_labs && unzip Datasets.zip
 
 All trial data (prompts, raw responses, parsed choices, token usage, latency) is preserved in the database for reproducibility and manual audit.
 
-## Cost
+## Scale
 
-Full run across all experiments and models costs approximately **$7**, dominated by Claude Opus ($5.63). The other four models combined cost ~$1.40.
+5,367 successful trials across 5 models and 6 experiments, with 50–62 unique generalization scenarios per bias. See Section 4.3 of the report for the full breakdown by model and experiment.
 
 ## Citation
 

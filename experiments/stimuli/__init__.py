@@ -193,3 +193,132 @@ def get_all_trial_specs() -> list[TrialSpec]:
     for name in experiments:
         all_specs.extend(get_trial_specs(name))
     return all_specs
+
+
+# --- Generalization stimuli (new YAML files, 1 rep each) ---
+
+def _load_yaml_list(filename: str) -> list[dict]:
+    """Load a bare YAML list file."""
+    path = STIMULI_DIR / filename
+    with open(path) as f:
+        return yaml.safe_load(f)
+
+
+def _gen_framing_specs() -> list[TrialSpec]:
+    """Load framing generalization scenarios from new file."""
+    items = _load_yaml_list("framing_generalization_new.yaml")
+    specs = []
+    for item in items:
+        for condition in ("gain", "loss"):
+            if condition in item:
+                prompt = item[condition]["prompt"] if isinstance(item[condition], dict) else item[condition]
+                specs.append(TrialSpec(
+                    experiment="framing",
+                    version="generalization",
+                    condition=condition,
+                    format="plain",
+                    item=item.get("name"),
+                    stimulus_text=prompt.strip(),
+                ))
+    return specs
+
+
+def _gen_anchoring_specs() -> list[TrialSpec]:
+    """Load anchoring items from new file."""
+    items = _load_yaml_list("anchoring_new.yaml")
+    specs = []
+    for item in items:
+        for condition in ("high", "low"):
+            specs.append(TrialSpec(
+                experiment="anchoring",
+                version="generalization",
+                condition=condition,
+                format="plain",
+                item=item["name"],
+                stimulus_text=item[condition].strip(),
+            ))
+    return specs
+
+
+def _gen_sunk_cost_specs() -> list[TrialSpec]:
+    """Load sunk cost scenarios from new file."""
+    items = _load_yaml_list("sunk_cost_new.yaml")
+    specs = []
+    for item in items:
+        for condition in ("paid", "free"):
+            specs.append(TrialSpec(
+                experiment="sunk_cost",
+                version="generalization",
+                condition=condition,
+                format="plain",
+                item=item["name"],
+                stimulus_text=item[condition]["prompt"].strip(),
+            ))
+    return specs
+
+
+def _gen_source_credibility_specs() -> list[TrialSpec]:
+    """Load source credibility scenarios from new file."""
+    items = _load_yaml_list("source_credibility_new.yaml")
+    specs = []
+    for item in items:
+        for condition, prompt_key in (("high", "prompt_high"), ("low", "prompt_low")):
+            specs.append(TrialSpec(
+                experiment="source_credibility",
+                version="generalization",
+                condition=condition,
+                format="plain",
+                item=item["name"],
+                stimulus_text=item[prompt_key].strip(),
+            ))
+    return specs
+
+
+def _gen_wording_specs() -> list[TrialSpec]:
+    """Load wording scenarios from new file."""
+    items = _load_yaml_list("wording_new.yaml")
+    specs = []
+    for item in items:
+        for condition in ("allow", "forbid"):
+            specs.append(TrialSpec(
+                experiment="wording",
+                version="generalization",
+                condition=condition,
+                format="plain",
+                item=item["name"],
+                stimulus_text=item[condition]["prompt"].strip(),
+            ))
+    return specs
+
+
+def _gen_decoy_specs() -> list[TrialSpec]:
+    """Load decoy triads from new file."""
+    path = STIMULI_DIR / "decoy_new.yaml"
+    with open(path) as f:
+        data = yaml.safe_load(f)
+    # File may be a bare list or have a top-level 'items' key
+    items = data["items"] if isinstance(data, dict) and "items" in data else data
+    specs = []
+    for item in items:
+        for condition in ("control", "decoy_premium", "decoy_budget"):
+            specs.append(TrialSpec(
+                experiment="decoy",
+                version="generalization",
+                condition=condition,
+                format="plain",
+                item=item["name"],
+                stimulus_text=item[condition].strip(),
+            ))
+    return specs
+
+
+def get_generalization_specs() -> list[TrialSpec]:
+    """Load all generalization stimuli from the new YAML files."""
+    specs = []
+    specs.extend(_gen_framing_specs())
+    specs.extend(_gen_anchoring_specs())
+    specs.extend(_gen_sunk_cost_specs())
+    specs.extend(_gen_source_credibility_specs())
+    specs.extend(_gen_wording_specs())
+    specs.extend(_gen_decoy_specs())
+    return specs

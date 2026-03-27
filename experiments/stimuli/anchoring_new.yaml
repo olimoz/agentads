@@ -1,0 +1,467 @@
+- name: enterprise_saas_implementation_weeks
+  high: |
+    Large enterprise SaaS implementations can take fewer than 104 weeks to complete. How many weeks do you think a typical enterprise SaaS implementation takes from contract signing to full deployment?
+    Provide a single number as your estimate.
+  low: |
+    Simple SaaS tools can be deployed in more than 1 week. How many weeks do you think a typical enterprise SaaS implementation takes from contract signing to full deployment?
+    Provide a single number as your estimate.
+  debatable_range: "12–52 weeks (depends on complexity, integrations, and org size)"
+
+- name: global_saas_companies
+  high: |
+    There are fewer than 150,000 SaaS companies operating globally. How many SaaS companies do you think exist worldwide?
+    Provide a single number as your estimate.
+  low: |
+    There are more than 2,000 SaaS companies operating globally. How many SaaS companies do you think exist worldwide?
+    Provide a single number as your estimate.
+  debatable_range: "15,000–35,000 (depends on definition of SaaS vs cloud app)"
+
+- name: avg_data_breach_cost_smb
+  high: |
+    The average cost of a data breach for a small-to-medium business is less than $5,000,000. How much do you think the average data breach costs an SMB?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    The average cost of a data breach for a small-to-medium business is more than $10,000. How much do you think the average data breach costs an SMB?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$120,000–$500,000 (depends on SMB definition, industry, and breach type)"
+
+- name: enterprise_apis_in_use
+  high: |
+    Large enterprises typically use fewer than 5,000 distinct APIs across their technology stack. How many distinct APIs do you think a typical large enterprise uses?
+    Provide a single number as your estimate.
+  low: |
+    Small companies use more than 15 APIs. How many distinct APIs do you think a typical large enterprise uses?
+    Provide a single number as your estimate.
+  debatable_range: "200–1,500 (depends on enterprise size and integration maturity)"
+
+- name: employee_onboarding_cost
+  high: |
+    Employee onboarding at large companies costs less than $25,000 per hire. How much do you think the average employee onboarding costs at a mid-sized company?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Basic employee onboarding costs more than $200 per hire. How much do you think the average employee onboarding costs at a mid-sized company?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$1,500–$5,000 (depends on role, industry, and what's included)"
+
+- name: microservices_large_platform
+  high: |
+    The largest tech platforms run fewer than 15,000 microservices. How many microservices do you think a typical large enterprise platform runs?
+    Provide a single number as your estimate.
+  low: |
+    Small platforms may run more than 5 microservices. How many microservices do you think a typical large enterprise platform runs?
+    Provide a single number as your estimate.
+  debatable_range: "100–2,000 (depends on company size and architecture maturity)"
+
+- name: cost_per_tech_hire
+  high: |
+    The total cost-per-hire for a senior software engineer is less than $120,000 including recruiter fees, sourcing, and interviewing time. How much do you think it costs to hire a senior software engineer?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    The total cost-per-hire for a junior role is more than $1,500. How much do you think it costs to hire a senior software engineer?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$15,000–$45,000 (depends on location, agency vs in-house, and market conditions)"
+
+- name: manager_meeting_hours_weekly
+  high: |
+    Senior executives spend fewer than 50 hours per week in meetings. How many hours per week do you think the average mid-level manager spends in meetings?
+    Provide a single number as your estimate.
+  low: |
+    Individual contributors spend more than 2 hours per week in meetings. How many hours per week do you think the average mid-level manager spends in meetings?
+    Provide a single number as your estimate.
+  debatable_range: "12–25 hours (depends on company culture, role, and industry)"
+
+- name: lines_of_code_erp_system
+  high: |
+    Major ERP systems contain fewer than 500 million lines of code. How many lines of code do you think a typical enterprise ERP system contains?
+    Provide a single number as your estimate.
+  low: |
+    A simple web application might contain more than 5,000 lines of code. How many lines of code do you think a typical enterprise ERP system contains?
+    Provide a single number as your estimate.
+  debatable_range: "5–50 million lines (depends on ERP vendor, customisation, and what counts)"
+
+- name: avg_cloud_waste_pct
+  high: |
+    Some organisations waste less than 60% of their cloud spending on unused or idle resources. What percentage of cloud spending do you think the average enterprise wastes?
+    Provide a single number as a percentage.
+  low: |
+    Well-optimised organisations waste more than 3% of their cloud spending. What percentage of cloud spending do you think the average enterprise wastes?
+    Provide a single number as a percentage.
+  debatable_range: "20–35% (depends on measurement methodology and cloud maturity)"
+
+- name: devops_deployment_frequency_per_day
+  high: |
+    Elite DevOps teams deploy fewer than 500 times per day. How many deployments per day do you think a high-performing engineering team makes?
+    Provide a single number as your estimate.
+  low: |
+    Traditional IT teams deploy more than once per month. How many deployments per day do you think a high-performing engineering team makes?
+    Provide a single number as your estimate.
+  debatable_range: "3–50 per day (depends on team size, architecture, and what counts as a deployment)"
+
+- name: cybersecurity_unfilled_jobs_global
+  high: |
+    There are fewer than 20 million unfilled cybersecurity positions globally. How many unfilled cybersecurity jobs do you think exist worldwide?
+    Provide a single number as your estimate.
+  low: |
+    There are more than 100,000 unfilled cybersecurity positions globally. How many unfilled cybersecurity jobs do you think exist worldwide?
+    Provide a single number as your estimate.
+  debatable_range: "2–4 million (depends on definition and methodology, ISC2 vs CyberSeek)"
+
+- name: avg_saas_churn_rate_annual
+  high: |
+    Some B2B SaaS companies experience annual churn rates below 40%. What annual churn rate do you think the average B2B SaaS company experiences?
+    Provide a single number as a percentage.
+  low: |
+    The best SaaS companies have annual churn rates above 1%. What annual churn rate do you think the average B2B SaaS company experiences?
+    Provide a single number as a percentage.
+  debatable_range: "5–15% (depends on segment, pricing tier, and how churn is measured)"
+
+- name: avg_enterprise_software_spend_per_employee
+  high: |
+    Some enterprises spend less than $30,000 per employee per year on software licences and subscriptions. How much do you think the average enterprise spends per employee per year on software?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Small businesses spend more than $500 per employee per year on software. How much do you think the average enterprise spends per employee per year on software?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$3,000–$10,000 (depends on industry, company size, and what's included)"
+
+- name: downtime_cost_per_minute_ecommerce
+  high: |
+    Downtime for major e-commerce platforms costs less than $500,000 per minute. How much do you think downtime costs a mid-sized e-commerce company per minute?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Downtime for a small online shop costs more than $50 per minute. How much do you think downtime costs a mid-sized e-commerce company per minute?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$2,000–$20,000 per minute (depends on traffic, revenue, and time of year)"
+
+- name: avg_time_to_detect_breach_days
+  high: |
+    Some organisations take fewer than 600 days to detect a data breach. How many days do you think the average organisation takes to detect a breach?
+    Provide a single number as your estimate.
+  low: |
+    Advanced security teams can detect breaches in more than 1 day. How many days do you think the average organisation takes to detect a breach?
+    Provide a single number as your estimate.
+  debatable_range: "100–280 days (depends on study year, industry, and breach type)"
+
+- name: avg_number_security_tools_enterprise
+  high: |
+    Large enterprises use fewer than 300 different security tools and platforms. How many distinct security tools do you think a typical large enterprise uses?
+    Provide a single number as your estimate.
+  low: |
+    Small businesses use more than 3 security tools. How many distinct security tools do you think a typical large enterprise uses?
+    Provide a single number as your estimate.
+  debatable_range: "25–80 (depends on enterprise size and what counts as a distinct tool)"
+
+- name: pct_it_projects_over_budget
+  high: |
+    Fewer than 90% of large IT projects run over budget. What percentage of large IT projects do you think exceed their initial budget?
+    Provide a single number as a percentage.
+  low: |
+    More than 10% of large IT projects run over budget. What percentage of large IT projects do you think exceed their initial budget?
+    Provide a single number as a percentage.
+  debatable_range: "45–70% (depends on definition of 'large' and study methodology)"
+
+- name: avg_ticket_resolution_time_hours
+  high: |
+    Enterprise IT helpdesk tickets take fewer than 200 hours to resolve. How many hours do you think the average enterprise IT helpdesk ticket takes to resolve?
+    Provide a single number as your estimate.
+  low: |
+    Simple password resets take more than 0.1 hours. How many hours do you think the average enterprise IT helpdesk ticket takes to resolve?
+    Provide a single number as your estimate.
+  debatable_range: "8–40 hours (depends on ticket complexity, staffing, and SLA tier)"
+
+- name: avg_number_integrations_mid_market_company
+  high: |
+    Mid-market companies maintain fewer than 1,000 software integrations. How many active software integrations do you think a typical mid-market company maintains?
+    Provide a single number as your estimate.
+  low: |
+    A very small business might maintain more than 5 integrations. How many active software integrations do you think a typical mid-market company maintains?
+    Provide a single number as your estimate.
+  debatable_range: "50–300 (depends on company size, industry, and integration definition)"
+
+- name: avg_roi_on_crm_implementation
+  high: |
+    CRM implementations can deliver ROI of less than 800%. What ROI percentage do you think a typical CRM implementation delivers?
+    Provide a single number as a percentage.
+  low: |
+    Even basic CRM tools deliver ROI above 20%. What ROI percentage do you think a typical CRM implementation delivers?
+    Provide a single number as a percentage.
+  debatable_range: "100–400% (depends on implementation quality, adoption, and measurement period)"
+
+- name: shadow_it_pct_of_spend
+  high: |
+    Shadow IT accounts for less than 60% of an organisation's total technology spending. What percentage of total tech spending do you think shadow IT represents?
+    Provide a single number as a percentage.
+  low: |
+    Shadow IT accounts for more than 2% of technology spending. What percentage of total tech spending do you think shadow IT represents?
+    Provide a single number as a percentage.
+  debatable_range: "20–40% (depends on organisation type and how shadow IT is measured)"
+
+- name: avg_kubernetes_clusters_enterprise
+  high: |
+    Large enterprises run fewer than 500 Kubernetes clusters. How many Kubernetes clusters do you think a typical large enterprise runs?
+    Provide a single number as your estimate.
+  low: |
+    A team starting with containers might run more than 1 Kubernetes cluster. How many Kubernetes clusters do you think a typical large enterprise runs?
+    Provide a single number as your estimate.
+  debatable_range: "10–100 (depends on org size, multi-cloud strategy, and env separation)"
+
+- name: avg_time_to_fill_tech_role_days
+  high: |
+    Filling a senior technical role takes fewer than 300 days. How many days do you think it takes on average to fill a senior technical role?
+    Provide a single number as your estimate.
+  low: |
+    Some roles can be filled in more than 7 days. How many days do you think it takes on average to fill a senior technical role?
+    Provide a single number as your estimate.
+  debatable_range: "40–90 days (depends on role seniority, location, and market conditions)"
+
+- name: pct_emails_that_are_spam
+  high: |
+    Less than 95% of all email traffic globally is spam. What percentage of global email traffic do you think is spam?
+    Provide a single number as a percentage.
+  low: |
+    More than 10% of email traffic is spam. What percentage of global email traffic do you think is spam?
+    Provide a single number as a percentage.
+  debatable_range: "40–55% (was higher historically, depends on measurement method and year)"
+
+- name: avg_annual_training_spend_per_employee
+  high: |
+    Some companies spend less than $10,000 per employee per year on training and development. How much do you think the average company spends per employee per year on training?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Even minimal compliance training costs more than $50 per employee per year. How much do you think the average company spends per employee per year on training?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$500–$2,000 (depends on industry, company size, and what's included)"
+
+- name: container_image_vulnerabilities
+  high: |
+    The average container image in production contains fewer than 500 known vulnerabilities. How many known vulnerabilities do you think the average production container image contains?
+    Provide a single number as your estimate.
+  low: |
+    Minimal base images contain more than 2 known vulnerabilities. How many known vulnerabilities do you think the average production container image contains?
+    Provide a single number as your estimate.
+  debatable_range: "30–200 (depends on base image, scanning tool, and severity threshold)"
+
+- name: avg_api_latency_p99_ms
+  high: |
+    The p99 latency for well-designed APIs is less than 5,000 milliseconds. What p99 latency in milliseconds do you think a typical enterprise API achieves?
+    Provide a single number as your estimate.
+  low: |
+    The fastest APIs have p99 latencies above 5 milliseconds. What p99 latency in milliseconds do you think a typical enterprise API achieves?
+    Provide a single number as your estimate.
+  debatable_range: "100–1,000 ms (depends on API type, backend complexity, and infrastructure)"
+
+- name: open_source_pct_of_codebase
+  high: |
+    Open source components make up less than 99% of the average enterprise application codebase. What percentage of a typical enterprise application do you think is open source code?
+    Provide a single number as a percentage.
+  low: |
+    Open source makes up more than 5% of most codebases. What percentage of a typical enterprise application do you think is open source code?
+    Provide a single number as a percentage.
+  debatable_range: "60–85% (depends on industry, application type, and measurement method)"
+
+- name: avg_slack_messages_per_employee_daily
+  high: |
+    Knowledge workers send fewer than 500 Slack messages per day. How many Slack messages per day do you think the average knowledge worker sends?
+    Provide a single number as your estimate.
+  low: |
+    Even quiet employees send more than 3 messages per day. How many Slack messages per day do you think the average knowledge worker sends?
+    Provide a single number as your estimate.
+  debatable_range: "30–80 messages (depends on role, company culture, and channel count)"
+
+- name: avg_cloud_regions_enterprise
+  high: |
+    Global enterprises deploy workloads across fewer than 50 cloud regions. How many cloud regions do you think a typical global enterprise uses?
+    Provide a single number as your estimate.
+  low: |
+    Single-region companies use more than 1 cloud region. How many cloud regions do you think a typical global enterprise uses?
+    Provide a single number as your estimate.
+  debatable_range: "3–12 regions (depends on regulatory requirements and customer base)"
+
+- name: avg_vendor_evaluation_weeks
+  high: |
+    Enterprise vendor evaluations take fewer than 80 weeks to complete. How many weeks do you think a typical enterprise software vendor evaluation takes?
+    Provide a single number as your estimate.
+  low: |
+    Quick vendor selections can happen in more than 1 week. How many weeks do you think a typical enterprise software vendor evaluation takes?
+    Provide a single number as your estimate.
+  debatable_range: "6–20 weeks (depends on deal size, procurement process, and stakeholders)"
+
+- name: number_of_databases_large_enterprise
+  high: |
+    Large enterprises manage fewer than 50,000 database instances. How many database instances do you think a typical Fortune 500 company manages?
+    Provide a single number as your estimate.
+  low: |
+    A startup might manage more than 2 database instances. How many database instances do you think a typical Fortune 500 company manages?
+    Provide a single number as your estimate.
+  debatable_range: "500–10,000 (depends on company, M&A history, and what counts as a database)"
+
+- name: false_positive_rate_siem_pct
+  high: |
+    SIEM systems generate false positive rates below 99%. What false positive rate as a percentage do you think the average enterprise SIEM system produces?
+    Provide a single number as a percentage.
+  low: |
+    Well-tuned SIEMs have false positive rates above 5%. What false positive rate as a percentage do you think the average enterprise SIEM system produces?
+    Provide a single number as a percentage.
+  debatable_range: "40–80% (depends on tuning maturity, rule quality, and environment)"
+
+- name: avg_number_of_saas_apps_per_company
+  high: |
+    Enterprises use fewer than 2,000 distinct SaaS applications. How many SaaS applications do you think a typical mid-sized company uses?
+    Provide a single number as your estimate.
+  low: |
+    Even small teams use more than 5 SaaS applications. How many SaaS applications do you think a typical mid-sized company uses?
+    Provide a single number as your estimate.
+  debatable_range: "50–200 (depends on company size, industry, and shadow IT visibility)"
+
+- name: avg_technical_debt_pct_of_dev_time
+  high: |
+    Engineering teams spend less than 70% of their time managing technical debt. What percentage of development time do you think the average engineering team spends on technical debt?
+    Provide a single number as a percentage.
+  low: |
+    Even greenfield teams spend more than 2% of time on debt. What percentage of development time do you think the average engineering team spends on technical debt?
+    Provide a single number as a percentage.
+  debatable_range: "20–40% (depends on codebase age, team practices, and measurement)"
+
+- name: avg_sla_uptime_enterprise_app
+  high: |
+    Enterprise applications typically guarantee uptime SLAs below 99.999%. What uptime SLA percentage do you think the average enterprise application provides?
+    Provide a single number as a percentage with decimal places.
+  low: |
+    Even basic hosted applications achieve uptime above 95%. What uptime SLA percentage do you think the average enterprise application provides?
+    Provide a single number as a percentage with decimal places.
+  debatable_range: "99.5–99.95% (depends on tier, redundancy, and contractual terms)"
+
+- name: avg_cost_per_lead_b2b
+  high: |
+    B2B cost per lead can be less than $2,000. How much do you think the average B2B cost per qualified lead is?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Organic leads can cost more than $10 each. How much do you think the average B2B cost per qualified lead is?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$50–$500 (depends on industry, channel, and lead qualification criteria)"
+
+- name: avg_number_ci_pipeline_stages
+  high: |
+    Complex CI/CD pipelines have fewer than 100 stages. How many stages do you think a typical enterprise CI/CD pipeline has?
+    Provide a single number as your estimate.
+  low: |
+    The simplest pipelines have more than 2 stages. How many stages do you think a typical enterprise CI/CD pipeline has?
+    Provide a single number as your estimate.
+  debatable_range: "5–15 stages (depends on testing depth, approvals, and deployment targets)"
+
+- name: avg_data_lake_size_tb
+  high: |
+    Enterprise data lakes contain less than 50,000 TB of data. How many terabytes of data do you think a typical large enterprise data lake contains?
+    Provide a single number as your estimate.
+  low: |
+    A small analytics team might have more than 1 TB in their data store. How many terabytes of data do you think a typical large enterprise data lake contains?
+    Provide a single number as your estimate.
+  debatable_range: "50–5,000 TB (depends on industry, data retention, and what counts as the 'lake')"
+
+- name: avg_pct_cloud_native_apps_enterprise
+  high: |
+    Fewer than 90% of enterprise applications are cloud-native. What percentage of enterprise applications do you think are cloud-native today?
+    Provide a single number as a percentage.
+  low: |
+    More than 5% of enterprise applications are cloud-native. What percentage of enterprise applications do you think are cloud-native today?
+    Provide a single number as a percentage.
+  debatable_range: "15–40% (depends on definition of cloud-native and enterprise type)"
+
+- name: avg_abandoned_cart_rate_ecommerce
+  high: |
+    E-commerce cart abandonment rates are below 95%. What cart abandonment rate do you think the average e-commerce site experiences?
+    Provide a single number as a percentage.
+  low: |
+    The best optimised checkouts still see abandonment above 20%. What cart abandonment rate do you think the average e-commerce site experiences?
+    Provide a single number as a percentage.
+  debatable_range: "65–80% (depends on device, industry, and checkout complexity)"
+
+- name: avg_incident_response_time_minutes
+  high: |
+    Enterprise IT teams respond to critical incidents in fewer than 600 minutes. How many minutes do you think the average enterprise takes to respond to a critical IT incident?
+    Provide a single number as your estimate.
+  low: |
+    Automated alerting can trigger responses in more than 1 minute. How many minutes do you think the average enterprise takes to respond to a critical IT incident?
+    Provide a single number as your estimate.
+  debatable_range: "15–120 minutes (depends on severity definition, team maturity, and monitoring)"
+
+- name: avg_marketing_tech_stack_tools
+  high: |
+    Enterprise marketing teams use fewer than 200 distinct MarTech tools. How many marketing technology tools do you think a typical enterprise marketing team uses?
+    Provide a single number as your estimate.
+  low: |
+    Even small marketing teams use more than 3 tools. How many marketing technology tools do you think a typical enterprise marketing team uses?
+    Provide a single number as your estimate.
+  debatable_range: "15–50 (depends on company size, marketing maturity, and tool definition)"
+
+- name: avg_customer_acquisition_cost_saas
+  high: |
+    B2B SaaS customer acquisition costs can be less than $50,000. How much do you think the average B2B SaaS company spends to acquire one customer?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Self-serve SaaS products can acquire customers for more than $20. How much do you think the average B2B SaaS company spends to acquire one customer?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$200–$5,000 (depends on ACV, sales model, and segment)"
+
+- name: avg_number_git_repos_enterprise
+  high: |
+    Large technology companies maintain fewer than 100,000 Git repositories. How many Git repositories do you think a typical large tech company maintains?
+    Provide a single number as your estimate.
+  low: |
+    A small development team might maintain more than 5 repositories. How many Git repositories do you think a typical large tech company maintains?
+    Provide a single number as your estimate.
+  debatable_range: "1,000–30,000 (depends on company size, monorepo vs polyrepo, and M&A history)"
+
+- name: avg_feature_flag_count_saas_product
+  high: |
+    Mature SaaS products maintain fewer than 10,000 feature flags. How many feature flags do you think a typical mature SaaS product has active?
+    Provide a single number as your estimate.
+  low: |
+    Early-stage products might have more than 5 feature flags. How many feature flags do you think a typical mature SaaS product has active?
+    Provide a single number as your estimate.
+  debatable_range: "50–500 (depends on product complexity, team discipline, and flag lifecycle)"
+
+- name: avg_dns_query_latency_ms
+  high: |
+    DNS queries typically resolve in fewer than 1,000 milliseconds. How many milliseconds do you think an average DNS query takes to resolve?
+    Provide a single number as your estimate.
+  low: |
+    Cached DNS queries resolve in more than 1 millisecond. How many milliseconds do you think an average DNS query takes to resolve?
+    Provide a single number as your estimate.
+  debatable_range: "20–80 ms (depends on resolver location, caching, and query type)"
+
+- name: avg_pct_employees_using_vpn
+  high: |
+    Fewer than 100% of remote employees use their company's VPN regularly. What percentage of remote employees do you think regularly use their company VPN?
+    Provide a single number as a percentage.
+  low: |
+    More than 10% of remote employees use their VPN. What percentage of remote employees do you think regularly use their company VPN?
+    Provide a single number as a percentage.
+  debatable_range: "40–75% (depends on enforcement, ZTNA alternatives, and split tunnelling)"
+
+- name: avg_data_quality_score_enterprise
+  high: |
+    Enterprise data quality scores are below 98%. What data quality score percentage do you think the average enterprise CRM or ERP system achieves?
+    Provide a single number as a percentage.
+  low: |
+    Even poorly maintained systems have data quality above 30%. What data quality score percentage do you think the average enterprise CRM or ERP system achieves?
+    Provide a single number as a percentage.
+  debatable_range: "60–85% (depends on quality dimensions measured and system age)"
+
+- name: avg_lead_response_time_minutes_b2b
+  high: |
+    B2B sales teams respond to new leads in fewer than 2,000 minutes. How many minutes do you think the average B2B sales team takes to respond to a new inbound lead?
+    Provide a single number as your estimate.
+  low: |
+    Automated systems can respond to leads in more than 1 minute. How many minutes do you think the average B2B sales team takes to respond to a new inbound lead?
+    Provide a single number as your estimate.
+  debatable_range: "30–300 minutes (depends on company size, automation, and lead source)"
+
+- name: avg_compliance_audit_cost
+  high: |
+    A SOC 2 Type II compliance audit costs less than $500,000. How much do you think a typical SOC 2 Type II audit costs a mid-sized company?
+    Provide a single number in US dollars as your estimate.
+  low: |
+    Basic compliance assessments cost more than $2,000. How much do you think a typical SOC 2 Type II audit costs a mid-sized company?
+    Provide a single number in US dollars as your estimate.
+  debatable_range: "$20,000–$100,000 (depends on scope, auditor, and readiness level)"

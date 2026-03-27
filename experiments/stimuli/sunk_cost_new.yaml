@@ -1,0 +1,1363 @@
+- name: erp_platform_migration
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £180,000 in an ERP platform 24 months ago, including licensing, data migration, and employee training. A new vendor evaluation reveals a competing ERP that scores higher on usability, reporting, and integration capabilities. Migrating would cost £95,000. Staying requires a £60,000 upgrade to maintain vendor support.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new ERP
+      9 = Definitely stay with the current ERP
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free open-source ERP platform for 24 months. A new vendor evaluation reveals a commercial ERP that scores higher on usability, reporting, and integration capabilities. Migrating would cost £95,000. Staying with the current platform requires a £60,000 investment in custom development to maintain functionality.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new ERP
+      9 = Definitely stay with the current ERP
+
+      Provide a single number (1-9) as your answer.
+
+- name: marketing_automation_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £65,000 implementing a marketing automation platform 14 months ago, including licence fees, template development, and team training. A competitive review shows an alternative platform delivers 40% higher email deliverability and better analytics at the same annual cost. Switching would cost £30,000 in migration and retraining. Staying requires a £25,000 annual renewal.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the alternative platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a marketing automation platform on a free trial extended by the vendor for 14 months. A competitive review shows an alternative platform delivers 40% higher email deliverability and better analytics at the same annual cost. Switching would cost £30,000 in migration and retraining. The current platform would cost £25,000 per year to continue.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the alternative platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: custom_software_project
+  paid:
+    condition: paid
+    prompt: |
+      Your company has spent £320,000 over 18 months developing a custom inventory management system. The project is 60% complete. A commercial off-the-shelf solution has been identified that covers 95% of requirements at £80,000 total. Completing the custom build would cost an additional £200,000 and take 12 more months. Annual maintenance of the custom system is estimated at £50,000 vs £15,000 for the COTS solution.
+
+      Rate on a scale of 1-9:
+      1 = Definitely abandon the custom build and buy the COTS solution
+      9 = Definitely complete the custom build
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company inherited a partially built custom inventory management system from an acquisition at no cost. The project is 60% complete. A commercial off-the-shelf solution has been identified that covers 95% of requirements at £80,000 total. Completing the custom build would cost £200,000 and take 12 months. Annual maintenance of the custom system is estimated at £50,000 vs £15,000 for the COTS solution.
+
+      Rate on a scale of 1-9:
+      1 = Definitely abandon the custom build and buy the COTS solution
+      9 = Definitely complete the custom build
+
+      Provide a single number (1-9) as your answer.
+
+- name: office_lease_relocation
+  paid:
+    condition: paid
+    prompt: |
+      Your company signed a 5-year office lease 2 years ago with a £150,000 fit-out investment. Employee surveys consistently show low satisfaction with the location (long commutes, poor transport links). A better-located office is available at the same monthly rent. Early lease termination would cost £40,000 in penalties, and the new fit-out would cost £80,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely relocate to the new office
+      9 = Definitely stay in the current office
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using office space provided rent-free by a partner organisation for 2 years. The arrangement is ending. Employee surveys consistently show low satisfaction with the location (long commutes, poor transport links). A well-located office is available. Fit-out would cost £80,000 and there is a £40,000 deposit required.
+
+      Rate on a scale of 1-9:
+      1 = Definitely relocate to the new office
+      9 = Definitely stay and negotiate to extend the current arrangement
+
+      Provide a single number (1-9) as your answer.
+
+- name: training_programme_certification
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £90,000 sending 30 engineers through a cloud certification programme with Vendor A. Vendor A has since been acquired and their certification is being discontinued. Vendor B offers a more widely recognised certification at £2,500 per engineer (£75,000 total). The Vendor A certification will have no market value within 12 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely retrain all engineers on Vendor B certification
+      9 = Definitely continue using the Vendor A certification as long as possible
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      30 engineers at your company received free cloud certification training through a vendor partnership with Vendor A. Vendor A has since been acquired and their certification is being discontinued. Vendor B offers a more widely recognised certification at £2,500 per engineer (£75,000 total). The Vendor A certification will have no market value within 12 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely retrain all engineers on Vendor B certification
+      9 = Definitely continue using the Vendor A certification as long as possible
+
+      Provide a single number (1-9) as your answer.
+
+- name: hardware_infrastructure_upgrade
+  paid:
+    condition: paid
+    prompt: |
+      Your company purchased £500,000 worth of on-premise server hardware 3 years ago. A total cost of ownership analysis shows that migrating to cloud infrastructure would save £120,000 per year in operational costs. The migration would cost £150,000. The existing hardware has no resale value and requires £80,000 per year in maintenance.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to cloud
+      9 = Definitely keep the on-premise hardware
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using on-premise server hardware donated by a technology partner 3 years ago. A total cost of ownership analysis shows that migrating to cloud infrastructure would save £120,000 per year in operational costs. The migration would cost £150,000. The existing hardware requires £80,000 per year in maintenance.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to cloud
+      9 = Definitely keep the on-premise hardware
+
+      Provide a single number (1-9) as your answer.
+
+- name: consulting_engagement_pivot
+  paid:
+    condition: paid
+    prompt: |
+      Your company has spent £200,000 on a management consulting engagement to redesign sales processes. After 4 months, the consultancy's recommendations have shown no measurable improvement. A different consultancy offers a data-driven approach with a guaranteed performance improvement clause for £120,000. Continuing with the current consultancy for the remaining 2 months would cost £80,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new consultancy
+      9 = Definitely continue with the current consultancy
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been receiving pro bono consulting from a business school partnership to redesign sales processes. After 4 months, their recommendations have shown no measurable improvement. A professional consultancy offers a data-driven approach with a guaranteed performance improvement clause for £120,000. Continuing with the business school for the remaining 2 months would require £80,000 in staff time to support.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the professional consultancy
+      9 = Definitely continue with the business school partnership
+
+      Provide a single number (1-9) as your answer.
+
+- name: conference_sponsorship
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid £45,000 for a premium sponsorship at an industry conference 6 months ago. Attendee registration numbers are 70% below projections, and two keynote speakers have cancelled. A competing event the same week has 3x the expected attendance. Transferring your sponsorship budget to the competing event would cost £20,000 in fees, but reach a much larger audience.
+
+      Rate on a scale of 1-9:
+      1 = Definitely transfer sponsorship to the competing event
+      9 = Definitely stay with the original conference
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company received a free premium sponsorship slot at an industry conference through a media partnership. Attendee registration numbers are 70% below projections, and two keynote speakers have cancelled. A competing event the same week has 3x the expected attendance. Sponsoring the competing event would cost £20,000, but reach a much larger audience.
+
+      Rate on a scale of 1-9:
+      1 = Definitely sponsor the competing event instead
+      9 = Definitely stay with the original conference
+
+      Provide a single number (1-9) as your answer.
+
+- name: product_development_pivot
+  paid:
+    condition: paid
+    prompt: |
+      Your company has spent £750,000 developing a new product feature over 12 months. Beta testing with 50 customers shows a Net Promoter Score of -15 and no measurable increase in retention. The product team has identified an alternative feature that addresses the top customer-requested improvement, estimated at £300,000 to develop. Continuing to refine the current feature would cost an additional £250,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely abandon the current feature and build the alternative
+      9 = Definitely continue refining the current feature
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company acquired a partially built product feature through an acqui-hire at no development cost. Beta testing with 50 customers shows a Net Promoter Score of -15 and no measurable increase in retention. The product team has identified an alternative feature that addresses the top customer-requested improvement, estimated at £300,000 to develop. Continuing to refine the current feature would cost £250,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely abandon the current feature and build the alternative
+      9 = Definitely continue refining the current feature
+
+      Provide a single number (1-9) as your answer.
+
+- name: vendor_contract_renegotiation
+  paid:
+    condition: paid
+    prompt: |
+      Your company signed a 3-year contract worth £360,000 with a cloud storage vendor 18 months ago. A new vendor offers identical features with better performance at 30% lower cost. The current contract has an early termination fee of £60,000. Staying with the current vendor for the remaining 18 months would cost £180,000. Switching to the new vendor would cost £126,000 for the same period plus the £60,000 termination fee.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new vendor
+      9 = Definitely stay with the current vendor
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a cloud storage vendor on a month-to-month arrangement for 18 months at no cost through a startup credits programme. The credits are expiring. A new vendor offers identical features with strong performance at £7,000 per month. The current vendor would charge £10,000 per month going forward. Switching would involve a one-off migration cost of £60,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new vendor
+      9 = Definitely stay with the current vendor
+
+      Provide a single number (1-9) as your answer.
+
+- name: data_warehouse_migration
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £280,000 building a data warehouse on a specific platform 2 years ago, including schema design, ETL pipelines, and analyst training. A benchmarking study shows a competing platform runs queries 5x faster at 40% lower operating cost. Migration would cost £130,000 in engineering time and retraining. Staying requires a £90,000 annual licence renewal.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the faster platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a data warehouse platform provided free through an academic research partnership for 2 years. The partnership is ending. A benchmarking study shows a competing platform runs queries 5x faster at 40% lower operating cost than the standard pricing of the current platform. Migration would cost £130,000. Staying with the current platform would cost £90,000 per year at commercial rates.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the faster platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: recruitment_agency_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid a £50,000 retainer to an executive recruitment agency 6 months ago to fill 5 senior roles. They have filled 1 of 5 positions, and the quality of candidates presented has been consistently below expectations. A competing agency offers a pay-on-success model with stronger candidate pools in your sector. Engaging the new agency would cost £15,000 per successful placement.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new agency
+      9 = Definitely continue with the current agency
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been working with an executive recruitment agency on a free trial basis for 6 months to fill 5 senior roles. They have filled 1 of 5 positions, and the quality of candidates presented has been consistently below expectations. A competing agency offers a pay-on-success model with stronger candidate pools in your sector at £15,000 per successful placement. Continuing with the current agency would also switch to a paid model at £15,000 per placement.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the new agency
+      9 = Definitely continue with the current agency
+
+      Provide a single number (1-9) as your answer.
+
+- name: security_tool_replacement
+  paid:
+    condition: paid
+    prompt: |
+      Your company purchased an endpoint security platform for £120,000 in perpetual licences 2 years ago, plus £35,000 in deployment costs. Independent testing shows it detects only 72% of threats, compared to 96% for a competing platform. The new platform costs £50,000 per year. Keeping the current platform requires £25,000 per year in maintenance and signature updates.
+
+      Rate on a scale of 1-9:
+      1 = Definitely replace with the higher-detection platform
+      9 = Definitely keep the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using an endpoint security platform bundled free with your OS licences for 2 years. Independent testing shows it detects only 72% of threats, compared to 96% for a dedicated security platform. The dedicated platform costs £50,000 per year. Keeping the current bundled solution requires £25,000 per year in additional configuration and manual monitoring.
+
+      Rate on a scale of 1-9:
+      1 = Definitely replace with the higher-detection platform
+      9 = Definitely keep the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: project_management_tool_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £40,000 implementing a project management platform 10 months ago, including customisation, workflow setup, and team training. A satisfaction survey shows 35% adoption and widespread complaints about usability. A competitor offers a platform with proven 85% adoption rates in similar organisations. Switching would cost £25,000. Continuing with the current tool requires a £15,000 upgrade to address usability issues.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competitor
+      9 = Definitely stay with the current tool
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free tier of a project management platform for 10 months. A satisfaction survey shows 35% adoption and widespread complaints about usability. A competitor offers a platform with proven 85% adoption rates in similar organisations. Switching would cost £25,000. Upgrading the current tool to its paid tier to address usability issues would cost £15,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competitor
+      9 = Definitely stay with the current tool
+
+      Provide a single number (1-9) as your answer.
+
+- name: mobile_app_rebuild
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £420,000 building a customer-facing mobile app using a cross-platform framework 18 months ago. App store ratings average 2.3 stars with persistent performance complaints. The engineering team recommends rebuilding natively at a cost of £350,000 over 9 months. Patching the current app to address the worst issues would cost £150,000 with no guarantee of improving ratings above 3.0.
+
+      Rate on a scale of 1-9:
+      1 = Definitely rebuild natively
+      9 = Definitely continue patching the current app
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company received a customer-facing mobile app built by a development bootcamp as a capstone project at no cost 18 months ago. App store ratings average 2.3 stars with persistent performance complaints. The engineering team recommends rebuilding natively at a cost of £350,000 over 9 months. Patching the current app to address the worst issues would cost £150,000 with no guarantee of improving ratings above 3.0.
+
+      Rate on a scale of 1-9:
+      1 = Definitely rebuild natively
+      9 = Definitely continue patching the current app
+
+      Provide a single number (1-9) as your answer.
+
+- name: bi_platform_migration
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £160,000 deploying a business intelligence platform 20 months ago, including licence fees, dashboard development, and analyst training. Only 20% of intended dashboards are in active use. A modern BI platform offers self-service analytics that would reduce report creation time by 70%. Migrating would cost £85,000. Renewing the current platform costs £55,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the new BI platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using an open-source business intelligence platform at no licence cost for 20 months. Only 20% of intended dashboards are in active use. A modern BI platform offers self-service analytics that would reduce report creation time by 70%. Migrating would cost £85,000. Continuing with the current platform requires £55,000 per year in support and hosting.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the new BI platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: video_conferencing_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid £70,000 for enterprise video conferencing licences and room hardware 15 months ago. Users report frequent connectivity issues and poor recording quality. A competing platform offers superior reliability and AI transcription. Switching would cost £35,000 in new licences and setup. Staying requires £20,000 in hardware upgrades to improve performance.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free video conferencing platform for 15 months. Users report frequent connectivity issues and poor recording quality. A competing platform offers superior reliability and AI transcription. Switching would cost £35,000 in licences and setup. Upgrading the current platform to its enterprise tier would cost £20,000 to address some performance issues.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: helpdesk_platform_replacement
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £55,000 setting up a helpdesk and ticketing platform 12 months ago. Customer satisfaction scores have declined 15% since implementation, and agents report the interface slows them down. An alternative platform used by a sister company shows 30% faster ticket resolution. Migrating would cost £28,000. Staying requires £18,000 in customisation to address workflow issues.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the alternative platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been piloting a free helpdesk and ticketing platform for 12 months. Customer satisfaction scores have declined 15% since implementation, and agents report the interface slows them down. An alternative platform used by a sister company shows 30% faster ticket resolution. Migrating would cost £28,000. Continuing with the current platform at commercial rates would cost £18,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the alternative platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: payroll_system_change
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £95,000 implementing a payroll system 16 months ago, including data migration and compliance configuration. Monthly processing errors affect 8% of employees. A competing system with a proven 0.1% error rate would cost £45,000 to implement. Staying with the current system requires £30,000 in patches to reduce error rates.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the more accurate system
+      9 = Definitely stay with the current system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a payroll system provided free by your accountancy firm as part of a bundled service for 16 months. The bundle is being discontinued. Monthly processing errors affect 8% of employees. A standalone system with a proven 0.1% error rate would cost £45,000 to implement. The current system at commercial rates would cost £30,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the more accurate system
+      9 = Definitely stay with the current system
+
+      Provide a single number (1-9) as your answer.
+
+- name: crm_addon_abandonment
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £110,000 on a CRM add-on for predictive lead scoring 8 months ago. Analysis shows the model's predictions are no better than random (50% accuracy). The CRM vendor's native scoring feature, included in your existing licence at no extra cost, achieves 68% accuracy. Decommissioning the add-on and switching to native scoring would cost £12,000 in configuration.
+
+      Rate on a scale of 1-9:
+      1 = Definitely decommission the add-on and use native scoring
+      9 = Definitely keep the paid add-on
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been beta-testing a free CRM add-on for predictive lead scoring for 8 months. Analysis shows the model's predictions are no better than random (50% accuracy). The CRM vendor's native scoring feature, included in your existing licence at no extra cost, achieves 68% accuracy. Switching to native scoring would cost £12,000 in configuration.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to native scoring
+      9 = Definitely keep the beta add-on
+
+      Provide a single number (1-9) as your answer.
+
+- name: fleet_vehicle_replacement
+  paid:
+    condition: paid
+    prompt: |
+      Your company purchased 50 diesel delivery vehicles for £1,200,000 two years ago. New emissions regulations will impose £800 per vehicle per month in congestion and emissions charges starting next year. Electric equivalents are available on lease at £600 per vehicle per month with zero emission charges. Disposing of the diesel fleet would recover £400,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to electric vehicles
+      9 = Definitely keep the diesel fleet
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using 50 diesel delivery vehicles provided through a fleet-sharing arrangement at no capital cost for two years. The arrangement is ending. New emissions regulations will impose £800 per vehicle per month in charges. Electric vehicles are available on lease at £600 per vehicle per month with zero emission charges. Purchasing the diesel fleet from the sharing partner would cost £400,000 plus the monthly charges.
+
+      Rate on a scale of 1-9:
+      1 = Definitely lease electric vehicles
+      9 = Definitely purchase the diesel fleet
+
+      Provide a single number (1-9) as your answer.
+
+- name: website_redesign
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £85,000 on a website redesign 9 months ago. A/B testing shows the new design converts 20% worse than the old design. Reverting to the old design would cost £15,000 in development work. A third-party design agency offers a conversion-optimised redesign for £60,000 with a performance guarantee. Continuing to optimise the current design is estimated at £40,000 with uncertain results.
+
+      Rate on a scale of 1-9:
+      1 = Definitely revert or engage the new agency
+      9 = Definitely continue optimising the current redesign
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company received a free website redesign from a design school partnership 9 months ago. A/B testing shows the new design converts 20% worse than the old design. Reverting to the old design would cost £15,000 in development work. A third-party design agency offers a conversion-optimised redesign for £60,000 with a performance guarantee. Continuing to optimise the current design is estimated at £40,000 with uncertain results.
+
+      Rate on a scale of 1-9:
+      1 = Definitely revert or engage the new agency
+      9 = Definitely continue optimising the current redesign
+
+      Provide a single number (1-9) as your answer.
+
+- name: translation_service_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £75,000 in a machine translation platform 11 months ago, including custom model training on your domain terminology. Quality audits show translation accuracy of 78%, while a competing service achieves 94% accuracy on the same test set at identical per-word pricing. Switching would cost £20,000 in API integration changes. Improving the current model would cost £35,000 with a projected accuracy improvement to 85%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the more accurate service
+      9 = Definitely continue improving the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free research-grade machine translation API for 11 months. Quality audits show translation accuracy of 78%, while a commercial service achieves 94% accuracy on the same test set. Switching would cost £20,000 in API integration changes. Improving the current approach with additional prompt engineering would cost £35,000 with a projected accuracy improvement to 85%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the commercial service
+      9 = Definitely continue improving the current approach
+
+      Provide a single number (1-9) as your answer.
+
+- name: testing_framework_migration
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £60,000 adopting a new testing framework 14 months ago, including tooling, CI integration, and developer training. Test suite execution takes 45 minutes, causing significant developer friction. A modern framework used by industry peers runs equivalent test suites in 8 minutes. Migrating would cost £40,000. Optimising the current framework is estimated at £30,000 for a projected reduction to 25 minutes.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the faster framework
+      9 = Definitely stay and optimise the current framework
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company adopted a free open-source testing framework 14 months ago. Test suite execution takes 45 minutes, causing significant developer friction. A modern framework used by industry peers runs equivalent test suites in 8 minutes. Migrating would cost £40,000. Optimising the current framework is estimated at £30,000 for a projected reduction to 25 minutes.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the faster framework
+      9 = Definitely stay and optimise the current framework
+
+      Provide a single number (1-9) as your answer.
+
+- name: chatbot_platform_replacement
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £130,000 in an AI chatbot platform for customer service 12 months ago, including conversation design and integration. The chatbot resolves only 25% of queries without human escalation, vs an industry benchmark of 60%. A competing platform demonstrates 58% resolution on your historical query data. Switching would cost £50,000. Continuing to train the current bot is estimated at £45,000 per quarter.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely continue training the current chatbot
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free-tier AI chatbot platform for customer service for 12 months. The chatbot resolves only 25% of queries without human escalation, vs an industry benchmark of 60%. A competing platform demonstrates 58% resolution on your historical query data. Switching would cost £50,000. Upgrading the current platform to its paid tier and continuing training is estimated at £45,000 per quarter.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely continue with the current chatbot
+
+      Provide a single number (1-9) as your answer.
+
+- name: ab_testing_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £48,000 on an A/B testing platform 10 months ago. The platform's statistical engine has produced three false-positive results that led to shipping worse variants. A competing platform with Bayesian methodology and peer-reviewed statistical methods costs £30,000 to implement. Staying with the current platform requires £20,000 in configuration to add manual statistical checks.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the Bayesian platform
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free A/B testing tool for 10 months. The tool's statistical engine has produced three false-positive results that led to shipping worse variants. A platform with Bayesian methodology and peer-reviewed methods costs £30,000 to implement. Adding manual statistical validation to the current tool would cost £20,000 in development.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the Bayesian platform
+      9 = Definitely stay with the current tool
+
+      Provide a single number (1-9) as your answer.
+
+- name: knowledge_base_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £38,000 in an internal knowledge base platform 8 months ago. Usage analytics show only 12% of employees access it regularly, and search relevance scores average 2.1/5. A competing platform with AI-powered search shows 4.3/5 relevance in testing. Migrating content would cost £22,000. Improving the current platform's search would cost £18,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the AI-powered platform
+      9 = Definitely stay and improve the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free wiki as an internal knowledge base for 8 months. Usage analytics show only 12% of employees access it regularly, and search relevance scores average 2.1/5. A dedicated platform with AI-powered search shows 4.3/5 relevance in testing. Migrating content would cost £22,000. Improving the wiki's search capabilities would cost £18,000 in plugins and customisation.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the AI-powered platform
+      9 = Definitely stay and improve the wiki
+
+      Provide a single number (1-9) as your answer.
+
+- name: email_provider_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £55,000 migrating to a new corporate email provider 7 months ago. Since migration, email deliverability to customer inboxes has dropped from 96% to 82%, impacting sales outreach. The previous provider would accept a return migration at £30,000. Fixing deliverability with the current provider is quoted at £25,000 with a 6-month timeline and no guarantee.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate back to the previous provider
+      9 = Definitely stay and fix deliverability with the current provider
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company switched to a free corporate email service through a technology partnership 7 months ago. Since switching, email deliverability to customer inboxes has dropped from 96% to 82%, impacting sales outreach. The previous provider would accept a return migration at £30,000. Fixing deliverability with the current provider is quoted at £25,000 with a 6-month timeline and no guarantee.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate back to the previous provider
+      9 = Definitely stay and fix deliverability with the current provider
+
+      Provide a single number (1-9) as your answer.
+
+- name: ci_cd_pipeline_rewrite
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £100,000 building a custom CI/CD pipeline 15 months ago. Deployment failures occur on 18% of releases, compared to an industry average of 3%. A managed CI/CD service offers 99.5% deployment success rates at £3,000 per month. Continuing to debug the custom pipeline is estimated at £70,000 over the next 6 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the managed service
+      9 = Definitely continue fixing the custom pipeline
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a custom CI/CD pipeline contributed by a former employee as a side project at no cost 15 months ago. Deployment failures occur on 18% of releases, compared to an industry average of 3%. A managed CI/CD service offers 99.5% success rates at £3,000 per month. Continuing to debug the custom pipeline is estimated at £70,000 over the next 6 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the managed service
+      9 = Definitely continue fixing the custom pipeline
+
+      Provide a single number (1-9) as your answer.
+
+- name: compliance_platform_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid £140,000 for a compliance management platform 13 months ago. During the last audit, the platform failed to flag 3 critical compliance gaps that were caught manually. A competing platform correctly identifies all known gap types in testing. Switching would cost £65,000. Updating the current platform's rule engine would cost £50,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the more reliable platform
+      9 = Definitely stay and update the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free compliance checklist tool for 13 months. During the last audit, the tool failed to flag 3 critical compliance gaps that were caught manually. A dedicated compliance platform correctly identifies all known gap types in testing. Implementing it would cost £65,000. Building better automated checks into the current tool would cost £50,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the dedicated platform
+      9 = Definitely improve the current tool
+
+      Provide a single number (1-9) as your answer.
+
+- name: data_enrichment_vendor
+  paid:
+    condition: paid
+    prompt: |
+      Your company signed a £90,000 annual contract with a data enrichment vendor 9 months ago. Match rates on your customer database are 45%, well below the 80% promised. A competing vendor demonstrates 82% match rates on a sample of your data at comparable pricing. Switching would cost £15,000 in integration changes. The current contract has no early termination clause but can be cancelled at renewal in 3 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch vendors at the earliest opportunity
+      9 = Definitely renew with the current vendor and push for improvements
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a data enrichment service on a free developer plan for 9 months. Match rates on your customer database are 45%. A competing vendor demonstrates 82% match rates on a sample of your data. Switching would cost £15,000 in integration changes. Moving to commercial terms with either vendor would cost approximately £90,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the higher-accuracy vendor
+      9 = Definitely stay with the current vendor and upgrade to commercial
+
+      Provide a single number (1-9) as your answer.
+
+- name: monitoring_tool_consolidation
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £200,000 deploying a monitoring and observability platform 16 months ago. The operations team reports alert fatigue with a 75% false-positive rate and 20-minute mean time to diagnosis. A competitor offers AI-powered alert correlation with a demonstrated 15% false-positive rate and 3-minute diagnosis. Switching would cost £90,000. Tuning the current platform is estimated at £60,000 with a projected reduction to 40% false positives.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the AI-powered platform
+      9 = Definitely stay and tune the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free open-source monitoring stack for 16 months. The operations team reports alert fatigue with a 75% false-positive rate and 20-minute mean time to diagnosis. A commercial platform offers AI-powered alert correlation with a demonstrated 15% false-positive rate and 3-minute diagnosis. Implementing it would cost £90,000. Tuning the current stack is estimated at £60,000 with a projected reduction to 40% false positives.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the commercial platform
+      9 = Definitely stay and tune the open-source stack
+
+      Provide a single number (1-9) as your answer.
+
+- name: time_tracking_tool
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £28,000 implementing a time tracking and billing platform 9 months ago. Consultants report that it takes 15 minutes per day to log time, and invoicing errors have increased 12%. A competing tool with auto-capture technology reduces logging to 2 minutes and shows 99.5% billing accuracy in trials. Switching would cost £14,000. Fixing the current platform is quoted at £10,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the auto-capture tool
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free time tracking tool for 9 months. Consultants report that it takes 15 minutes per day to log time, and invoicing errors have increased 12%. A competing tool with auto-capture technology reduces logging to 2 minutes and shows 99.5% billing accuracy in trials. Switching would cost £14,000. Upgrading the current tool to its paid tier is quoted at £10,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the auto-capture tool
+      9 = Definitely stay with the current tool
+
+      Provide a single number (1-9) as your answer.
+
+- name: inventory_rfid_system
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £220,000 in an RFID inventory tracking system 20 months ago. Accuracy audits show 88% tag-read reliability, well below the 99% needed for automated replenishment. A computer-vision-based system achieves 99.2% accuracy in warehouse trials. Switching would cost £140,000. Upgrading the RFID readers is quoted at £95,000 with projected improvement to 94%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the computer-vision system
+      9 = Definitely stay with the RFID system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using an RFID inventory tracking system donated by a technology vendor as a reference site for 20 months. Accuracy audits show 88% tag-read reliability, well below the 99% needed for automated replenishment. A computer-vision-based system achieves 99.2% accuracy in warehouse trials at £140,000 to implement. Upgrading the current RFID approach would cost £95,000 with projected improvement to 94%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the computer-vision system
+      9 = Definitely stay with the RFID system
+
+      Provide a single number (1-9) as your answer.
+
+- name: voip_phone_system
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £160,000 deploying a VoIP phone system across 8 offices 18 months ago. Call quality complaints average 15 per week, and the system drops 6% of calls. A cloud-based UCaaS platform offers 99.99% call reliability at £4,000 per month. Migrating would cost £45,000. Fixing the current VoIP infrastructure is estimated at £70,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the UCaaS platform
+      9 = Definitely stay with the current VoIP system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a VoIP phone system inherited from a previous tenant at no cost across 8 offices for 18 months. Call quality complaints average 15 per week, and the system drops 6% of calls. A cloud-based UCaaS platform offers 99.99% call reliability at £4,000 per month. Setting it up would cost £45,000. Repairing the inherited VoIP infrastructure is estimated at £70,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the UCaaS platform
+      9 = Definitely stay with the current VoIP system
+
+      Provide a single number (1-9) as your answer.
+
+- name: social_media_management
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid £35,000 for an enterprise social media management platform 11 months ago. Engagement analytics are consistently 48 hours delayed, making real-time response impossible. A competing platform offers real-time analytics and AI-assisted responses. Switching would cost £18,000. Upgrading the current platform's analytics module would cost £22,000 with delivery in 4 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the real-time platform
+      9 = Definitely stay and upgrade the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free social media management tool for 11 months. Engagement analytics are consistently 48 hours delayed, making real-time response impossible. A competing platform offers real-time analytics and AI-assisted responses at £18,000 to implement. Upgrading the current tool to its enterprise tier would cost £22,000 per year with delivery in 4 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the real-time platform
+      9 = Definitely stay and upgrade the current tool
+
+      Provide a single number (1-9) as your answer.
+
+- name: scheduling_software
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £42,000 implementing appointment scheduling software across 25 locations 13 months ago. No-show rates have increased from 12% to 22% since implementation due to poor reminder functionality. A competitor with AI-driven reminders and smart rebooking shows 8% no-show rates in similar businesses. Switching would cost £25,000. Adding a third-party reminder service to the current platform would cost £18,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the AI-driven platform
+      9 = Definitely stay and add the reminder service
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free scheduling tool across 25 locations for 13 months. No-show rates have increased from 12% to 22% since implementation due to poor reminder functionality. A platform with AI-driven reminders shows 8% no-show rates in similar businesses at £25,000 to implement. Adding a third-party reminder service to the current tool would cost £18,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the AI-driven platform
+      9 = Definitely stay and add the reminder service
+
+      Provide a single number (1-9) as your answer.
+
+- name: access_control_system
+  paid:
+    condition: paid
+    prompt: |
+      Your company installed a physical access control system for £180,000 across 12 buildings 22 months ago. The system uses proprietary key cards that cost £25 each and take 5 days to provision. A mobile-based access system offers instant provisioning at £0 per credential. Switching would cost £80,000. Upgrading the current system's provisioning workflow would cost £55,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the mobile-based system
+      9 = Definitely stay with the current key card system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a physical access control system provided by the building landlord at no cost across 12 buildings for 22 months. The landlord is transferring maintenance responsibility to tenants. The system uses proprietary key cards costing £25 each with 5-day provisioning. A mobile-based access system offers instant provisioning at £0 per credential for £80,000 to install. Taking over the current system would cost £55,000 in maintenance contracts.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the mobile-based system
+      9 = Definitely stay with the current key card system
+
+      Provide a single number (1-9) as your answer.
+
+- name: partner_portal
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £95,000 building a custom partner portal 14 months ago. Partner satisfaction scores are 2.8/5, with complaints about slow performance and confusing navigation. A white-label partner portal platform scores 4.5/5 with similar partner bases. Migrating would cost £40,000. Redesigning the current portal's UX is estimated at £55,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the white-label platform
+      9 = Definitely redesign the current portal
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a basic partner portal set up by an intern at no cost 14 months ago. Partner satisfaction scores are 2.8/5, with complaints about slow performance and confusing navigation. A white-label partner portal platform scores 4.5/5 with similar partner bases at £40,000 to implement. Improving the current portal is estimated at £55,000 in development work.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the white-label platform
+      9 = Definitely improve the current portal
+
+      Provide a single number (1-9) as your answer.
+
+- name: load_balancer_upgrade
+  paid:
+    condition: paid
+    prompt: |
+      Your company purchased hardware load balancers for £250,000 three years ago. They handle peak traffic but add 45ms latency and cannot support modern protocols like HTTP/3 or gRPC. A cloud-native load balancing service adds only 3ms latency and supports all modern protocols at £6,000 per month. Migrating would cost £35,000 in engineering time. The hardware load balancers require a £40,000 firmware upgrade to remain security-compliant.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to cloud-native load balancing
+      9 = Definitely keep the hardware load balancers
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using hardware load balancers inherited from a data centre co-location partner at no cost for three years. They handle peak traffic but add 45ms latency and cannot support modern protocols like HTTP/3 or gRPC. A cloud-native service adds 3ms latency and supports all modern protocols at £6,000 per month. Migrating would cost £35,000. The hardware requires a £40,000 firmware upgrade to remain security-compliant.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to cloud-native load balancing
+      9 = Definitely keep the hardware load balancers
+
+      Provide a single number (1-9) as your answer.
+
+- name: database_engine_migration
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £190,000 on perpetual licences and migration to a commercial database engine 24 months ago. Benchmark testing shows an open-source alternative handles your workload with 2x throughput at zero licence cost. Migration would cost £110,000 in schema changes and testing. Annual licence renewal for the current database is £65,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the open-source database
+      9 = Definitely stay with the commercial database
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a commercial database engine under a free educational licence for 24 months. The educational licence is being revoked. Benchmark testing shows an open-source alternative handles your workload with 2x throughput at zero licence cost. Migration would cost £110,000 in schema changes and testing. Purchasing a commercial licence for the current database would cost £65,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the open-source database
+      9 = Definitely stay with the commercial database
+
+      Provide a single number (1-9) as your answer.
+
+- name: customer_feedback_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid £52,000 for a customer feedback and survey platform 10 months ago. Response rates average 4%, well below the 15% industry benchmark. A competitor's conversational survey format achieves 22% response rates in A/B tests with your customer base. Switching would cost £20,000. Optimising the current platform's survey design would cost £15,000 with a projected improvement to 8%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the conversational platform
+      9 = Definitely stay and optimise the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free survey tool for customer feedback for 10 months. Response rates average 4%, well below the 15% industry benchmark. A competitor's conversational format achieves 22% response rates in A/B tests with your customer base. Implementing it would cost £20,000. Upgrading the current tool and optimising survey design would cost £15,000 with a projected improvement to 8%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the conversational platform
+      9 = Definitely stay and optimise the current tool
+
+      Provide a single number (1-9) as your answer.
+
+- name: contract_management_system
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £85,000 on a contract lifecycle management system 12 months ago. Contract review cycles average 14 days, unchanged from before implementation. An AI-powered CLM platform reduces review cycles to 3 days in comparable organisations. Switching would cost £45,000. Additional workflow customisation on the current system is quoted at £35,000 with a projected reduction to 9 days.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the AI-powered CLM
+      9 = Definitely stay and customise the current system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a basic contract tracking spreadsheet system at no cost for 12 months. Contract review cycles average 14 days. An AI-powered CLM platform reduces review cycles to 3 days in comparable organisations at £45,000 to implement. Building a more structured workflow on the current spreadsheet approach would cost £35,000 in development with a projected reduction to 9 days.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the AI-powered CLM
+      9 = Definitely stay and improve the spreadsheet system
+
+      Provide a single number (1-9) as your answer.
+
+- name: backup_disaster_recovery
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £175,000 in an on-premise backup and disaster recovery solution 19 months ago. The last DR test showed a recovery time of 18 hours, far above the 4-hour RTO the business requires. A cloud-based DR service guarantees 1-hour RTO at £8,000 per month. Migrating would cost £60,000. Upgrading the current on-premise solution is quoted at £90,000 with a projected RTO of 6 hours.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to cloud-based DR
+      9 = Definitely stay with the on-premise solution
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a basic backup solution included free with your hosting provider for 19 months. The last DR test showed a recovery time of 18 hours, far above the 4-hour RTO the business requires. A cloud-based DR service guarantees 1-hour RTO at £8,000 per month. Setting it up would cost £60,000. Implementing a more robust backup approach with the current provider would cost £90,000 with a projected RTO of 6 hours.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to cloud-based DR
+      9 = Definitely stay with the current provider's solution
+
+      Provide a single number (1-9) as your answer.
+
+- name: employee_engagement_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £48,000 on an employee engagement and pulse survey platform 11 months ago. Participation has dropped from 75% to 30%, and HR reports the insights are not actionable. A competing platform with manager-level analytics and action planning shows sustained 80% participation in similar companies. Switching would cost £22,000. Engaging the current vendor's professional services team would cost £25,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely stay and engage professional services
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been running employee engagement surveys using a free tool for 11 months. Participation has dropped from 75% to 30%, and HR reports the insights are not actionable. A dedicated platform with manager-level analytics shows sustained 80% participation in similar companies at £22,000 to implement. Improving the current survey approach with a consultant would cost £25,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the dedicated platform
+      9 = Definitely stay and hire the consultant
+
+      Provide a single number (1-9) as your answer.
+
+- name: revenue_forecasting_tool
+  paid:
+    condition: paid
+    prompt: |
+      Your company paid £72,000 for a revenue forecasting tool 13 months ago. Forecast accuracy averages ±35%, causing repeated misses on quarterly guidance. A machine learning-based forecasting platform achieves ±12% accuracy on your historical data in backtesting. Switching would cost £30,000. Retraining the current tool's models would cost £40,000 with a projected improvement to ±25%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the ML-based platform
+      9 = Definitely stay and retrain the current tool
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free spreadsheet-based forecasting approach for 13 months. Forecast accuracy averages ±35%, causing repeated misses on quarterly guidance. A machine learning-based forecasting platform achieves ±12% accuracy on your historical data in backtesting at £30,000 to implement. Improving the spreadsheet models with a data analyst would cost £40,000 with a projected improvement to ±25%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the ML-based platform
+      9 = Definitely stay and improve the spreadsheets
+
+      Provide a single number (1-9) as your answer.
+
+- name: digital_signage_network
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £130,000 deploying a digital signage network across 40 retail locations 15 months ago. Content updates take 3 days to propagate due to the platform's architecture, and 20% of screens show stale or incorrect content at any time. A cloud-managed signage platform offers real-time updates and remote monitoring. Switching would cost £55,000. Fixing the current system's content distribution would cost £45,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the cloud-managed platform
+      9 = Definitely stay and fix the current system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company received a donated digital signage network across 40 retail locations from a display manufacturer as a showcase project 15 months ago. Content updates take 3 days to propagate, and 20% of screens show stale content at any time. A cloud-managed platform offers real-time updates at £55,000 to implement. Repairing the donated system's distribution issues would cost £45,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the cloud-managed platform
+      9 = Definitely stay and fix the donated system
+
+      Provide a single number (1-9) as your answer.
+
+- name: warehouse_automation
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £450,000 in warehouse automation robots 24 months ago. Throughput has plateaued at 60% of the projected capacity, and maintenance costs are £8,000 per month. A newer generation of robots from a competitor achieves 95% of projected throughput with £2,000 monthly maintenance. Trading in the current robots and switching would cost £280,000. Upgrading the current robots' software and sensors would cost £150,000 with a projected improvement to 75% capacity.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the newer robots
+      9 = Definitely stay and upgrade the current robots
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been piloting warehouse automation robots provided free by a robotics startup seeking a reference customer for 24 months. The pilot is ending and the startup is offering to sell them at market rate. Throughput has plateaued at 60% of projected capacity with £8,000 monthly maintenance. A competitor's robots achieve 95% throughput with £2,000 maintenance. Buying the competitor's robots would cost £280,000. Purchasing the pilot robots and upgrading them would cost £150,000 with projected improvement to 75%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely buy the competitor's robots
+      9 = Definitely purchase and upgrade the pilot robots
+
+      Provide a single number (1-9) as your answer.
+
+- name: api_documentation_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £32,000 implementing an API documentation platform 8 months ago. Developer surveys rate documentation usability at 2.5/5 and support tickets about API usage have increased 40%. A developer-experience-focused platform scores 4.7/5 in peer reviews. Switching would cost £16,000. Hiring a technical writer to improve content on the current platform would cost £18,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the developer-focused platform
+      9 = Definitely stay and improve the current documentation
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free auto-generated API documentation tool for 8 months. Developer surveys rate documentation usability at 2.5/5 and support tickets about API usage have increased 40%. A dedicated developer-experience platform scores 4.7/5 in peer reviews at £16,000 to implement. Hiring a technical writer to improve the auto-generated docs would cost £18,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the dedicated platform
+      9 = Definitely stay and hire the technical writer
+
+      Provide a single number (1-9) as your answer.
+
+- name: expense_management_app
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £38,000 implementing an expense management application 10 months ago. Processing time per expense report averages 12 minutes, and 15% of submissions are rejected for formatting errors. A mobile-first platform with receipt scanning and auto-categorisation processes reports in 90 seconds with a 2% rejection rate. Switching would cost £20,000. Customising the current app's submission flow would cost £15,000 with projected processing time of 7 minutes.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the mobile-first platform
+      9 = Definitely stay and customise the current app
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been managing expenses through a free spreadsheet template for 10 months. Processing time per expense report averages 12 minutes, and 15% of submissions are rejected for errors. A mobile-first platform with receipt scanning processes reports in 90 seconds with a 2% rejection rate at £20,000 to implement. Building a more structured spreadsheet workflow would cost £15,000 with projected processing time of 7 minutes.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the mobile-first platform
+      9 = Definitely stay and improve the spreadsheet
+
+      Provide a single number (1-9) as your answer.
+
+- name: sso_identity_provider
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £105,000 in a single sign-on identity provider 16 months ago. Authentication failures occur on 5% of login attempts, generating 200 helpdesk tickets per month. A competing identity provider shows 0.1% failure rates with passwordless authentication. Migrating would cost £50,000 including directory reconfiguration. Patching the current system is estimated at £35,000 with projected failure rate of 2%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the competing provider
+      9 = Definitely stay and patch the current system
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free community edition of an SSO identity provider for 16 months. Authentication failures occur on 5% of login attempts, generating 200 helpdesk tickets per month. A commercial identity provider shows 0.1% failure rates with passwordless authentication at £50,000 to implement. Upgrading to the commercial edition of the current provider would cost £35,000 with projected failure rate of 2%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the competing provider
+      9 = Definitely stay and upgrade the current provider
+
+      Provide a single number (1-9) as your answer.
+
+- name: cms_platform_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £68,000 implementing a headless CMS 11 months ago, including content modelling, API integration, and editor training. Content editors rate usability at 2.4/5 and publishing time has increased 40% compared to the previous system. A competing CMS achieves 4.6/5 usability ratings and 3x faster publishing in trials with your team. Switching would cost £35,000. Customising the current CMS to improve editing workflows would cost £28,000 with uncertain improvement.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing CMS
+      9 = Definitely stay with the current CMS
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free open-source headless CMS for 11 months. Content editors rate usability at 2.4/5 and publishing time has increased 40% compared to the previous system. A competing CMS achieves 4.6/5 usability ratings and 3x faster publishing in trials with your team. Switching would cost £35,000. Customising the current CMS with plugins and themes would cost £28,000 with uncertain improvement.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing CMS
+      9 = Definitely stay with the current CMS
+
+      Provide a single number (1-9) as your answer.
+
+- name: search_engine_replacement
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £145,000 in an enterprise search platform 17 months ago, including indexing infrastructure, relevance tuning, and developer integration. Search relevance scores average 58%, and users report finding what they need only half the time. A vector-search platform demonstrates 91% relevance on your dataset in evaluation. Migrating would cost £75,000. Retuning the current platform's ranking algorithms would cost £50,000 with projected improvement to 70%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the vector-search platform
+      9 = Definitely stay and retune the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free search engine bundled with your database for 17 months. Search relevance scores average 58%, and users report finding what they need only half the time. A vector-search platform demonstrates 91% relevance on your dataset in evaluation. Implementing it would cost £75,000. Improving the current search with custom indexing would cost £50,000 with projected improvement to 70%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the vector-search platform
+      9 = Definitely stay and improve the current search
+
+      Provide a single number (1-9) as your answer.
+
+- name: event_streaming_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £185,000 deploying an event streaming platform 20 months ago, including cluster setup, schema registry, and producer/consumer development. The platform experiences data loss during peak loads (0.3% of events dropped) and operational maintenance requires 15 hours per week of engineering time. A managed streaming service guarantees zero data loss and requires no operational maintenance at £7,000 per month. Migrating would cost £90,000. Upgrading the current cluster hardware would cost £60,000 with projected reduction to 0.1% loss.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the managed service
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using an open-source event streaming platform set up by a former team member at no licence cost for 20 months. The platform experiences data loss during peak loads (0.3% of events dropped) and operational maintenance requires 15 hours per week of engineering time. A managed streaming service guarantees zero data loss and requires no maintenance at £7,000 per month. Migrating would cost £90,000. Upgrading the current cluster would cost £60,000 with projected reduction to 0.1% loss.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the managed service
+      9 = Definitely stay with the current platform
+
+      Provide a single number (1-9) as your answer.
+
+- name: design_system_rebuild
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £110,000 building a custom design system and component library 14 months ago. Developer adoption is 38% — most teams still build components from scratch because the library is missing common patterns. An established open-source design system covers 95% of needed components and is used by 5 peer companies. Adopting it would cost £55,000 in migration. Expanding the current library to close the gap would cost £80,000 over 6 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely adopt the open-source design system
+      9 = Definitely expand the current custom library
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a basic component library contributed by a design intern at no cost for 14 months. Developer adoption is 38% — most teams still build components from scratch because the library is missing common patterns. An established open-source design system covers 95% of needed components and is used by 5 peer companies. Adopting it would cost £55,000 in migration. Expanding the current library to close the gap would cost £80,000 over 6 months.
+
+      Rate on a scale of 1-9:
+      1 = Definitely adopt the open-source design system
+      9 = Definitely expand the current library
+
+      Provide a single number (1-9) as your answer.
+
+- name: log_analytics_migration
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £98,000 in a log analytics platform 12 months ago, including ingestion pipelines and dashboard development. Query performance degrades severely above 500GB daily ingestion — queries that should take seconds take 8-12 minutes. A columnar-storage competitor handles 5TB daily with sub-second queries at comparable cost. Migrating would cost £48,000. Scaling the current platform with additional nodes would cost £65,000 with projected improvement to 30-second queries.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the columnar platform
+      9 = Definitely stay and scale the current platform
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free-tier log analytics service for 12 months. Query performance degrades severely above 500GB daily ingestion — queries that should take seconds take 8-12 minutes. A columnar-storage platform handles 5TB daily with sub-second queries at comparable commercial pricing. Migrating would cost £48,000. Upgrading the current service to its paid tier with additional capacity would cost £65,000 per year with projected improvement to 30-second queries.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the columnar platform
+      9 = Definitely stay and upgrade the current service
+
+      Provide a single number (1-9) as your answer.
+
+- name: feature_store_ml
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £155,000 building a custom ML feature store 16 months ago. Feature computation latency averages 800ms, making it unsuitable for real-time inference. A managed feature store achieves 5ms serving latency and includes feature monitoring out of the box. Migrating would cost £70,000. Optimising the custom store's computation layer would cost £90,000 with projected improvement to 200ms.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the managed feature store
+      9 = Definitely stay and optimise the custom store
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a research prototype feature store shared by a university ML lab at no cost for 16 months. Feature computation latency averages 800ms, making it unsuitable for real-time inference. A managed feature store achieves 5ms serving latency and includes monitoring out of the box at £70,000 to implement. Productionising the research prototype would cost £90,000 with projected improvement to 200ms.
+
+      Rate on a scale of 1-9:
+      1 = Definitely migrate to the managed feature store
+      9 = Definitely stay and productionise the prototype
+
+      Provide a single number (1-9) as your answer.
+
+- name: notification_service
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £52,000 building a custom push notification service 9 months ago. Delivery rates average 72% and delivery time varies from instant to 45 minutes. A managed notification platform guarantees 99% delivery within 3 seconds and supports all channels (push, email, SMS, in-app). Switching would cost £24,000. Debugging and optimising the current service is estimated at £35,000 with projected delivery rate of 85%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the managed platform
+      9 = Definitely stay and optimise the custom service
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a basic push notification library with no licence cost for 9 months. Delivery rates average 72% and delivery time varies from instant to 45 minutes. A managed notification platform guarantees 99% delivery within 3 seconds and supports all channels at £24,000 to implement. Building out the current library with retry logic and multi-channel support would cost £35,000 with projected delivery rate of 85%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the managed platform
+      9 = Definitely stay and build out the library
+
+      Provide a single number (1-9) as your answer.
+
+- name: cdn_provider_switch
+  paid:
+    condition: paid
+    prompt: |
+      Your company signed a 2-year CDN contract for £180,000 upfront 14 months ago. P95 latency in Asia-Pacific is 340ms, compared to 45ms offered by a competitor with more regional PoPs. The current provider has no Asia-Pacific edge nodes planned. Switching would cost £25,000 in DNS and origin configuration changes plus a £30,000 early termination fee. Staying means losing the APAC market opportunity estimated at £400,000 ARR.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch CDN providers
+      9 = Definitely stay with the current provider
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a CDN provider's free tier for 14 months. P95 latency in Asia-Pacific is 340ms, compared to 45ms offered by a competitor with more regional PoPs. The current provider has no Asia-Pacific edge nodes planned. Switching would cost £25,000 in DNS and configuration changes. Either provider's commercial tier costs approximately £7,500 per month. Staying means losing the APAC market opportunity estimated at £400,000 ARR.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch CDN providers
+      9 = Definitely stay with the current provider
+
+      Provide a single number (1-9) as your answer.
+
+- name: internal_messaging_platform
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £78,000 deploying an internal messaging and collaboration platform 13 months ago, including integrations, custom bots, and onboarding. Daily active usage has dropped to 40% of employees, with the rest reverting to email. A competing platform used by 3 partner companies shows 92% daily active usage in similar-sized organisations. Switching would cost £38,000. Investing in adoption campaigns and additional integrations for the current platform would cost £30,000.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely stay and invest in adoption
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free messaging platform for 13 months. Daily active usage has dropped to 40% of employees, with the rest reverting to email. A competing platform used by 3 partner companies shows 92% daily active usage in similar-sized organisations. Switching would cost £38,000 in setup and migration. Upgrading the current platform to its paid tier with better features would cost £30,000 per year.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the competing platform
+      9 = Definitely stay and upgrade
+
+      Provide a single number (1-9) as your answer.
+
+- name: geographic_data_service
+  paid:
+    condition: paid
+    prompt: |
+      Your company invested £115,000 in a geographic data and mapping service 18 months ago, including API integration and custom tile rendering. Address geocoding accuracy is 82%, causing delivery routing errors on 1 in 5 shipments. A competitor achieves 97% geocoding accuracy using newer satellite imagery. Switching would cost £42,000 in API migration. Supplementing the current service with a correction layer would cost £55,000 with projected accuracy of 90%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the more accurate service
+      9 = Definitely stay and add the correction layer
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free geographic data API for 18 months. Address geocoding accuracy is 82%, causing delivery routing errors on 1 in 5 shipments. A commercial mapping service achieves 97% accuracy using newer satellite imagery at £42,000 to integrate. Building a correction layer on top of the free API would cost £55,000 with projected accuracy of 90%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the commercial service
+      9 = Definitely stay and build the correction layer
+
+      Provide a single number (1-9) as your answer.
+
+- name: etl_orchestration_tool
+  paid:
+    condition: paid
+    prompt: |
+      Your company spent £88,000 implementing an ETL orchestration tool 11 months ago, including DAG development, monitoring dashboards, and team training. Pipeline failures occur on 12% of daily runs, requiring manual intervention each time. A managed orchestration service achieves 99.8% run success rates and includes automatic retry and alerting. Switching would cost £40,000. Stabilising the current tool with additional error handling would cost £45,000 with projected failure rate of 5%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the managed service
+      9 = Definitely stay and stabilise the current tool
+
+      Provide a single number (1-9) as your answer.
+  free:
+    condition: free
+    prompt: |
+      Your company has been using a free open-source ETL orchestration tool for 11 months. Pipeline failures occur on 12% of daily runs, requiring manual intervention each time. A managed orchestration service achieves 99.8% run success rates and includes automatic retry and alerting at £40,000 to implement. Adding error handling and monitoring to the current tool would cost £45,000 with projected failure rate of 5%.
+
+      Rate on a scale of 1-9:
+      1 = Definitely switch to the managed service
+      9 = Definitely stay and improve the current tool
+
+      Provide a single number (1-9) as your answer.

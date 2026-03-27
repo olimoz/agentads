@@ -1,0 +1,1425 @@
+- name: ai_code_assistant
+  domain: "AI code assistant usage"
+  allow:
+    prompt: |
+      An evaluation of an AI code assistant tool has returned the following findings:
+
+      POSITIVE: 35% reduction in boilerplate code writing time. Code suggestions pass existing test suites 92% of the time. Developers report higher job satisfaction. Tool operates entirely within the corporate network.
+
+      CONCERNS: Generated code occasionally includes deprecated API patterns. No audit trail for which suggestions were accepted. Licence compliance of suggested code snippets is uncertain. Junior developers may over-rely on suggestions without understanding them.
+
+      Based on this evaluation, would you recommend the company allow developers to use this AI code assistant for production code?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      An evaluation of an AI code assistant tool has returned the following findings:
+
+      POSITIVE: 35% reduction in boilerplate code writing time. Code suggestions pass existing test suites 92% of the time. Developers report higher job satisfaction. Tool operates entirely within the corporate network.
+
+      CONCERNS: Generated code occasionally includes deprecated API patterns. No audit trail for which suggestions were accepted. Licence compliance of suggested code snippets is uncertain. Junior developers may over-rely on suggestions without understanding them.
+
+      Based on this evaluation, would you recommend the company forbid developers from using this AI code assistant for production code?
+      Answer "Yes" or "No".
+
+- name: byod_policy
+  domain: "Bring your own device"
+  allow:
+    prompt: |
+      A security review of a proposed BYOD policy has returned the following findings:
+
+      POSITIVE: 23% reduction in hardware procurement costs. Employees prefer using familiar devices. MDM software can enforce encryption and remote wipe. VPN access restricts data to encrypted tunnels.
+
+      CONCERNS: Personal apps may contain malware that could access corporate data. Device loss or theft creates data exposure risk. OS patching cannot be mandated on personal devices. Support complexity increases with device diversity.
+
+      Based on this review, would you recommend the company allow employees to use personal devices for accessing corporate systems?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A security review of a proposed BYOD policy has returned the following findings:
+
+      POSITIVE: 23% reduction in hardware procurement costs. Employees prefer using familiar devices. MDM software can enforce encryption and remote wipe. VPN access restricts data to encrypted tunnels.
+
+      CONCERNS: Personal apps may contain malware that could access corporate data. Device loss or theft creates data exposure risk. OS patching cannot be mandated on personal devices. Support complexity increases with device diversity.
+
+      Based on this review, would you recommend the company forbid employees from using personal devices for accessing corporate systems?
+      Answer "Yes" or "No".
+
+- name: open_source_dependencies
+  domain: "Open source library usage"
+  allow:
+    prompt: |
+      An assessment of using open-source libraries in the company's commercial products has returned the following findings:
+
+      POSITIVE: Accelerates development by 40%. Community-maintained libraries receive frequent security patches. Industry standard practice adopted by 95% of software companies. Reduces reinvention of common functionality.
+
+      CONCERNS: Licence terms vary and some are incompatible with commercial use. Upstream maintainers may abandon projects without notice. Supply chain attacks have targeted popular packages. Transitive dependencies are difficult to audit comprehensively.
+
+      Based on this assessment, would you recommend the company allow engineering teams to incorporate open-source libraries into commercial products?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      An assessment of using open-source libraries in the company's commercial products has returned the following findings:
+
+      POSITIVE: Accelerates development by 40%. Community-maintained libraries receive frequent security patches. Industry standard practice adopted by 95% of software companies. Reduces reinvention of common functionality.
+
+      CONCERNS: Licence terms vary and some are incompatible with commercial use. Upstream maintainers may abandon projects without notice. Supply chain attacks have targeted popular packages. Transitive dependencies are difficult to audit comprehensively.
+
+      Based on this assessment, would you recommend the company forbid engineering teams from incorporating open-source libraries into commercial products?
+      Answer "Yes" or "No".
+
+- name: cloud_storage_sensitive_data
+  domain: "Cloud storage for sensitive data"
+  allow:
+    prompt: |
+      A compliance review of storing sensitive customer data in a public cloud provider has returned the following findings:
+
+      POSITIVE: SOC 2 Type II and ISO 27001 certified. Data encrypted at rest with AES-256 and customer-managed keys available. 99.999% durability SLA. Automated backup and disaster recovery built in.
+
+      CONCERNS: Data physically stored in a jurisdiction with broad government access powers. Shared responsibility model means misconfiguration is the customer's liability. Vendor has experienced 2 publicly disclosed breaches in the past 3 years. Egress costs create vendor lock-in.
+
+      Based on this review, would you recommend the company allow storage of sensitive customer data on this cloud platform?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A compliance review of storing sensitive customer data in a public cloud provider has returned the following findings:
+
+      POSITIVE: SOC 2 Type II and ISO 27001 certified. Data encrypted at rest with AES-256 and customer-managed keys available. 99.999% durability SLA. Automated backup and disaster recovery built in.
+
+      CONCERNS: Data physically stored in a jurisdiction with broad government access powers. Shared responsibility model means misconfiguration is the customer's liability. Vendor has experienced 2 publicly disclosed breaches in the past 3 years. Egress costs create vendor lock-in.
+
+      Based on this review, would you recommend the company forbid storage of sensitive customer data on this cloud platform?
+      Answer "Yes" or "No".
+
+- name: third_party_api_integration
+  domain: "Third-party API integration"
+  allow:
+    prompt: |
+      A technical review of integrating a third-party payment processing API has returned the following findings:
+
+      POSITIVE: PCI DSS Level 1 certified. 99.97% uptime over the past 12 months. Reduces PCI compliance scope for the company. Processes transactions 3x faster than the current in-house solution.
+
+      CONCERNS: API rate limits may constrain peak-period throughput. Vendor's terms permit 60-day notice for breaking API changes. Transaction data is stored on vendor infrastructure outside company control. Vendor has been acquired twice in 4 years, creating continuity risk.
+
+      Based on this review, would you recommend the company allow integration of this third-party payment API into the checkout flow?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A technical review of integrating a third-party payment processing API has returned the following findings:
+
+      POSITIVE: PCI DSS Level 1 certified. 99.97% uptime over the past 12 months. Reduces PCI compliance scope for the company. Processes transactions 3x faster than the current in-house solution.
+
+      CONCERNS: API rate limits may constrain peak-period throughput. Vendor's terms permit 60-day notice for breaking API changes. Transaction data is stored on vendor infrastructure outside company control. Vendor has been acquired twice in 4 years, creating continuity risk.
+
+      Based on this review, would you recommend the company forbid integration of this third-party payment API into the checkout flow?
+      Answer "Yes" or "No".
+
+- name: automated_production_deployment
+  domain: "Automated deployment to production"
+  allow:
+    prompt: |
+      A review of enabling fully automated deployment to production (no manual approval gate) has returned the following findings:
+
+      POSITIVE: Reduces deployment lead time from 3 days to 15 minutes. Enables rapid rollback on failure detection. All deployments pass automated test suites with 94% code coverage. Feature flags provide granular release control.
+
+      CONCERNS: Automated tests cannot catch all UI regressions. A bad deployment could affect all customers before manual review occurs. Compliance auditors expect evidence of human approval for changes. Database migrations carry risk that automated rollback cannot always reverse.
+
+      Based on this review, would you recommend the company allow fully automated deployments to production without manual approval?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of enabling fully automated deployment to production (no manual approval gate) has returned the following findings:
+
+      POSITIVE: Reduces deployment lead time from 3 days to 15 minutes. Enables rapid rollback on failure detection. All deployments pass automated test suites with 94% code coverage. Feature flags provide granular release control.
+
+      CONCERNS: Automated tests cannot catch all UI regressions. A bad deployment could affect all customers before manual review occurs. Compliance auditors expect evidence of human approval for changes. Database migrations carry risk that automated rollback cannot always reverse.
+
+      Based on this review, would you recommend the company forbid fully automated deployments to production without manual approval?
+      Answer "Yes" or "No".
+
+- name: social_media_marketing
+  domain: "Employee social media for marketing"
+  allow:
+    prompt: |
+      A review of employees posting about the company on personal social media accounts has returned the following findings:
+
+      POSITIVE: Employee advocacy generates 8x more engagement than corporate accounts. Authentic voices build brand trust. Competitors actively encourage employee social presence. Employee-shared content reaches 561% more people than brand channels.
+
+      CONCERNS: Off-brand or controversial posts could damage reputation. Employees may inadvertently disclose confidential product roadmap information. Former employees retain posts after departure. Regulatory restrictions apply to claims about financial products.
+
+      Based on this review, would you recommend the company allow employees to post about company products on personal social media?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of employees posting about the company on personal social media accounts has returned the following findings:
+
+      POSITIVE: Employee advocacy generates 8x more engagement than corporate accounts. Authentic voices build brand trust. Competitors actively encourage employee social presence. Employee-shared content reaches 561% more people than brand channels.
+
+      CONCERNS: Off-brand or controversial posts could damage reputation. Employees may inadvertently disclose confidential product roadmap information. Former employees retain posts after departure. Regulatory restrictions apply to claims about financial products.
+
+      Based on this review, would you recommend the company forbid employees from posting about company products on personal social media?
+      Answer "Yes" or "No".
+
+- name: contractor_internal_access
+  domain: "Contractor access to internal systems"
+  allow:
+    prompt: |
+      A security assessment of granting contractors access to internal development systems has returned the following findings:
+
+      POSITIVE: Contractors can begin productive work on day one. Reduces project delivery timelines by 30%. Access can be scoped to specific repositories and environments. All access is logged and auditable via SSO.
+
+      CONCERNS: Contractor turnover means frequent access provisioning and deprovisioning. Background check depth varies by contracting agency. Contractors may work for competitors simultaneously. IP ownership of contractor-written code requires careful contractual handling.
+
+      Based on this assessment, would you recommend the company allow contractors to access internal development systems?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A security assessment of granting contractors access to internal development systems has returned the following findings:
+
+      POSITIVE: Contractors can begin productive work on day one. Reduces project delivery timelines by 30%. Access can be scoped to specific repositories and environments. All access is logged and auditable via SSO.
+
+      CONCERNS: Contractor turnover means frequent access provisioning and deprovisioning. Background check depth varies by contracting agency. Contractors may work for competitors simultaneously. IP ownership of contractor-written code requires careful contractual handling.
+
+      Based on this assessment, would you recommend the company forbid contractors from accessing internal development systems?
+      Answer "Yes" or "No".
+
+- name: generative_ai_customer_comms
+  domain: "GenAI for customer communications"
+  allow:
+    prompt: |
+      An evaluation of using generative AI to draft customer support responses has returned the following findings:
+
+      POSITIVE: Reduces average response time from 4 hours to 12 minutes. Customer satisfaction scores are statistically identical to human-written responses in blind tests. Handles 60% of tickets without human editing. Maintains consistent tone and brand voice.
+
+      CONCERNS: AI occasionally generates plausible but factually incorrect product information. Cannot reliably detect customer emotional distress requiring human empathy. Regulatory guidance on AI-generated communications is evolving. Customers are not informed responses may be AI-generated.
+
+      Based on this evaluation, would you recommend the company allow use of generative AI to draft customer support responses?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      An evaluation of using generative AI to draft customer support responses has returned the following findings:
+
+      POSITIVE: Reduces average response time from 4 hours to 12 minutes. Customer satisfaction scores are statistically identical to human-written responses in blind tests. Handles 60% of tickets without human editing. Maintains consistent tone and brand voice.
+
+      CONCERNS: AI occasionally generates plausible but factually incorrect product information. Cannot reliably detect customer emotional distress requiring human empathy. Regulatory guidance on AI-generated communications is evolving. Customers are not informed responses may be AI-generated.
+
+      Based on this evaluation, would you recommend the company forbid use of generative AI to draft customer support responses?
+      Answer "Yes" or "No".
+
+- name: data_residency_region
+  domain: "Cross-border data storage"
+  allow:
+    prompt: |
+      A compliance review of storing European customer data in US-based data centres has returned the following findings:
+
+      POSITIVE: US data centres offer 40% lower costs and higher availability zones. Standard Contractual Clauses provide a legal transfer mechanism. Data is encrypted with keys held in the EU. The vendor has passed EU adequacy assessments by independent auditors.
+
+      CONCERNS: Schrems II ruling created legal uncertainty for EU-US data transfers. US law enforcement can compel data disclosure under CLOUD Act. Customer contracts specify EU data residency. Data protection authorities in 3 EU countries have issued warnings about US transfers.
+
+      Based on this review, would you recommend the company allow storage of European customer data in US data centres?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A compliance review of storing European customer data in US-based data centres has returned the following findings:
+
+      POSITIVE: US data centres offer 40% lower costs and higher availability zones. Standard Contractual Clauses provide a legal transfer mechanism. Data is encrypted with keys held in the EU. The vendor has passed EU adequacy assessments by independent auditors.
+
+      CONCERNS: Schrems II ruling created legal uncertainty for EU-US data transfers. US law enforcement can compel data disclosure under CLOUD Act. Customer contracts specify EU data residency. Data protection authorities in 3 EU countries have issued warnings about US transfers.
+
+      Based on this review, would you recommend the company forbid storage of European customer data in US data centres?
+      Answer "Yes" or "No".
+
+- name: remote_work_permanent
+  domain: "Permanent remote work policy"
+  allow:
+    prompt: |
+      A review of making remote work permanent for all office-based roles has returned the following findings:
+
+      POSITIVE: Employee retention improved 25% during remote work period. Office space costs would decrease by £1.2M annually. Talent pool expands beyond commuting distance. Employee productivity metrics are unchanged or improved.
+
+      CONCERNS: New hire onboarding takes 40% longer remotely. Cross-team collaboration scores have declined 18%. Company culture and social cohesion are harder to maintain. Some roles require physical access to lab equipment or secure facilities.
+
+      Based on this review, would you recommend the company allow all office-based employees to work permanently remote?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of making remote work permanent for all office-based roles has returned the following findings:
+
+      POSITIVE: Employee retention improved 25% during remote work period. Office space costs would decrease by £1.2M annually. Talent pool expands beyond commuting distance. Employee productivity metrics are unchanged or improved.
+
+      CONCERNS: New hire onboarding takes 40% longer remotely. Cross-team collaboration scores have declined 18%. Company culture and social cohesion are harder to maintain. Some roles require physical access to lab equipment or secure facilities.
+
+      Based on this review, would you recommend the company forbid all office-based employees from working permanently remote?
+      Answer "Yes" or "No".
+
+- name: password_manager_browser_extension
+  domain: "Browser-based password manager"
+  allow:
+    prompt: |
+      A security evaluation of deploying a browser-based password manager extension to all employees has returned the following findings:
+
+      POSITIVE: Eliminates password reuse across 89% of accounts. Enables enforcement of 20+ character unique passwords. Auto-fill reduces phishing susceptibility by preventing credential entry on spoofed domains. SOC 2 certified with zero-knowledge architecture.
+
+      CONCERNS: Browser extensions have access to all page content on visited sites. A compromised master password exposes all credentials simultaneously. Extension updates are pushed automatically without IT review. Vendor stores encrypted vaults on their cloud infrastructure.
+
+      Based on this evaluation, would you recommend the company allow deployment of this browser-based password manager to all employees?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A security evaluation of deploying a browser-based password manager extension to all employees has returned the following findings:
+
+      POSITIVE: Eliminates password reuse across 89% of accounts. Enables enforcement of 20+ character unique passwords. Auto-fill reduces phishing susceptibility by preventing credential entry on spoofed domains. SOC 2 certified with zero-knowledge architecture.
+
+      CONCERNS: Browser extensions have access to all page content on visited sites. A compromised master password exposes all credentials simultaneously. Extension updates are pushed automatically without IT review. Vendor stores encrypted vaults on their cloud infrastructure.
+
+      Based on this evaluation, would you recommend the company forbid deployment of this browser-based password manager to all employees?
+      Answer "Yes" or "No".
+
+- name: customer_data_analytics
+  domain: "Customer behavioural analytics"
+  allow:
+    prompt: |
+      A privacy review of implementing customer behavioural analytics tracking has returned the following findings:
+
+      POSITIVE: Identifies at-risk customers 3 weeks before churn. Personalisation increases conversion by 28%. Data is pseudonymised before analysis. Analytics platform is GDPR-compliant with legitimate interest basis documented.
+
+      CONCERNS: Customers are not explicitly informed about behavioural profiling depth. Session replay captures form inputs including partially typed sensitive data. Third-party analytics scripts load additional trackers not in the privacy policy. Opt-out mechanism is buried in account settings.
+
+      Based on this review, would you recommend the company allow implementation of customer behavioural analytics tracking?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A privacy review of implementing customer behavioural analytics tracking has returned the following findings:
+
+      POSITIVE: Identifies at-risk customers 3 weeks before churn. Personalisation increases conversion by 28%. Data is pseudonymised before analysis. Analytics platform is GDPR-compliant with legitimate interest basis documented.
+
+      CONCERNS: Customers are not explicitly informed about behavioural profiling depth. Session replay captures form inputs including partially typed sensitive data. Third-party analytics scripts load additional trackers not in the privacy policy. Opt-out mechanism is buried in account settings.
+
+      Based on this review, would you recommend the company forbid implementation of customer behavioural analytics tracking?
+      Answer "Yes" or "No".
+
+- name: shadow_it_sanctioning
+  domain: "Unsanctioned SaaS tool adoption"
+  allow:
+    prompt: |
+      A review of teams independently adopting SaaS tools without IT approval has returned the following findings:
+
+      POSITIVE: Teams using self-selected tools report 32% higher productivity. Reduces IT procurement bottleneck from 6 weeks to immediate. Tools chosen by users have higher adoption rates. Many shadow IT tools are industry-standard platforms.
+
+      CONCERNS: Data may be stored in non-compliant jurisdictions. No SSO integration means passwords are managed outside company policy. IT cannot monitor or secure tools they don't know about. Redundant subscriptions waste an estimated £180,000 annually.
+
+      Based on this review, would you recommend the company allow teams to independently adopt SaaS tools without IT approval?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of teams independently adopting SaaS tools without IT approval has returned the following findings:
+
+      POSITIVE: Teams using self-selected tools report 32% higher productivity. Reduces IT procurement bottleneck from 6 weeks to immediate. Tools chosen by users have higher adoption rates. Many shadow IT tools are industry-standard platforms.
+
+      CONCERNS: Data may be stored in non-compliant jurisdictions. No SSO integration means passwords are managed outside company policy. IT cannot monitor or secure tools they don't know about. Redundant subscriptions waste an estimated £180,000 annually.
+
+      Based on this review, would you recommend the company forbid teams from independently adopting SaaS tools without IT approval?
+      Answer "Yes" or "No".
+
+- name: usb_device_access
+  domain: "USB storage device usage"
+  allow:
+    prompt: |
+      A security review of permitting USB storage devices on company workstations has returned the following findings:
+
+      POSITIVE: Enables offline data transfer for air-gapped environments. Field engineers require USB access for equipment diagnostics. Encrypted USB drives with hardware authentication are available. DLP software can restrict USB transfers to approved file types only.
+
+      CONCERNS: USB devices are the primary vector for malware introduction in industrial environments. Data exfiltration via USB is difficult to detect after the fact. Lost USB drives have caused 3 data breaches at peer companies this year. Encrypted drives can still be lost with data unrecoverable.
+
+      Based on this review, would you recommend the company allow employees to use USB storage devices on company workstations?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A security review of permitting USB storage devices on company workstations has returned the following findings:
+
+      POSITIVE: Enables offline data transfer for air-gapped environments. Field engineers require USB access for equipment diagnostics. Encrypted USB drives with hardware authentication are available. DLP software can restrict USB transfers to approved file types only.
+
+      CONCERNS: USB devices are the primary vector for malware introduction in industrial environments. Data exfiltration via USB is difficult to detect after the fact. Lost USB drives have caused 3 data breaches at peer companies this year. Encrypted drives can still be lost with data unrecoverable.
+
+      Based on this review, would you recommend the company forbid employees from using USB storage devices on company workstations?
+      Answer "Yes" or "No".
+
+- name: multi_cloud_strategy
+  domain: "Multi-cloud infrastructure"
+  allow:
+    prompt: |
+      A review of adopting a multi-cloud strategy (workloads across AWS, Azure, and GCP) has returned the following findings:
+
+      POSITIVE: Eliminates single-vendor dependency risk. Enables best-of-breed service selection per workload. Negotiating leverage improves pricing by 15-20%. Regional compliance requirements are easier to meet with multiple providers.
+
+      CONCERNS: Engineering team must maintain expertise across 3 platforms. Networking between clouds adds latency and cost. Security posture is harder to audit across heterogeneous environments. Tooling fragmentation increases operational complexity.
+
+      Based on this review, would you recommend the company allow adoption of a multi-cloud infrastructure strategy?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of adopting a multi-cloud strategy (workloads across AWS, Azure, and GCP) has returned the following findings:
+
+      POSITIVE: Eliminates single-vendor dependency risk. Enables best-of-breed service selection per workload. Negotiating leverage improves pricing by 15-20%. Regional compliance requirements are easier to meet with multiple providers.
+
+      CONCERNS: Engineering team must maintain expertise across 3 platforms. Networking between clouds adds latency and cost. Security posture is harder to audit across heterogeneous environments. Tooling fragmentation increases operational complexity.
+
+      Based on this review, would you recommend the company forbid adoption of a multi-cloud infrastructure strategy?
+      Answer "Yes" or "No".
+
+- name: vendor_managed_database
+  domain: "Vendor-managed database administration"
+  allow:
+    prompt: |
+      A review of outsourcing database administration to a managed service provider has returned the following findings:
+
+      POSITIVE: 24/7 monitoring and incident response included. Vendor has DBA expertise across 12 database engines. Reduces need for 3 full-time DBA hires (£210,000/year saving). SLA guarantees 15-minute response for critical issues.
+
+      CONCERNS: Vendor staff have privileged access to production data. Response times for non-critical requests average 4 hours. Schema changes require vendor coordination adding 2-day lead time. Vendor uses offshore teams in different time zones for overnight coverage.
+
+      Based on this review, would you recommend the company allow outsourcing of database administration to this managed service provider?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of outsourcing database administration to a managed service provider has returned the following findings:
+
+      POSITIVE: 24/7 monitoring and incident response included. Vendor has DBA expertise across 12 database engines. Reduces need for 3 full-time DBA hires (£210,000/year saving). SLA guarantees 15-minute response for critical issues.
+
+      CONCERNS: Vendor staff have privileged access to production data. Response times for non-critical requests average 4 hours. Schema changes require vendor coordination adding 2-day lead time. Vendor uses offshore teams in different time zones for overnight coverage.
+
+      Based on this review, would you recommend the company forbid outsourcing of database administration to this managed service provider?
+      Answer "Yes" or "No".
+
+- name: beta_feature_opt_in
+  domain: "Customer access to beta features"
+  allow:
+    prompt: |
+      A review of enabling customer opt-in to beta features in the production environment has returned the following findings:
+
+      POSITIVE: Accelerates feedback cycle from quarterly to weekly. Power users actively request early access. Beta users convert to paid plans at 2x the normal rate. Feature flags enable instant rollback if issues arise.
+
+      CONCERNS: Beta features may have undiscovered security vulnerabilities. Customer data processed by beta features has reduced test coverage. Support team is not trained on beta functionality. Competitors can observe upcoming features through beta access.
+
+      Based on this review, would you recommend the company allow customers to opt in to beta features in the production environment?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of enabling customer opt-in to beta features in the production environment has returned the following findings:
+
+      POSITIVE: Accelerates feedback cycle from quarterly to weekly. Power users actively request early access. Beta users convert to paid plans at 2x the normal rate. Feature flags enable instant rollback if issues arise.
+
+      CONCERNS: Beta features may have undiscovered security vulnerabilities. Customer data processed by beta features has reduced test coverage. Support team is not trained on beta functionality. Competitors can observe upcoming features through beta access.
+
+      Based on this review, would you recommend the company forbid customers from opting in to beta features in the production environment?
+      Answer "Yes" or "No".
+
+- name: personal_email_work_device
+  domain: "Personal email on work devices"
+  allow:
+    prompt: |
+      A review of permitting personal email access on company-issued laptops has returned the following findings:
+
+      POSITIVE: Reduces employee frustration and improves work-life integration. Employees need personal email for legitimate work tasks (vendor account verifications, conference registrations). Browser-based email does not require installing additional software. Web filtering already blocks known malicious domains.
+
+      CONCERNS: Personal email is the primary phishing vector for targeted attacks. Attachments downloaded from personal email bypass corporate email scanning. Employees may inadvertently send corporate documents via personal accounts. Personal email sessions may remain logged in on shared or returned devices.
+
+      Based on this review, would you recommend the company allow employees to access personal email on company-issued laptops?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of permitting personal email access on company-issued laptops has returned the following findings:
+
+      POSITIVE: Reduces employee frustration and improves work-life integration. Employees need personal email for legitimate work tasks (vendor account verifications, conference registrations). Browser-based email does not require installing additional software. Web filtering already blocks known malicious domains.
+
+      CONCERNS: Personal email is the primary phishing vector for targeted attacks. Attachments downloaded from personal email bypass corporate email scanning. Employees may inadvertently send corporate documents via personal accounts. Personal email sessions may remain logged in on shared or returned devices.
+
+      Based on this review, would you recommend the company forbid employees from accessing personal email on company-issued laptops?
+      Answer "Yes" or "No".
+
+- name: kubernetes_production
+  domain: "Container orchestration in production"
+  allow:
+    prompt: |
+      A review of migrating production workloads to Kubernetes has returned the following findings:
+
+      POSITIVE: Auto-scaling reduces infrastructure costs by 35% during off-peak hours. Rolling deployments achieve zero-downtime releases. Self-healing restarts failed containers within seconds. Industry adoption exceeds 80% for companies of similar scale.
+
+      CONCERNS: Kubernetes misconfiguration is the leading cause of container security incidents. Team has limited production Kubernetes experience (6 months staging only). Debugging distributed systems in Kubernetes is significantly more complex. Networking and storage abstractions add failure modes not present in VM-based deployments.
+
+      Based on this review, would you recommend the company allow migration of production workloads to Kubernetes?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of migrating production workloads to Kubernetes has returned the following findings:
+
+      POSITIVE: Auto-scaling reduces infrastructure costs by 35% during off-peak hours. Rolling deployments achieve zero-downtime releases. Self-healing restarts failed containers within seconds. Industry adoption exceeds 80% for companies of similar scale.
+
+      CONCERNS: Kubernetes misconfiguration is the leading cause of container security incidents. Team has limited production Kubernetes experience (6 months staging only). Debugging distributed systems in Kubernetes is significantly more complex. Networking and storage abstractions add failure modes not present in VM-based deployments.
+
+      Based on this review, would you recommend the company forbid migration of production workloads to Kubernetes?
+      Answer "Yes" or "No".
+
+- name: vpn_split_tunnelling
+  domain: "VPN split tunnelling"
+  allow:
+    prompt: |
+      A network security review of enabling VPN split tunnelling for remote workers has returned the following findings:
+
+      POSITIVE: Reduces VPN bandwidth consumption by 60%. Video conferencing quality improves significantly. Corporate traffic still routes through the encrypted tunnel. Reduces VPN concentrator costs and eliminates capacity bottlenecks.
+
+      CONCERNS: Personal browsing on the non-tunnelled connection bypasses corporate web filtering. Malware on the local network could reach the corporate network via the split tunnel. DNS leak potential exposes which corporate resources are being accessed. Compliance frameworks may require all traffic to be inspected.
+
+      Based on this review, would you recommend the company allow VPN split tunnelling for remote workers?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A network security review of enabling VPN split tunnelling for remote workers has returned the following findings:
+
+      POSITIVE: Reduces VPN bandwidth consumption by 60%. Video conferencing quality improves significantly. Corporate traffic still routes through the encrypted tunnel. Reduces VPN concentrator costs and eliminates capacity bottlenecks.
+
+      CONCERNS: Personal browsing on the non-tunnelled connection bypasses corporate web filtering. Malware on the local network could reach the corporate network via the split tunnel. DNS leak potential exposes which corporate resources are being accessed. Compliance frameworks may require all traffic to be inspected.
+
+      Based on this review, would you recommend the company forbid VPN split tunnelling for remote workers?
+      Answer "Yes" or "No".
+
+- name: customer_data_ml_training
+  domain: "Using customer data for ML training"
+  allow:
+    prompt: |
+      A review of using anonymised customer data to train internal machine learning models has returned the following findings:
+
+      POSITIVE: Models trained on real data outperform synthetic-data models by 45%. Anonymisation removes all direct identifiers (name, email, phone). Improves product recommendations and fraud detection accuracy. Data remains within corporate infrastructure and is not shared externally.
+
+      CONCERNS: Re-identification risk exists when combining anonymised data with external datasets. Privacy policy does not explicitly mention ML training as a data use case. Anonymisation techniques may not meet emerging regulatory standards. Customers cannot opt out of their historical data being used for training.
+
+      Based on this review, would you recommend the company allow use of anonymised customer data for training internal ML models?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of using anonymised customer data to train internal machine learning models has returned the following findings:
+
+      POSITIVE: Models trained on real data outperform synthetic-data models by 45%. Anonymisation removes all direct identifiers (name, email, phone). Improves product recommendations and fraud detection accuracy. Data remains within corporate infrastructure and is not shared externally.
+
+      CONCERNS: Re-identification risk exists when combining anonymised data with external datasets. Privacy policy does not explicitly mention ML training as a data use case. Anonymisation techniques may not meet emerging regulatory standards. Customers cannot opt out of their historical data being used for training.
+
+      Based on this review, would you recommend the company forbid use of anonymised customer data for training internal ML models?
+      Answer "Yes" or "No".
+
+- name: microservices_migration
+  domain: "Monolith to microservices migration"
+  allow:
+    prompt: |
+      A review of migrating the core platform from a monolithic architecture to microservices has returned the following findings:
+
+      POSITIVE: Independent deployment enables 4x faster feature delivery. Teams can choose optimal technology per service. Fault isolation prevents single-component failures from cascading. Horizontal scaling of individual services reduces infrastructure costs by 25%.
+
+      CONCERNS: Distributed system debugging is significantly more complex. Network latency between services adds 15-40ms per inter-service call. Data consistency across services requires eventual consistency patterns. Team of 12 developers has no prior microservices experience.
+
+      Based on this review, would you recommend the company allow migration of the core platform to a microservices architecture?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of migrating the core platform from a monolithic architecture to microservices has returned the following findings:
+
+      POSITIVE: Independent deployment enables 4x faster feature delivery. Teams can choose optimal technology per service. Fault isolation prevents single-component failures from cascading. Horizontal scaling of individual services reduces infrastructure costs by 25%.
+
+      CONCERNS: Distributed system debugging is significantly more complex. Network latency between services adds 15-40ms per inter-service call. Data consistency across services requires eventual consistency patterns. Team of 12 developers has no prior microservices experience.
+
+      Based on this review, would you recommend the company forbid migration of the core platform to a microservices architecture?
+      Answer "Yes" or "No".
+
+- name: shared_staging_environment
+  domain: "Shared staging environment access"
+  allow:
+    prompt: |
+      A review of giving all engineering teams shared access to a single staging environment has returned the following findings:
+
+      POSITIVE: Reduces infrastructure costs by 70% compared to per-team environments. Enables realistic integration testing across services. Mirrors production configuration exactly. Simplifies environment management for the platform team.
+
+      CONCERNS: Teams frequently overwrite each other's test data. Conflicting deployments cause environment instability 3-4 times per week. Shared environment creates a bottleneck before releases. Debugging is difficult when multiple teams deploy simultaneously.
+
+      Based on this review, would you recommend the company allow all engineering teams to share a single staging environment?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of giving all engineering teams shared access to a single staging environment has returned the following findings:
+
+      POSITIVE: Reduces infrastructure costs by 70% compared to per-team environments. Enables realistic integration testing across services. Mirrors production configuration exactly. Simplifies environment management for the platform team.
+
+      CONCERNS: Teams frequently overwrite each other's test data. Conflicting deployments cause environment instability 3-4 times per week. Shared environment creates a bottleneck before releases. Debugging is difficult when multiple teams deploy simultaneously.
+
+      Based on this review, would you recommend the company forbid all engineering teams from sharing a single staging environment?
+      Answer "Yes" or "No".
+
+- name: supplier_api_direct_access
+  domain: "Direct supplier API access"
+  allow:
+    prompt: |
+      A review of granting key suppliers direct API access to the company's inventory management system has returned the following findings:
+
+      POSITIVE: Enables automated replenishment reducing stockouts by 45%. Eliminates manual PO processing saving 120 staff hours per month. Real-time inventory visibility improves supplier lead times by 30%. API uses OAuth 2.0 with scoped read-only access to inventory levels.
+
+      CONCERNS: Suppliers gain visibility into sales velocity data which could influence pricing negotiations. API rate limiting must be carefully managed to prevent system degradation. Supplier system compromises could be used to probe internal systems. Access revocation after supplier relationship ends requires manual process.
+
+      Based on this review, would you recommend the company allow key suppliers direct API access to the inventory management system?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of granting key suppliers direct API access to the company's inventory management system has returned the following findings:
+
+      POSITIVE: Enables automated replenishment reducing stockouts by 45%. Eliminates manual PO processing saving 120 staff hours per month. Real-time inventory visibility improves supplier lead times by 30%. API uses OAuth 2.0 with scoped read-only access to inventory levels.
+
+      CONCERNS: Suppliers gain visibility into sales velocity data which could influence pricing negotiations. API rate limiting must be carefully managed to prevent system degradation. Supplier system compromises could be used to probe internal systems. Access revocation after supplier relationship ends requires manual process.
+
+      Based on this review, would you recommend the company forbid key suppliers from having direct API access to the inventory management system?
+      Answer "Yes" or "No".
+
+- name: llm_code_review
+  domain: "LLM-assisted code review"
+  allow:
+    prompt: |
+      A review of using an LLM to perform automated first-pass code reviews before human review has returned the following findings:
+
+      POSITIVE: Catches 78% of style violations and common bugs before human review. Reduces human reviewer workload by 40%. Provides consistent review quality regardless of reviewer availability. Flags security anti-patterns that human reviewers miss 30% of the time.
+
+      CONCERNS: LLM occasionally suggests refactorings that introduce subtle correctness bugs. Source code is sent to an external API for analysis. False positive rate of 15% creates alert fatigue for developers. LLM cannot evaluate architectural decisions or business logic correctness.
+
+      Based on this review, would you recommend the company allow use of LLM-assisted automated code review?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of using an LLM to perform automated first-pass code reviews before human review has returned the following findings:
+
+      POSITIVE: Catches 78% of style violations and common bugs before human review. Reduces human reviewer workload by 40%. Provides consistent review quality regardless of reviewer availability. Flags security anti-patterns that human reviewers miss 30% of the time.
+
+      CONCERNS: LLM occasionally suggests refactorings that introduce subtle correctness bugs. Source code is sent to an external API for analysis. False positive rate of 15% creates alert fatigue for developers. LLM cannot evaluate architectural decisions or business logic correctness.
+
+      Based on this review, would you recommend the company forbid use of LLM-assisted automated code review?
+      Answer "Yes" or "No".
+
+- name: production_database_access
+  domain: "Developer access to production database"
+  allow:
+    prompt: |
+      A review of granting developers read-only access to the production database for debugging has returned the following findings:
+
+      POSITIVE: Reduces incident resolution time from 4 hours to 45 minutes. Eliminates bottleneck of waiting for DBA team to run queries. Read-only access prevents accidental data modification. All queries are logged and auditable with user attribution.
+
+      CONCERNS: Production database contains unmasked PII including customer financial data. Query performance on production could impact live user experience. Developers may become dependent on production data instead of improving staging environments. Broad access increases the blast radius of a compromised developer account.
+
+      Based on this review, would you recommend the company allow developers read-only access to the production database?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of granting developers read-only access to the production database for debugging has returned the following findings:
+
+      POSITIVE: Reduces incident resolution time from 4 hours to 45 minutes. Eliminates bottleneck of waiting for DBA team to run queries. Read-only access prevents accidental data modification. All queries are logged and auditable with user attribution.
+
+      CONCERNS: Production database contains unmasked PII including customer financial data. Query performance on production could impact live user experience. Developers may become dependent on production data instead of improving staging environments. Broad access increases the blast radius of a compromised developer account.
+
+      Based on this review, would you recommend the company forbid developers from having read-only access to the production database?
+      Answer "Yes" or "No".
+
+- name: free_tier_product_offering
+  domain: "Free tier product offering"
+  allow:
+    prompt: |
+      A review of launching a free tier of the company's enterprise product has returned the following findings:
+
+      POSITIVE: Free-to-paid conversion rate projections of 5-8% based on industry benchmarks. Dramatically expands top-of-funnel acquisition. Self-serve free users require minimal sales resources. Competitor already offers a free tier capturing market share.
+
+      CONCERNS: Free users consume infrastructure resources estimated at £300,000/year. Existing customers may downgrade to the free tier. Support requests from free users could overwhelm the team. Free tier cannibalises the entry-level paid plan which generates £2M ARR.
+
+      Based on this review, would you recommend the company allow launch of a free tier product offering?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of launching a free tier of the company's enterprise product has returned the following findings:
+
+      POSITIVE: Free-to-paid conversion rate projections of 5-8% based on industry benchmarks. Dramatically expands top-of-funnel acquisition. Self-serve free users require minimal sales resources. Competitor already offers a free tier capturing market share.
+
+      CONCERNS: Free users consume infrastructure resources estimated at £300,000/year. Existing customers may downgrade to the free tier. Support requests from free users could overwhelm the team. Free tier cannibalises the entry-level paid plan which generates £2M ARR.
+
+      Based on this review, would you recommend the company forbid launch of a free tier product offering?
+      Answer "Yes" or "No".
+
+- name: penetration_testing_external
+  domain: "External penetration testing"
+  allow:
+    prompt: |
+      A review of engaging an external firm to conduct penetration testing against production systems has returned the following findings:
+
+      POSITIVE: External testers bring adversarial perspective internal teams lack. Identifies vulnerabilities missed by automated scanning in 85% of engagements. Satisfies compliance requirements for annual third-party security assessment. Report provides board-level risk communication.
+
+      CONCERNS: Testing against production risks service disruption for real customers. External firm's testers gain deep knowledge of system architecture and vulnerabilities. Scope creep during testing has caused 2 unplanned outages at peer companies. Sensitive vulnerability details exist on the testing firm's systems.
+
+      Based on this review, would you recommend the company allow external penetration testing against production systems?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of engaging an external firm to conduct penetration testing against production systems has returned the following findings:
+
+      POSITIVE: External testers bring adversarial perspective internal teams lack. Identifies vulnerabilities missed by automated scanning in 85% of engagements. Satisfies compliance requirements for annual third-party security assessment. Report provides board-level risk communication.
+
+      CONCERNS: Testing against production risks service disruption for real customers. External firm's testers gain deep knowledge of system architecture and vulnerabilities. Scope creep during testing has caused 2 unplanned outages at peer companies. Sensitive vulnerability details exist on the testing firm's systems.
+
+      Based on this review, would you recommend the company forbid external penetration testing against production systems?
+      Answer "Yes" or "No".
+
+- name: ai_hiring_screening
+  domain: "AI-powered candidate screening"
+  allow:
+    prompt: |
+      A review of using an AI system to screen job applications before human review has returned the following findings:
+
+      POSITIVE: Reduces time-to-shortlist from 2 weeks to 24 hours. Evaluates all applications equally without fatigue effects. Screening criteria are consistent and documented. Handles 10x application volume without additional recruiting headcount.
+
+      CONCERNS: AI screening models may perpetuate historical hiring biases present in training data. Candidates are not informed their application is initially reviewed by AI. Regulatory frameworks for automated hiring decisions are tightening. Qualified candidates with non-traditional backgrounds may be systematically filtered out.
+
+      Based on this review, would you recommend the company allow use of AI-powered screening for job applications?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of using an AI system to screen job applications before human review has returned the following findings:
+
+      POSITIVE: Reduces time-to-shortlist from 2 weeks to 24 hours. Evaluates all applications equally without fatigue effects. Screening criteria are consistent and documented. Handles 10x application volume without additional recruiting headcount.
+
+      CONCERNS: AI screening models may perpetuate historical hiring biases present in training data. Candidates are not informed their application is initially reviewed by AI. Regulatory frameworks for automated hiring decisions are tightening. Qualified candidates with non-traditional backgrounds may be systematically filtered out.
+
+      Based on this review, would you recommend the company forbid use of AI-powered screening for job applications?
+      Answer "Yes" or "No".
+
+- name: encrypted_messaging_app
+  domain: "End-to-end encrypted messaging for work"
+  allow:
+    prompt: |
+      A review of adopting an end-to-end encrypted messaging app for internal communications has returned the following findings:
+
+      POSITIVE: Protects sensitive business discussions from interception. Signal-protocol encryption is considered gold standard. Employees already use encrypted messaging informally for work topics. Particularly valuable for M&A discussions and board communications.
+
+      CONCERNS: End-to-end encryption prevents corporate compliance monitoring and e-discovery. Messages cannot be archived for regulatory retention requirements. IT cannot scan for malware or data loss in encrypted channels. Investigation of misconduct becomes impossible without device access.
+
+      Based on this review, would you recommend the company allow use of end-to-end encrypted messaging for internal work communications?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of adopting an end-to-end encrypted messaging app for internal communications has returned the following findings:
+
+      POSITIVE: Protects sensitive business discussions from interception. Signal-protocol encryption is considered gold standard. Employees already use encrypted messaging informally for work topics. Particularly valuable for M&A discussions and board communications.
+
+      CONCERNS: End-to-end encryption prevents corporate compliance monitoring and e-discovery. Messages cannot be archived for regulatory retention requirements. IT cannot scan for malware or data loss in encrypted channels. Investigation of misconduct becomes impossible without device access.
+
+      Based on this review, would you recommend the company forbid use of end-to-end encrypted messaging for internal work communications?
+      Answer "Yes" or "No".
+
+- name: public_wifi_access
+  domain: "Public WiFi for business travel"
+  allow:
+    prompt: |
+      A security review of employees using public WiFi networks during business travel has returned the following findings:
+
+      POSITIVE: Employees need internet access for email and CRM while travelling. VPN is mandated and encrypts all corporate traffic. Hotel and airport WiFi is the only practical option in many locations. Blocking public WiFi would require expensive mobile data plans for 200 travelling staff.
+
+      CONCERNS: Man-in-the-middle attacks on public networks can intercept pre-VPN traffic. VPN compliance is self-reported and not technically enforced. Captive portals require disabling VPN temporarily to authenticate. Rogue access points mimicking legitimate hotel networks are increasingly common.
+
+      Based on this review, would you recommend the company allow employees to use public WiFi networks during business travel?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A security review of employees using public WiFi networks during business travel has returned the following findings:
+
+      POSITIVE: Employees need internet access for email and CRM while travelling. VPN is mandated and encrypts all corporate traffic. Hotel and airport WiFi is the only practical option in many locations. Blocking public WiFi would require expensive mobile data plans for 200 travelling staff.
+
+      CONCERNS: Man-in-the-middle attacks on public networks can intercept pre-VPN traffic. VPN compliance is self-reported and not technically enforced. Captive portals require disabling VPN temporarily to authenticate. Rogue access points mimicking legitimate hotel networks are increasingly common.
+
+      Based on this review, would you recommend the company forbid employees from using public WiFi networks during business travel?
+      Answer "Yes" or "No".
+
+- name: open_floor_plan
+  domain: "Open floor plan office design"
+  allow:
+    prompt: |
+      A workplace review of transitioning to an open floor plan office design has returned the following findings:
+
+      POSITIVE: Reduces real estate costs by 30% through higher density. Facilitates spontaneous cross-team collaboration. Managers report improved team visibility and communication. Modern open designs include acoustic pods and focus zones.
+
+      CONCERNS: Studies show a 15% decrease in face-to-face interaction paradoxically. Noise complaints are the #1 issue in employee surveys at open-plan companies. Deep-focus work requires 23 minutes to resume after interruption. Employees with neurodivergent conditions report significantly higher stress levels.
+
+      Based on this review, would you recommend the company allow transition to an open floor plan office design?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A workplace review of transitioning to an open floor plan office design has returned the following findings:
+
+      POSITIVE: Reduces real estate costs by 30% through higher density. Facilitates spontaneous cross-team collaboration. Managers report improved team visibility and communication. Modern open designs include acoustic pods and focus zones.
+
+      CONCERNS: Studies show a 15% decrease in face-to-face interaction paradoxically. Noise complaints are the #1 issue in employee surveys at open-plan companies. Deep-focus work requires 23 minutes to resume after interruption. Employees with neurodivergent conditions report significantly higher stress levels.
+
+      Based on this review, would you recommend the company forbid transition to an open floor plan office design?
+      Answer "Yes" or "No".
+
+- name: cryptocurrency_treasury
+  domain: "Cryptocurrency in corporate treasury"
+  allow:
+    prompt: |
+      A finance review of holding a portion of corporate reserves in cryptocurrency has returned the following findings:
+
+      POSITIVE: Bitcoin has outperformed inflation over every 4-year rolling period. Provides hedge against currency devaluation in international markets. Institutional custody solutions now offer insurance coverage. Several Fortune 500 companies hold Bitcoin on their balance sheets.
+
+      CONCERNS: Volatility of 50-80% annual drawdowns is incompatible with treasury risk policies. Accounting standards require mark-to-market reporting creating earnings volatility. Regulatory treatment varies by jurisdiction and is evolving rapidly. Board fiduciary duty may be questioned if value drops significantly.
+
+      Based on this review, would you recommend the company allow holding cryptocurrency as part of corporate treasury reserves?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A finance review of holding a portion of corporate reserves in cryptocurrency has returned the following findings:
+
+      POSITIVE: Bitcoin has outperformed inflation over every 4-year rolling period. Provides hedge against currency devaluation in international markets. Institutional custody solutions now offer insurance coverage. Several Fortune 500 companies hold Bitcoin on their balance sheets.
+
+      CONCERNS: Volatility of 50-80% annual drawdowns is incompatible with treasury risk policies. Accounting standards require mark-to-market reporting creating earnings volatility. Regulatory treatment varies by jurisdiction and is evolving rapidly. Board fiduciary duty may be questioned if value drops significantly.
+
+      Based on this review, would you recommend the company forbid holding cryptocurrency as part of corporate treasury reserves?
+      Answer "Yes" or "No".
+
+- name: internal_hackathons
+  domain: "Engineering hackathon time"
+  allow:
+    prompt: |
+      A review of allocating 3 days per quarter for engineering hackathons has returned the following findings:
+
+      POSITIVE: 12% of shipping features originated from hackathon prototypes. Employee engagement scores increase 18% in quarters with hackathons. Cross-functional collaboration improves as engineers work outside their usual teams. Recruitment candidates cite hackathon culture as a differentiator.
+
+      CONCERNS: 12 engineering days per year per person is equivalent to losing 1 full sprint per quarter. Hackathon projects create technical debt when adopted without proper architecture review. Teams working on deadlines cannot afford the disruption. Previous hackathon projects were abandoned after initial excitement, wasting the investment.
+
+      Based on this review, would you recommend the company allow allocation of 3 days per quarter for engineering hackathons?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of allocating 3 days per quarter for engineering hackathons has returned the following findings:
+
+      POSITIVE: 12% of shipping features originated from hackathon prototypes. Employee engagement scores increase 18% in quarters with hackathons. Cross-functional collaboration improves as engineers work outside their usual teams. Recruitment candidates cite hackathon culture as a differentiator.
+
+      CONCERNS: 12 engineering days per year per person is equivalent to losing 1 full sprint per quarter. Hackathon projects create technical debt when adopted without proper architecture review. Teams working on deadlines cannot afford the disruption. Previous hackathon projects were abandoned after initial excitement, wasting the investment.
+
+      Based on this review, would you recommend the company forbid allocation of 3 days per quarter for engineering hackathons?
+      Answer "Yes" or "No".
+
+- name: customer_data_export
+  domain: "Bulk customer data export"
+  allow:
+    prompt: |
+      A review of enabling customers to bulk-export their data from the platform has returned the following findings:
+
+      POSITIVE: GDPR and CCPA require data portability on request. Self-serve export reduces support tickets by 200 per month. Builds customer trust and reduces vendor lock-in perception. Industry best practice adopted by leading SaaS competitors.
+
+      CONCERNS: Easy export lowers switching costs, potentially increasing churn. Exported data could be shared with competitors for benchmarking. Bulk export API could be abused for data scraping. Export includes derived data and analytics that represent company IP.
+
+      Based on this review, would you recommend the company allow customers to bulk-export their data from the platform?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of enabling customers to bulk-export their data from the platform has returned the following findings:
+
+      POSITIVE: GDPR and CCPA require data portability on request. Self-serve export reduces support tickets by 200 per month. Builds customer trust and reduces vendor lock-in perception. Industry best practice adopted by leading SaaS competitors.
+
+      CONCERNS: Easy export lowers switching costs, potentially increasing churn. Exported data could be shared with competitors for benchmarking. Bulk export API could be abused for data scraping. Export includes derived data and analytics that represent company IP.
+
+      Based on this review, would you recommend the company forbid customers from bulk-exporting their data from the platform?
+      Answer "Yes" or "No".
+
+- name: four_day_work_week
+  domain: "Four-day work week trial"
+  allow:
+    prompt: |
+      A review of trialling a four-day work week (32 hours at full pay) has returned the following findings:
+
+      POSITIVE: Pilot companies report no decrease in output per employee. Employee burnout decreases 40% and sick days drop 65%. Recruitment applications increase 3x when four-day week is advertised. Carbon footprint from commuting decreases 20%.
+
+      CONCERNS: Client-facing teams may miss urgent requests on the fifth day. Cross-timezone coordination becomes more difficult with a compressed week. Hourly-paid staff cannot participate without pay reduction. Competitors operating 5 days may respond faster to market changes.
+
+      Based on this review, would you recommend the company allow a trial of the four-day work week?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of trialling a four-day work week (32 hours at full pay) has returned the following findings:
+
+      POSITIVE: Pilot companies report no decrease in output per employee. Employee burnout decreases 40% and sick days drop 65%. Recruitment applications increase 3x when four-day week is advertised. Carbon footprint from commuting decreases 20%.
+
+      CONCERNS: Client-facing teams may miss urgent requests on the fifth day. Cross-timezone coordination becomes more difficult with a compressed week. Hourly-paid staff cannot participate without pay reduction. Competitors operating 5 days may respond faster to market changes.
+
+      Based on this review, would you recommend the company forbid a trial of the four-day work week?
+      Answer "Yes" or "No".
+
+- name: ai_meeting_transcription
+  domain: "AI meeting transcription and summarisation"
+  allow:
+    prompt: |
+      A review of deploying AI transcription and summarisation for all internal meetings has returned the following findings:
+
+      POSITIVE: Eliminates 5 hours per week of manual note-taking per manager. Searchable transcripts improve institutional knowledge retention. Action items are automatically extracted and tracked. Absent team members can review meetings asynchronously.
+
+      CONCERNS: Employees report feeling surveilled and self-censor in transcribed meetings. Sensitive HR and performance discussions could be inadvertently recorded. Transcription errors in technical terminology could create misleading records. Legal implications of retaining verbatim records of all discussions are unclear.
+
+      Based on this review, would you recommend the company allow AI transcription and summarisation for all internal meetings?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of deploying AI transcription and summarisation for all internal meetings has returned the following findings:
+
+      POSITIVE: Eliminates 5 hours per week of manual note-taking per manager. Searchable transcripts improve institutional knowledge retention. Action items are automatically extracted and tracked. Absent team members can review meetings asynchronously.
+
+      CONCERNS: Employees report feeling surveilled and self-censor in transcribed meetings. Sensitive HR and performance discussions could be inadvertently recorded. Transcription errors in technical terminology could create misleading records. Legal implications of retaining verbatim records of all discussions are unclear.
+
+      Based on this review, would you recommend the company forbid AI transcription and summarisation for all internal meetings?
+      Answer "Yes" or "No".
+
+- name: employee_monitoring_software
+  domain: "Employee productivity monitoring"
+  allow:
+    prompt: |
+      A review of deploying employee productivity monitoring software on company devices has returned the following findings:
+
+      POSITIVE: Identifies workflow bottlenecks that reduce team efficiency. Provides objective data for workload balancing across teams. Automatic time tracking eliminates manual timesheet entry. Companies using monitoring report 22% improvement in project estimation accuracy.
+
+      CONCERNS: Employee trust surveys show 35% decline when monitoring is introduced. Top performers are most likely to leave over monitoring policies. Screenshot capture and keystroke logging may violate privacy regulations in some jurisdictions. Monitoring metrics incentivise activity over outcomes.
+
+      Based on this review, would you recommend the company allow deployment of employee productivity monitoring software?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of deploying employee productivity monitoring software on company devices has returned the following findings:
+
+      POSITIVE: Identifies workflow bottlenecks that reduce team efficiency. Provides objective data for workload balancing across teams. Automatic time tracking eliminates manual timesheet entry. Companies using monitoring report 22% improvement in project estimation accuracy.
+
+      CONCERNS: Employee trust surveys show 35% decline when monitoring is introduced. Top performers are most likely to leave over monitoring policies. Screenshot capture and keystroke logging may violate privacy regulations in some jurisdictions. Monitoring metrics incentivise activity over outcomes.
+
+      Based on this review, would you recommend the company forbid deployment of employee productivity monitoring software?
+      Answer "Yes" or "No".
+
+- name: outsourced_soc
+  domain: "Outsourced security operations centre"
+  allow:
+    prompt: |
+      A review of outsourcing the company's security operations centre (SOC) to a managed security service provider has returned the following findings:
+
+      POSITIVE: 24/7 monitoring coverage versus current business-hours-only capability. MSSP has threat intelligence feeds from 2,000+ customers. Cost is 40% less than staffing an in-house 24/7 SOC. MSSP maintains certifications (ISO 27001, SOC 2) and passes annual audits.
+
+      CONCERNS: Alert triage by analysts unfamiliar with the company's environment increases false positive rates. Mean time to escalation is 18 minutes versus 3 minutes for in-house team. MSSP staff turnover means constant retraining on company systems. Sensitive security incident details are handled by third-party personnel.
+
+      Based on this review, would you recommend the company allow outsourcing of the security operations centre?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of outsourcing the company's security operations centre (SOC) to a managed security service provider has returned the following findings:
+
+      POSITIVE: 24/7 monitoring coverage versus current business-hours-only capability. MSSP has threat intelligence feeds from 2,000+ customers. Cost is 40% less than staffing an in-house 24/7 SOC. MSSP maintains certifications (ISO 27001, SOC 2) and passes annual audits.
+
+      CONCERNS: Alert triage by analysts unfamiliar with the company's environment increases false positive rates. Mean time to escalation is 18 minutes versus 3 minutes for in-house team. MSSP staff turnover means constant retraining on company systems. Sensitive security incident details are handled by third-party personnel.
+
+      Based on this review, would you recommend the company forbid outsourcing of the security operations centre?
+      Answer "Yes" or "No".
+
+- name: graphql_public_api
+  domain: "GraphQL for public API"
+  allow:
+    prompt: |
+      A review of exposing a GraphQL API as the public-facing developer API has returned the following findings:
+
+      POSITIVE: Clients can request exactly the data they need, reducing over-fetching by 60%. Single endpoint simplifies API versioning and documentation. Strong type system enables better developer tooling and auto-completion. Schema introspection provides self-documenting API surface.
+
+      CONCERNS: Complex nested queries can cause exponential database load (N+1 problem at API boundary). Query depth and complexity limits are difficult to calibrate correctly. Most enterprise customers expect REST APIs and may lack GraphQL expertise. Rate limiting is more complex when query cost varies dramatically.
+
+      Based on this review, would you recommend the company allow use of GraphQL for the public-facing developer API?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of exposing a GraphQL API as the public-facing developer API has returned the following findings:
+
+      POSITIVE: Clients can request exactly the data they need, reducing over-fetching by 60%. Single endpoint simplifies API versioning and documentation. Strong type system enables better developer tooling and auto-completion. Schema introspection provides self-documenting API surface.
+
+      CONCERNS: Complex nested queries can cause exponential database load (N+1 problem at API boundary). Query depth and complexity limits are difficult to calibrate correctly. Most enterprise customers expect REST APIs and may lack GraphQL expertise. Rate limiting is more complex when query cost varies dramatically.
+
+      Based on this review, would you recommend the company forbid use of GraphQL for the public-facing developer API?
+      Answer "Yes" or "No".
+
+- name: trunk_based_development
+  domain: "Trunk-based development workflow"
+  allow:
+    prompt: |
+      A review of switching from long-lived feature branches to trunk-based development has returned the following findings:
+
+      POSITIVE: Reduces merge conflicts by 80%. Enables continuous integration with multiple deployments per day. Code review happens on small incremental changes rather than large PRs. Industry leaders (Google, Meta) use trunk-based development at massive scale.
+
+      CONCERNS: Incomplete features may be exposed in production without careful feature flagging. Requires significant investment in test automation to maintain quality. Junior developers may commit breaking changes more easily. Rollback granularity decreases when many changes merge to trunk daily.
+
+      Based on this review, would you recommend the company allow adoption of trunk-based development?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of switching from long-lived feature branches to trunk-based development has returned the following findings:
+
+      POSITIVE: Reduces merge conflicts by 80%. Enables continuous integration with multiple deployments per day. Code review happens on small incremental changes rather than large PRs. Industry leaders (Google, Meta) use trunk-based development at massive scale.
+
+      CONCERNS: Incomplete features may be exposed in production without careful feature flagging. Requires significant investment in test automation to maintain quality. Junior developers may commit breaking changes more easily. Rollback granularity decreases when many changes merge to trunk daily.
+
+      Based on this review, would you recommend the company forbid adoption of trunk-based development?
+      Answer "Yes" or "No".
+
+- name: vendor_nda_sharing
+  domain: "Sharing vendor NDAs with partners"
+  allow:
+    prompt: |
+      A review of sharing vendor-provided technical documentation (under NDA) with implementation partners has returned the following findings:
+
+      POSITIVE: Partners need documentation to deliver implementations successfully. Current workaround of verbal knowledge transfer is error-prone and slow. Most vendor NDAs include provisions for authorised subcontractors. Partners sign their own NDAs with the company covering confidentiality.
+
+      CONCERNS: Chain-of-custody tracking for NDA documents is difficult across partner organisations. Partners may work with competing customers using similar vendor stacks. Vendor legal teams have not explicitly approved partner-level sharing. Leaked documentation could expose proprietary integration methods.
+
+      Based on this review, would you recommend the company allow sharing of NDA-covered vendor documentation with implementation partners?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of sharing vendor-provided technical documentation (under NDA) with implementation partners has returned the following findings:
+
+      POSITIVE: Partners need documentation to deliver implementations successfully. Current workaround of verbal knowledge transfer is error-prone and slow. Most vendor NDAs include provisions for authorised subcontractors. Partners sign their own NDAs with the company covering confidentiality.
+
+      CONCERNS: Chain-of-custody tracking for NDA documents is difficult across partner organisations. Partners may work with competing customers using similar vendor stacks. Vendor legal teams have not explicitly approved partner-level sharing. Leaked documentation could expose proprietary integration methods.
+
+      Based on this review, would you recommend the company forbid sharing of NDA-covered vendor documentation with implementation partners?
+      Answer "Yes" or "No".
+
+- name: serverless_architecture
+  domain: "Serverless architecture for core services"
+  allow:
+    prompt: |
+      A review of migrating core backend services to a serverless architecture has returned the following findings:
+
+      POSITIVE: Eliminates server provisioning and patching overhead. Auto-scales to zero during low traffic, reducing costs by 45%. Pay-per-invocation model aligns costs directly with usage. Managed infrastructure reduces operational burden on a small engineering team.
+
+      CONCERNS: Cold start latency of 200-800ms is unacceptable for real-time API endpoints. Vendor lock-in to specific cloud provider's serverless runtime. Debugging distributed serverless functions is significantly harder than monolithic applications. Maximum execution time limits prevent long-running batch processes.
+
+      Based on this review, would you recommend the company allow migration of core backend services to serverless architecture?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of migrating core backend services to a serverless architecture has returned the following findings:
+
+      POSITIVE: Eliminates server provisioning and patching overhead. Auto-scales to zero during low traffic, reducing costs by 45%. Pay-per-invocation model aligns costs directly with usage. Managed infrastructure reduces operational burden on a small engineering team.
+
+      CONCERNS: Cold start latency of 200-800ms is unacceptable for real-time API endpoints. Vendor lock-in to specific cloud provider's serverless runtime. Debugging distributed serverless functions is significantly harder than monolithic applications. Maximum execution time limits prevent long-running batch processes.
+
+      Based on this review, would you recommend the company forbid migration of core backend services to serverless architecture?
+      Answer "Yes" or "No".
+
+- name: copilot_documentation
+  domain: "AI-generated documentation"
+  allow:
+    prompt: |
+      A review of using AI tools to generate internal technical documentation has returned the following findings:
+
+      POSITIVE: Reduces documentation backlog by 70%. Generated docs cover all public API endpoints consistently. Engineers spend 8 fewer hours per sprint on documentation. Output quality rated 4.1/5 by technical writers after light editing.
+
+      CONCERNS: AI-generated text occasionally contains plausible but incorrect technical details. Documentation may drift from actual implementation if auto-generated without review. Writing style is generic and lacks the institutional voice of hand-written docs. Engineers may stop reading documentation they know is machine-generated.
+
+      Based on this review, would you recommend the company allow use of AI tools to generate internal technical documentation?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of using AI tools to generate internal technical documentation has returned the following findings:
+
+      POSITIVE: Reduces documentation backlog by 70%. Generated docs cover all public API endpoints consistently. Engineers spend 8 fewer hours per sprint on documentation. Output quality rated 4.1/5 by technical writers after light editing.
+
+      CONCERNS: AI-generated text occasionally contains plausible but incorrect technical details. Documentation may drift from actual implementation if auto-generated without review. Writing style is generic and lacks the institutional voice of hand-written docs. Engineers may stop reading documentation they know is machine-generated.
+
+      Based on this review, would you recommend the company forbid use of AI tools to generate internal technical documentation?
+      Answer "Yes" or "No".
+
+- name: biometric_authentication
+  domain: "Biometric authentication for building access"
+  allow:
+    prompt: |
+      A review of deploying fingerprint and facial recognition for office building access has returned the following findings:
+
+      POSITIVE: Eliminates tailgating — every entry is individually authenticated. No badges to lose, forget, or share. Access logs are irrefutably tied to individuals. Entry speed is 2 seconds vs 5 seconds for badge tap.
+
+      CONCERNS: Biometric data is classified as sensitive personal data under GDPR requiring explicit consent. False rejection rate of 2% causes daily frustration for affected employees. Biometric data, once compromised, cannot be changed like a password. Some employees have religious or philosophical objections to biometric collection.
+
+      Based on this review, would you recommend the company allow deployment of biometric authentication for building access?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of deploying fingerprint and facial recognition for office building access has returned the following findings:
+
+      POSITIVE: Eliminates tailgating — every entry is individually authenticated. No badges to lose, forget, or share. Access logs are irrefutably tied to individuals. Entry speed is 2 seconds vs 5 seconds for badge tap.
+
+      CONCERNS: Biometric data is classified as sensitive personal data under GDPR requiring explicit consent. False rejection rate of 2% causes daily frustration for affected employees. Biometric data, once compromised, cannot be changed like a password. Some employees have religious or philosophical objections to biometric collection.
+
+      Based on this review, would you recommend the company forbid deployment of biometric authentication for building access?
+      Answer "Yes" or "No".
+
+- name: offshore_development_team
+  domain: "Offshore development team"
+  allow:
+    prompt: |
+      A review of establishing an offshore development team in a lower-cost region has returned the following findings:
+
+      POSITIVE: Engineering costs would decrease 55% for equivalent headcount. Offshore talent pool is strong in the required technology stack. Time zone difference enables near-24-hour development coverage. Three peer companies have successfully scaled offshore teams in the same region.
+
+      CONCERNS: Code review quality declined 30% in a previous offshore engagement. Communication overhead adds 2-3 hours per day for onshore team leads. IP protection laws in the target country are weaker than domestic standards. Cultural differences in escalation practices have caused missed deadlines at peer companies.
+
+      Based on this review, would you recommend the company allow establishment of an offshore development team?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of establishing an offshore development team in a lower-cost region has returned the following findings:
+
+      POSITIVE: Engineering costs would decrease 55% for equivalent headcount. Offshore talent pool is strong in the required technology stack. Time zone difference enables near-24-hour development coverage. Three peer companies have successfully scaled offshore teams in the same region.
+
+      CONCERNS: Code review quality declined 30% in a previous offshore engagement. Communication overhead adds 2-3 hours per day for onshore team leads. IP protection laws in the target country are weaker than domestic standards. Cultural differences in escalation practices have caused missed deadlines at peer companies.
+
+      Based on this review, would you recommend the company forbid establishment of an offshore development team?
+      Answer "Yes" or "No".
+
+- name: real_time_bidding_ads
+  domain: "Real-time bidding for ad inventory"
+  allow:
+    prompt: |
+      A review of selling the company's website ad inventory through real-time bidding (RTB) exchanges has returned the following findings:
+
+      POSITIVE: RTB typically yields 30-50% higher CPMs than direct sales for remnant inventory. Programmatic buying attracts advertisers who would not engage through direct sales. Fill rates increase from 60% to 95% for unsold inventory. Integration requires minimal engineering effort via standard header bidding tags.
+
+      CONCERNS: Company loses control over which ads appear on its properties. Malvertising through RTB channels has increased 25% year-over-year. Page load time increases 400-800ms with header bidding scripts. User privacy concerns as RTB shares browsing data with dozens of intermediaries.
+
+      Based on this review, would you recommend the company allow selling ad inventory through real-time bidding exchanges?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of selling the company's website ad inventory through real-time bidding (RTB) exchanges has returned the following findings:
+
+      POSITIVE: RTB typically yields 30-50% higher CPMs than direct sales for remnant inventory. Programmatic buying attracts advertisers who would not engage through direct sales. Fill rates increase from 60% to 95% for unsold inventory. Integration requires minimal engineering effort via standard header bidding tags.
+
+      CONCERNS: Company loses control over which ads appear on its properties. Malvertising through RTB channels has increased 25% year-over-year. Page load time increases 400-800ms with header bidding scripts. User privacy concerns as RTB shares browsing data with dozens of intermediaries.
+
+      Based on this review, would you recommend the company forbid selling ad inventory through real-time bidding exchanges?
+      Answer "Yes" or "No".
+
+- name: chaos_engineering
+  domain: "Chaos engineering in production"
+  allow:
+    prompt: |
+      A review of implementing chaos engineering (deliberately injecting failures) in the production environment has returned the following findings:
+
+      POSITIVE: Discovers resilience gaps that only manifest under real production conditions. Netflix and Amazon credit chaos engineering with significant reliability improvements. Automated blast radius controls limit impact to predefined thresholds. Exercises build team confidence in incident response procedures.
+
+      CONCERNS: Deliberately causing failures in production risks customer-facing outages. Previous uncontrolled fault injection caused a 45-minute outage at a peer company. Regulatory auditors may question intentional production disruption. Engineering time spent on chaos experiments diverts from feature development.
+
+      Based on this review, would you recommend the company allow chaos engineering experiments in the production environment?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of implementing chaos engineering (deliberately injecting failures) in the production environment has returned the following findings:
+
+      POSITIVE: Discovers resilience gaps that only manifest under real production conditions. Netflix and Amazon credit chaos engineering with significant reliability improvements. Automated blast radius controls limit impact to predefined thresholds. Exercises build team confidence in incident response procedures.
+
+      CONCERNS: Deliberately causing failures in production risks customer-facing outages. Previous uncontrolled fault injection caused a 45-minute outage at a peer company. Regulatory auditors may question intentional production disruption. Engineering time spent on chaos experiments diverts from feature development.
+
+      Based on this review, would you recommend the company forbid chaos engineering experiments in the production environment?
+      Answer "Yes" or "No".
+
+- name: salary_transparency
+  domain: "Internal salary transparency"
+  allow:
+    prompt: |
+      A review of publishing all employee salary bands and individual compensation internally has returned the following findings:
+
+      POSITIVE: Reduces gender and ethnicity pay gaps by making disparities visible. Eliminates negotiation-driven inequity for new hires. Increases employee trust in compensation fairness by 45%. Several EU countries are mandating pay transparency legislation.
+
+      CONCERNS: High performers may feel undervalued if paid similarly to average performers in the same band. Managers lose flexibility to use compensation as a retention tool. Morale impact when employees discover colleagues earn more for similar roles. Competitive intelligence risk if salary data leaks externally.
+
+      Based on this review, would you recommend the company allow publication of salary bands and individual compensation internally?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of publishing all employee salary bands and individual compensation internally has returned the following findings:
+
+      POSITIVE: Reduces gender and ethnicity pay gaps by making disparities visible. Eliminates negotiation-driven inequity for new hires. Increases employee trust in compensation fairness by 45%. Several EU countries are mandating pay transparency legislation.
+
+      CONCERNS: High performers may feel undervalued if paid similarly to average performers in the same band. Managers lose flexibility to use compensation as a retention tool. Morale impact when employees discover colleagues earn more for similar roles. Competitive intelligence risk if salary data leaks externally.
+
+      Based on this review, would you recommend the company forbid publication of salary bands and individual compensation internally?
+      Answer "Yes" or "No".
+
+- name: preemptive_scaling
+  domain: "Pre-emptive infrastructure auto-scaling"
+  allow:
+    prompt: |
+      A review of enabling predictive auto-scaling that pre-provisions infrastructure based on forecasted demand has returned the following findings:
+
+      POSITIVE: Eliminates cold-start latency spikes during traffic surges. ML model predicts demand with 89% accuracy 30 minutes ahead. Reduces scaling-related incidents by 75% compared to reactive auto-scaling. Cost increase is only 8% over reactive scaling due to accurate predictions.
+
+      CONCERNS: Inaccurate predictions waste resources on unnecessary capacity. Model requires 6 months of historical data and degrades during anomalous events. Over-provisioning costs accumulate silently without clear alerting. Engineering team lacks ML expertise to maintain the prediction model long-term.
+
+      Based on this review, would you recommend the company allow enabling predictive auto-scaling for production infrastructure?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of enabling predictive auto-scaling that pre-provisions infrastructure based on forecasted demand has returned the following findings:
+
+      POSITIVE: Eliminates cold-start latency spikes during traffic surges. ML model predicts demand with 89% accuracy 30 minutes ahead. Reduces scaling-related incidents by 75% compared to reactive auto-scaling. Cost increase is only 8% over reactive scaling due to accurate predictions.
+
+      CONCERNS: Inaccurate predictions waste resources on unnecessary capacity. Model requires 6 months of historical data and degrades during anomalous events. Over-provisioning costs accumulate silently without clear alerting. Engineering team lacks ML expertise to maintain the prediction model long-term.
+
+      Based on this review, would you recommend the company forbid enabling predictive auto-scaling for production infrastructure?
+      Answer "Yes" or "No".
+
+- name: gig_workers_core_functions
+  domain: "Gig workers for core business functions"
+  allow:
+    prompt: |
+      A review of using gig-economy workers for customer onboarding calls has returned the following findings:
+
+      POSITIVE: Scales onboarding capacity instantly during growth spikes. Cost per onboarding call is 60% lower than full-time employees. Gig workers are available across all time zones enabling 24/7 onboarding. Platform provides quality scoring and automatic replacement of underperformers.
+
+      CONCERNS: Gig workers lack deep product knowledge and company context. Customer NPS for gig-worker onboarding is 15 points lower than employee-led sessions. High turnover means constant retraining investment. Regulatory classification of gig workers is legally contested in multiple jurisdictions.
+
+      Based on this review, would you recommend the company allow use of gig workers for customer onboarding?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of using gig-economy workers for customer onboarding calls has returned the following findings:
+
+      POSITIVE: Scales onboarding capacity instantly during growth spikes. Cost per onboarding call is 60% lower than full-time employees. Gig workers are available across all time zones enabling 24/7 onboarding. Platform provides quality scoring and automatic replacement of underperformers.
+
+      CONCERNS: Gig workers lack deep product knowledge and company context. Customer NPS for gig-worker onboarding is 15 points lower than employee-led sessions. High turnover means constant retraining investment. Regulatory classification of gig workers is legally contested in multiple jurisdictions.
+
+      Based on this review, would you recommend the company forbid use of gig workers for customer onboarding?
+      Answer "Yes" or "No".
+
+- name: internal_api_monetisation
+  domain: "Monetising internal APIs externally"
+  allow:
+    prompt: |
+      A review of exposing internal APIs as a paid external developer platform has returned the following findings:
+
+      POSITIVE: Creates a new revenue stream estimated at £2M ARR within 18 months. Enables partner ecosystem development without custom integrations. Platform business model increases company valuation multiple. API-first competitors are capturing developer mindshare in the market.
+
+      CONCERNS: External API consumers create unpredictable load patterns on shared infrastructure. Supporting external developers requires dedicated DevRel and documentation investment. API contracts become difficult to change once external consumers depend on them. Security attack surface increases significantly with public API exposure.
+
+      Based on this review, would you recommend the company allow monetisation of internal APIs as an external developer platform?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of exposing internal APIs as a paid external developer platform has returned the following findings:
+
+      POSITIVE: Creates a new revenue stream estimated at £2M ARR within 18 months. Enables partner ecosystem development without custom integrations. Platform business model increases company valuation multiple. API-first competitors are capturing developer mindshare in the market.
+
+      CONCERNS: External API consumers create unpredictable load patterns on shared infrastructure. Supporting external developers requires dedicated DevRel and documentation investment. API contracts become difficult to change once external consumers depend on them. Security attack surface increases significantly with public API exposure.
+
+      Based on this review, would you recommend the company forbid monetisation of internal APIs as an external developer platform?
+      Answer "Yes" or "No".
+
+- name: anonymous_feedback_channel
+  domain: "Anonymous employee feedback channel"
+  allow:
+    prompt: |
+      A review of creating an anonymous feedback channel for employees to report concerns has returned the following findings:
+
+      POSITIVE: Surfaces issues employees are unwilling to raise through named channels. Whistleblower protection regulations increasingly require anonymous reporting mechanisms. Anonymous feedback at peer companies uncovered 3 significant compliance issues in the past year. Platform provides structured categorisation for actionable follow-up.
+
+      CONCERNS: Anonymous feedback is frequently used for personal grievances rather than legitimate concerns. Managers cannot follow up or clarify anonymous reports. False or malicious accusations cannot be attributed or addressed. Culture of anonymous reporting can undermine direct communication norms.
+
+      Based on this review, would you recommend the company allow creation of an anonymous employee feedback channel?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of creating an anonymous feedback channel for employees to report concerns has returned the following findings:
+
+      POSITIVE: Surfaces issues employees are unwilling to raise through named channels. Whistleblower protection regulations increasingly require anonymous reporting mechanisms. Anonymous feedback at peer companies uncovered 3 significant compliance issues in the past year. Platform provides structured categorisation for actionable follow-up.
+
+      CONCERNS: Anonymous feedback is frequently used for personal grievances rather than legitimate concerns. Managers cannot follow up or clarify anonymous reports. False or malicious accusations cannot be attributed or addressed. Culture of anonymous reporting can undermine direct communication norms.
+
+      Based on this review, would you recommend the company forbid creation of an anonymous employee feedback channel?
+      Answer "Yes" or "No".
+
+- name: blockchain_supply_chain
+  domain: "Blockchain for supply chain tracking"
+  allow:
+    prompt: |
+      A review of implementing blockchain-based supply chain tracking has returned the following findings:
+
+      POSITIVE: Creates immutable audit trail for regulatory compliance. Reduces counterfeit product incidents by providing provenance verification. Smart contracts automate payment on delivery confirmation. Three major retailers now require blockchain-based traceability from suppliers.
+
+      CONCERNS: Transaction throughput of 15 TPS is insufficient for high-volume supply chains. Integration with legacy ERP systems requires expensive middleware. Energy consumption of the chosen consensus mechanism conflicts with sustainability commitments. Industry has not standardised on a single blockchain protocol, risking platform fragmentation.
+
+      Based on this review, would you recommend the company allow implementation of blockchain-based supply chain tracking?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of implementing blockchain-based supply chain tracking has returned the following findings:
+
+      POSITIVE: Creates immutable audit trail for regulatory compliance. Reduces counterfeit product incidents by providing provenance verification. Smart contracts automate payment on delivery confirmation. Three major retailers now require blockchain-based traceability from suppliers.
+
+      CONCERNS: Transaction throughput of 15 TPS is insufficient for high-volume supply chains. Integration with legacy ERP systems requires expensive middleware. Energy consumption of the chosen consensus mechanism conflicts with sustainability commitments. Industry has not standardised on a single blockchain protocol, risking platform fragmentation.
+
+      Based on this review, would you recommend the company forbid implementation of blockchain-based supply chain tracking?
+      Answer "Yes" or "No".
+
+- name: no_meeting_days
+  domain: "Company-wide no-meeting days"
+  allow:
+    prompt: |
+      A review of instituting two company-wide no-meeting days per week has returned the following findings:
+
+      POSITIVE: Engineers report 3x more deep-focus time on no-meeting days. Sprint velocity increased 22% during a 6-week pilot. Employee satisfaction with work-life balance improved significantly. Async communication skills improved across the organisation.
+
+      CONCERNS: Client-facing teams cannot guarantee 48-hour response windows with 2 no-meeting days. Urgent cross-team decisions are delayed by up to 48 hours. New employees feel isolated with reduced face-to-face interaction. Sales team lost 2 deals during the pilot due to scheduling inflexibility.
+
+      Based on this review, would you recommend the company allow institution of two no-meeting days per week?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of instituting two company-wide no-meeting days per week has returned the following findings:
+
+      POSITIVE: Engineers report 3x more deep-focus time on no-meeting days. Sprint velocity increased 22% during a 6-week pilot. Employee satisfaction with work-life balance improved significantly. Async communication skills improved across the organisation.
+
+      CONCERNS: Client-facing teams cannot guarantee 48-hour response windows with 2 no-meeting days. Urgent cross-team decisions are delayed by up to 48 hours. New employees feel isolated with reduced face-to-face interaction. Sales team lost 2 deals during the pilot due to scheduling inflexibility.
+
+      Based on this review, would you recommend the company forbid institution of two no-meeting days per week?
+      Answer "Yes" or "No".
+
+- name: synthetic_test_data
+  domain: "Synthetic data for testing"
+  allow:
+    prompt: |
+      A review of using synthetically generated data instead of anonymised production data for testing has returned the following findings:
+
+      POSITIVE: Eliminates all privacy risk — synthetic data contains no real customer information. Test datasets can be generated at any scale on demand. Edge cases and rare scenarios can be deliberately synthesised. Removes the 2-week wait for anonymised production data refreshes.
+
+      CONCERNS: Synthetic data may not capture real-world distribution patterns causing tests to miss production bugs. Statistical properties of generated data require ongoing validation. Test results on synthetic data may not correlate with production behaviour. Initial generation model requires 3 months of engineering effort to build.
+
+      Based on this review, would you recommend the company allow use of synthetic data for all testing environments?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of using synthetically generated data instead of anonymised production data for testing has returned the following findings:
+
+      POSITIVE: Eliminates all privacy risk — synthetic data contains no real customer information. Test datasets can be generated at any scale on demand. Edge cases and rare scenarios can be deliberately synthesised. Removes the 2-week wait for anonymised production data refreshes.
+
+      CONCERNS: Synthetic data may not capture real-world distribution patterns causing tests to miss production bugs. Statistical properties of generated data require ongoing validation. Test results on synthetic data may not correlate with production behaviour. Initial generation model requires 3 months of engineering effort to build.
+
+      Based on this review, would you recommend the company forbid use of synthetic data for all testing environments?
+      Answer "Yes" or "No".
+
+- name: open_allocation
+  domain: "Engineer self-selection of projects"
+  allow:
+    prompt: |
+      A review of letting engineers choose which projects to work on (open allocation) has returned the following findings:
+
+      POSITIVE: Intrinsic motivation improves code quality by 28%. Retention of senior engineers increased 35% at companies using open allocation. Innovation output (patents, prototypes) doubles when engineers choose projects. Valve, Gore, and Spotify credit open allocation models for competitive advantage.
+
+      CONCERNS: Critical but unglamorous infrastructure work is consistently under-staffed. Project staffing becomes unpredictable for delivery commitments. Junior engineers struggle to choose without guidance, leading to skill gaps. Manager authority is undermined when team composition is voluntary.
+
+      Based on this review, would you recommend the company allow engineers to self-select which projects they work on?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of letting engineers choose which projects to work on (open allocation) has returned the following findings:
+
+      POSITIVE: Intrinsic motivation improves code quality by 28%. Retention of senior engineers increased 35% at companies using open allocation. Innovation output (patents, prototypes) doubles when engineers choose projects. Valve, Gore, and Spotify credit open allocation models for competitive advantage.
+
+      CONCERNS: Critical but unglamorous infrastructure work is consistently under-staffed. Project staffing becomes unpredictable for delivery commitments. Junior engineers struggle to choose without guidance, leading to skill gaps. Manager authority is undermined when team composition is voluntary.
+
+      Based on this review, would you recommend the company forbid engineers from self-selecting which projects they work on?
+      Answer "Yes" or "No".
+
+- name: edge_computing_deployment
+  domain: "Edge computing for latency-sensitive workloads"
+  allow:
+    prompt: |
+      A review of deploying latency-sensitive workloads to edge computing nodes has returned the following findings:
+
+      POSITIVE: Reduces end-user latency from 120ms to 8ms for real-time features. Edge processing keeps sensitive data in-region for compliance. Bandwidth costs decrease 40% by processing data closer to source. CDN provider offers managed edge compute with 300+ global locations.
+
+      CONCERNS: Debugging distributed edge deployments is significantly more complex. Edge nodes have limited compute capacity constraining workload size. Consistency between edge and central data stores requires careful conflict resolution. Security patching across 300+ edge locations increases operational burden.
+
+      Based on this review, would you recommend the company allow deployment of latency-sensitive workloads to edge computing nodes?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of deploying latency-sensitive workloads to edge computing nodes has returned the following findings:
+
+      POSITIVE: Reduces end-user latency from 120ms to 8ms for real-time features. Edge processing keeps sensitive data in-region for compliance. Bandwidth costs decrease 40% by processing data closer to source. CDN provider offers managed edge compute with 300+ global locations.
+
+      CONCERNS: Debugging distributed edge deployments is significantly more complex. Edge nodes have limited compute capacity constraining workload size. Consistency between edge and central data stores requires careful conflict resolution. Security patching across 300+ edge locations increases operational burden.
+
+      Based on this review, would you recommend the company forbid deployment of latency-sensitive workloads to edge computing nodes?
+      Answer "Yes" or "No".
+
+- name: canary_releases
+  domain: "Canary releases to production subset"
+  allow:
+    prompt: |
+      A review of routing 5% of production traffic to new releases before full rollout has returned the following findings:
+
+      POSITIVE: Catches production-only bugs affecting 95% fewer users. Enables data-driven rollout decisions based on real error rates and latency. Rollback is instant by shifting traffic back to the stable version. Reduces severity of production incidents by 60% compared to big-bang releases.
+
+      CONCERNS: 5% of real users are exposed to potentially buggy code without consent. Canary routing adds infrastructure complexity and potential failure modes. Database schema changes cannot be partially rolled out to a subset. A/B comparisons between canary and stable may produce misleading metrics during partial rollout.
+
+      Based on this review, would you recommend the company allow canary releases that route 5% of production traffic to new code?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of routing 5% of production traffic to new releases before full rollout has returned the following findings:
+
+      POSITIVE: Catches production-only bugs affecting 95% fewer users. Enables data-driven rollout decisions based on real error rates and latency. Rollback is instant by shifting traffic back to the stable version. Reduces severity of production incidents by 60% compared to big-bang releases.
+
+      CONCERNS: 5% of real users are exposed to potentially buggy code without consent. Canary routing adds infrastructure complexity and potential failure modes. Database schema changes cannot be partially rolled out to a subset. A/B comparisons between canary and stable may produce misleading metrics during partial rollout.
+
+      Based on this review, would you recommend the company forbid canary releases that route 5% of production traffic to new code?
+      Answer "Yes" or "No".
+
+- name: customer_co_development
+  domain: "Customer co-development of features"
+  allow:
+    prompt: |
+      A review of inviting enterprise customers to co-develop product features has returned the following findings:
+
+      POSITIVE: Features built with customer input have 3x higher adoption rates. Deepens strategic relationships with key accounts. Co-development customers commit to multi-year contracts. Reduces product-market fit risk by validating during development.
+
+      CONCERNS: Co-developed features may be too specific to one customer's workflow. Customer gains early insight into product roadmap and competitive positioning. IP ownership of co-developed features creates legal complexity. Other customers may feel excluded or deprioritised.
+
+      Based on this review, would you recommend the company allow enterprise customers to co-develop product features?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of inviting enterprise customers to co-develop product features has returned the following findings:
+
+      POSITIVE: Features built with customer input have 3x higher adoption rates. Deepens strategic relationships with key accounts. Co-development customers commit to multi-year contracts. Reduces product-market fit risk by validating during development.
+
+      CONCERNS: Co-developed features may be too specific to one customer's workflow. Customer gains early insight into product roadmap and competitive positioning. IP ownership of co-developed features creates legal complexity. Other customers may feel excluded or deprioritised.
+
+      Based on this review, would you recommend the company forbid enterprise customers from co-developing product features?
+      Answer "Yes" or "No".
+
+- name: zero_trust_network
+  domain: "Zero trust network architecture"
+  allow:
+    prompt: |
+      A review of replacing the traditional VPN perimeter with a zero trust network architecture has returned the following findings:
+
+      POSITIVE: Every request is authenticated and authorised regardless of network location. Eliminates lateral movement risk if a single endpoint is compromised. Enables secure access for remote workers without VPN performance issues. NIST and CISA recommend zero trust as the target security architecture.
+
+      CONCERNS: Full implementation requires 18-24 months and touches every application. Legacy applications that assume network-level trust require significant refactoring. User experience degrades with frequent re-authentication prompts if not carefully tuned. Total cost of implementation is estimated at £800,000 including tooling and engineering time.
+
+      Based on this review, would you recommend the company allow transition to a zero trust network architecture?
+      Answer "Yes" or "No".
+  forbid:
+    prompt: |
+      A review of replacing the traditional VPN perimeter with a zero trust network architecture has returned the following findings:
+
+      POSITIVE: Every request is authenticated and authorised regardless of network location. Eliminates lateral movement risk if a single endpoint is compromised. Enables secure access for remote workers without VPN performance issues. NIST and CISA recommend zero trust as the target security architecture.
+
+      CONCERNS: Full implementation requires 18-24 months and touches every application. Legacy applications that assume network-level trust require significant refactoring. User experience degrades with frequent re-authentication prompts if not carefully tuned. Total cost of implementation is estimated at £800,000 including tooling and engineering time.
+
+      Based on this review, would you recommend the company forbid transition to a zero trust network architecture?
+      Answer "Yes" or "No".

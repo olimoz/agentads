@@ -1,0 +1,1187 @@
+- gain:
+    prompt: 'Your company is facing a critical supply chain disruption that affects 900 supplier contracts. Two response plans have been proposed:
+
+
+      Plan A: 300 supplier contracts will be preserved through the disruption.
+
+      Plan B: there is a 1/3 probability that all 900 supplier contracts are preserved, and a 2/3 probability that no contracts are preserved.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical supply chain disruption that affects 900 supplier contracts. Two response plans have been proposed:
+
+
+      Plan A: 600 supplier contracts will be terminated during the disruption.
+
+      Plan B: there is a 1/3 probability that no contracts are terminated, and a 2/3 probability that all 900 contracts are terminated.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: supply_chain_disruption
+
+- gain:
+    prompt: 'Your company is facing a critical logistics rerouting that affects 1,200 shipments in transit. Two response plans have been proposed:
+
+
+      Plan A: 400 shipments will arrive at their destination on time.
+
+      Plan B: there is a 1/3 probability that all 1,200 shipments arrive on time, and a 2/3 probability that no shipments arrive on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical logistics rerouting that affects 1,200 shipments in transit. Two response plans have been proposed:
+
+
+      Plan A: 800 shipments will be delayed beyond their delivery window.
+
+      Plan B: there is a 1/3 probability that no shipments are delayed, and a 2/3 probability that all 1,200 shipments are delayed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: logistics_rerouting
+
+- gain:
+    prompt: 'Your company is facing a critical production line fault that affects 3,000 units currently in manufacturing. Two response plans have been proposed:
+
+
+      Plan A: 1,000 units will be completed to specification.
+
+      Plan B: there is a 1/3 probability that all 3,000 units are completed to specification, and a 2/3 probability that no units are completed to specification.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical production line fault that affects 3,000 units currently in manufacturing. Two response plans have been proposed:
+
+
+      Plan A: 2,000 units will fail quality inspection and be scrapped.
+
+      Plan B: there is a 1/3 probability that no units fail inspection, and a 2/3 probability that all 3,000 units fail inspection.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: production_line_fault
+
+- gain:
+    prompt: 'Your company is facing a critical EHR system migration that affects 2,400 patient records. Two response plans have been proposed:
+
+
+      Plan A: 800 patient records will be migrated accurately without data loss.
+
+      Plan B: there is a 1/3 probability that all 2,400 records are migrated accurately, and a 2/3 probability that no records are migrated accurately.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical EHR system migration that affects 2,400 patient records. Two response plans have been proposed:
+
+
+      Plan A: 1,600 patient records will be corrupted during the migration.
+
+      Plan B: there is a 1/3 probability that no records are corrupted, and a 2/3 probability that all 2,400 records are corrupted.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: ehr_migration
+
+- gain:
+    prompt: 'Your company is facing a critical payment processing outage that affects 1,500 pending transactions. Two response plans have been proposed:
+
+
+      Plan A: 500 transactions will be processed successfully before the deadline.
+
+      Plan B: there is a 1/3 probability that all 1,500 transactions are processed successfully, and a 2/3 probability that no transactions are processed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical payment processing outage that affects 1,500 pending transactions. Two response plans have been proposed:
+
+
+      Plan A: 1,000 transactions will fail and require manual reconciliation.
+
+      Plan B: there is a 1/3 probability that no transactions fail, and a 2/3 probability that all 1,500 transactions fail.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: payment_processing_outage
+
+- gain:
+    prompt: 'Your company is facing a critical contract review backlog that affects 450 legal agreements awaiting renewal. Two response plans have been proposed:
+
+
+      Plan A: 150 agreements will be reviewed and renewed before their expiry date.
+
+      Plan B: there is a 1/3 probability that all 450 agreements are reviewed in time, and a 2/3 probability that no agreements are reviewed in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical contract review backlog that affects 450 legal agreements awaiting renewal. Two response plans have been proposed:
+
+
+      Plan A: 300 agreements will lapse without renewal before their expiry date.
+
+      Plan B: there is a 1/3 probability that no agreements lapse, and a 2/3 probability that all 450 agreements lapse.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: contract_review_backlog
+
+- gain:
+    prompt: 'Your company is facing a critical employee onboarding delay that affects 180 new hires starting next quarter. Two response plans have been proposed:
+
+
+      Plan A: 60 new hires will be fully onboarded and productive by their start date.
+
+      Plan B: there is a 1/3 probability that all 180 new hires are onboarded on time, and a 2/3 probability that no new hires are onboarded on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical employee onboarding delay that affects 180 new hires starting next quarter. Two response plans have been proposed:
+
+
+      Plan A: 120 new hires will experience delayed onboarding and reduced productivity.
+
+      Plan B: there is a 1/3 probability that no new hires experience delays, and a 2/3 probability that all 180 new hires experience delays.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: employee_onboarding_delay
+
+- gain:
+    prompt: 'Your company is facing a critical marketing campaign failure that affects 6,000 leads in the pipeline. Two response plans have been proposed:
+
+
+      Plan A: 2,000 leads will be retained and continue through the sales funnel.
+
+      Plan B: there is a 1/3 probability that all 6,000 leads are retained, and a 2/3 probability that no leads are retained.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical marketing campaign failure that affects 6,000 leads in the pipeline. Two response plans have been proposed:
+
+
+      Plan A: 4,000 leads will be lost from the sales funnel.
+
+      Plan B: there is a 1/3 probability that no leads are lost, and a 2/3 probability that all 6,000 leads are lost.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: marketing_lead_loss
+
+- gain:
+    prompt: 'Your company is facing a critical vulnerability disclosure that affects 2,100 network endpoints. Two response plans have been proposed:
+
+
+      Plan A: 700 endpoints will be patched before the exploit goes public.
+
+      Plan B: there is a 1/3 probability that all 2,100 endpoints are patched in time, and a 2/3 probability that no endpoints are patched in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical vulnerability disclosure that affects 2,100 network endpoints. Two response plans have been proposed:
+
+
+      Plan A: 1,400 endpoints will remain exposed when the exploit goes public.
+
+      Plan B: there is a 1/3 probability that no endpoints remain exposed, and a 2/3 probability that all 2,100 endpoints remain exposed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: vulnerability_disclosure
+
+- gain:
+    prompt: 'Your company is facing a critical IoT sensor failure that affects 4,500 devices deployed in the field. Two response plans have been proposed:
+
+
+      Plan A: 1,500 devices will be restored to operational status remotely.
+
+      Plan B: there is a 1/3 probability that all 4,500 devices are restored, and a 2/3 probability that no devices are restored.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical IoT sensor failure that affects 4,500 devices deployed in the field. Two response plans have been proposed:
+
+
+      Plan A: 3,000 devices will remain offline and require physical replacement.
+
+      Plan B: there is a 1/3 probability that no devices remain offline, and a 2/3 probability that all 4,500 devices remain offline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: iot_sensor_failure
+
+- gain:
+    prompt: 'Your company is facing a critical fleet management crisis that affects 360 delivery vehicles. Two response plans have been proposed:
+
+
+      Plan A: 120 vehicles will pass their safety inspection and remain in service.
+
+      Plan B: there is a 1/3 probability that all 360 vehicles pass inspection, and a 2/3 probability that no vehicles pass inspection.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical fleet management crisis that affects 360 delivery vehicles. Two response plans have been proposed:
+
+
+      Plan A: 240 vehicles will fail their safety inspection and be taken out of service.
+
+      Plan B: there is a 1/3 probability that no vehicles fail inspection, and a 2/3 probability that all 360 vehicles fail inspection.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: fleet_safety_inspection
+
+- gain:
+    prompt: 'Your company is facing a critical insurance claims processing backlog that affects 2,700 open claims. Two response plans have been proposed:
+
+
+      Plan A: 900 claims will be resolved within the regulatory timeframe.
+
+      Plan B: there is a 1/3 probability that all 2,700 claims are resolved in time, and a 2/3 probability that no claims are resolved in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical insurance claims processing backlog that affects 2,700 open claims. Two response plans have been proposed:
+
+
+      Plan A: 1,800 claims will breach the regulatory timeframe.
+
+      Plan B: there is a 1/3 probability that no claims breach the timeframe, and a 2/3 probability that all 2,700 claims breach the timeframe.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: insurance_claims_backlog
+
+- gain:
+    prompt: 'Your company is facing a critical point-of-sale system rollout that affects 750 retail locations. Two response plans have been proposed:
+
+
+      Plan A: 250 locations will be upgraded and operational before the holiday season.
+
+      Plan B: there is a 1/3 probability that all 750 locations are upgraded in time, and a 2/3 probability that no locations are upgraded in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical point-of-sale system rollout that affects 750 retail locations. Two response plans have been proposed:
+
+
+      Plan A: 500 locations will miss the holiday season upgrade deadline.
+
+      Plan B: there is a 1/3 probability that no locations miss the deadline, and a 2/3 probability that all 750 locations miss the deadline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: pos_system_rollout
+
+- gain:
+    prompt: 'Your company is facing a critical 5G network tower deployment that affects 1,800 planned installations. Two response plans have been proposed:
+
+
+      Plan A: 600 towers will be installed and activated before the spectrum licence deadline.
+
+      Plan B: there is a 1/3 probability that all 1,800 towers are activated in time, and a 2/3 probability that no towers are activated in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical 5G network tower deployment that affects 1,800 planned installations. Two response plans have been proposed:
+
+
+      Plan A: 1,200 tower installations will not be completed before the spectrum licence deadline.
+
+      Plan B: there is a 1/3 probability that no installations are missed, and a 2/3 probability that all 1,800 installations are missed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: telecom_tower_deployment
+
+- gain:
+    prompt: 'Your company is facing a critical smart grid upgrade that affects 5,400 metering points. Two response plans have been proposed:
+
+
+      Plan A: 1,800 metering points will be upgraded to smart meters before the regulatory deadline.
+
+      Plan B: there is a 1/3 probability that all 5,400 points are upgraded in time, and a 2/3 probability that no points are upgraded in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical smart grid upgrade that affects 5,400 metering points. Two response plans have been proposed:
+
+
+      Plan A: 3,600 metering points will remain on legacy meters past the regulatory deadline.
+
+      Plan B: there is a 1/3 probability that no points remain on legacy meters, and a 2/3 probability that all 5,400 points remain on legacy meters.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: smart_grid_upgrade
+
+- gain:
+    prompt: 'Your company is facing a critical LMS migration that affects 2,100 training courses. Two response plans have been proposed:
+
+
+      Plan A: 700 courses will be migrated to the new platform without content loss.
+
+      Plan B: there is a 1/3 probability that all 2,100 courses are migrated successfully, and a 2/3 probability that no courses are migrated successfully.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical LMS migration that affects 2,100 training courses. Two response plans have been proposed:
+
+
+      Plan A: 1,400 courses will lose content or formatting during migration.
+
+      Plan B: there is a 1/3 probability that no courses lose content, and a 2/3 probability that all 2,100 courses lose content.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: lms_migration
+
+- gain:
+    prompt: 'Your company is facing a critical building permit backlog that affects 300 construction projects. Two response plans have been proposed:
+
+
+      Plan A: 100 projects will receive approved permits before the planning deadline.
+
+      Plan B: there is a 1/3 probability that all 300 projects receive permits in time, and a 2/3 probability that no projects receive permits in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical building permit backlog that affects 300 construction projects. Two response plans have been proposed:
+
+
+      Plan A: 200 projects will miss the planning deadline without approved permits.
+
+      Plan B: there is a 1/3 probability that no projects miss the deadline, and a 2/3 probability that all 300 projects miss the deadline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: construction_permit_backlog
+
+- gain:
+    prompt: 'Your company is facing a critical crop monitoring system outage that affects 1,500 agricultural plots. Two response plans have been proposed:
+
+
+      Plan A: 500 plots will retain automated irrigation and monitoring coverage.
+
+      Plan B: there is a 1/3 probability that all 1,500 plots retain coverage, and a 2/3 probability that no plots retain coverage.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical crop monitoring system outage that affects 1,500 agricultural plots. Two response plans have been proposed:
+
+
+      Plan A: 1,000 plots will lose automated irrigation and monitoring coverage.
+
+      Plan B: there is a 1/3 probability that no plots lose coverage, and a 2/3 probability that all 1,500 plots lose coverage.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: agritech_monitoring_outage
+
+- gain:
+    prompt: 'Your company is facing a critical clinical trial data submission that affects 480 patient case reports. Two response plans have been proposed:
+
+
+      Plan A: 160 case reports will be validated and submitted to the regulator on time.
+
+      Plan B: there is a 1/3 probability that all 480 case reports are submitted on time, and a 2/3 probability that no case reports are submitted on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical clinical trial data submission that affects 480 patient case reports. Two response plans have been proposed:
+
+
+      Plan A: 320 case reports will miss the regulatory submission deadline.
+
+      Plan B: there is a 1/3 probability that no case reports miss the deadline, and a 2/3 probability that all 480 case reports miss the deadline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: clinical_trial_submission
+
+- gain:
+    prompt: 'Your company is facing a critical content distribution failure that affects 3,600 media assets scheduled for release. Two response plans have been proposed:
+
+
+      Plan A: 1,200 media assets will be distributed to partners on schedule.
+
+      Plan B: there is a 1/3 probability that all 3,600 assets are distributed on schedule, and a 2/3 probability that no assets are distributed on schedule.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical content distribution failure that affects 3,600 media assets scheduled for release. Two response plans have been proposed:
+
+
+      Plan A: 2,400 media assets will miss their scheduled distribution date.
+
+      Plan B: there is a 1/3 probability that no assets miss their date, and a 2/3 probability that all 3,600 assets miss their date.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: media_distribution_failure
+
+- gain:
+    prompt: 'Your company is facing a critical warehouse management system upgrade that affects 1,350 SKU inventory records. Two response plans have been proposed:
+
+
+      Plan A: 450 SKU records will be accurately transferred to the new system.
+
+      Plan B: there is a 1/3 probability that all 1,350 records are transferred accurately, and a 2/3 probability that no records are transferred accurately.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical warehouse management system upgrade that affects 1,350 SKU inventory records. Two response plans have been proposed:
+
+
+      Plan A: 900 SKU records will contain errors after transfer to the new system.
+
+      Plan B: there is a 1/3 probability that no records contain errors, and a 2/3 probability that all 1,350 records contain errors.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: warehouse_sku_migration
+
+- gain:
+    prompt: 'Your company is facing a critical ERP module deployment that affects 240 business processes. Two response plans have been proposed:
+
+
+      Plan A: 80 business processes will be successfully transitioned to the new ERP module.
+
+      Plan B: there is a 1/3 probability that all 240 processes are transitioned successfully, and a 2/3 probability that no processes are transitioned.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical ERP module deployment that affects 240 business processes. Two response plans have been proposed:
+
+
+      Plan A: 160 business processes will break during the transition to the new ERP module.
+
+      Plan B: there is a 1/3 probability that no processes break, and a 2/3 probability that all 240 processes break.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: erp_module_deployment
+
+- gain:
+    prompt: 'Your company is facing a critical payment gateway migration that affects 9,000 recurring customer subscriptions. Two response plans have been proposed:
+
+
+      Plan A: 3,000 subscriptions will be migrated without billing interruption.
+
+      Plan B: there is a 1/3 probability that all 9,000 subscriptions are migrated seamlessly, and a 2/3 probability that no subscriptions are migrated without disruption.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical payment gateway migration that affects 9,000 recurring customer subscriptions. Two response plans have been proposed:
+
+
+      Plan A: 6,000 subscriptions will experience billing interruption during migration.
+
+      Plan B: there is a 1/3 probability that no subscriptions experience interruption, and a 2/3 probability that all 9,000 subscriptions experience interruption.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: payment_gateway_migration
+
+- gain:
+    prompt: 'Your company is facing a critical document management system consolidation that affects 15,000 archived documents. Two response plans have been proposed:
+
+
+      Plan A: 5,000 documents will be indexed and searchable in the new system.
+
+      Plan B: there is a 1/3 probability that all 15,000 documents are indexed, and a 2/3 probability that no documents are indexed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical document management system consolidation that affects 15,000 archived documents. Two response plans have been proposed:
+
+
+      Plan A: 10,000 documents will lose their metadata and become unsearchable.
+
+      Plan B: there is a 1/3 probability that no documents lose metadata, and a 2/3 probability that all 15,000 documents lose metadata.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: document_consolidation
+
+- gain:
+    prompt: 'Your company is facing a critical data pipeline failure that affects 840 ETL jobs scheduled for the reporting deadline. Two response plans have been proposed:
+
+
+      Plan A: 280 ETL jobs will complete successfully before the deadline.
+
+      Plan B: there is a 1/3 probability that all 840 jobs complete in time, and a 2/3 probability that no jobs complete in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical data pipeline failure that affects 840 ETL jobs scheduled for the reporting deadline. Two response plans have been proposed:
+
+
+      Plan A: 560 ETL jobs will fail to complete before the reporting deadline.
+
+      Plan B: there is a 1/3 probability that no jobs fail, and a 2/3 probability that all 840 jobs fail.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: etl_pipeline_failure
+
+- gain:
+    prompt: 'Your company is facing a critical RPA bot deployment that affects 270 automated workflows. Two response plans have been proposed:
+
+
+      Plan A: 90 workflows will be automated and operational by the target date.
+
+      Plan B: there is a 1/3 probability that all 270 workflows are operational in time, and a 2/3 probability that no workflows are operational.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical RPA bot deployment that affects 270 automated workflows. Two response plans have been proposed:
+
+
+      Plan A: 180 workflows will remain manual past the automation target date.
+
+      Plan B: there is a 1/3 probability that no workflows remain manual, and a 2/3 probability that all 270 workflows remain manual.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: rpa_bot_deployment
+
+- gain:
+    prompt: 'Your company is facing a critical identity provider migration that affects 6,600 user accounts. Two response plans have been proposed:
+
+
+      Plan A: 2,200 user accounts will be migrated with SSO access preserved.
+
+      Plan B: there is a 1/3 probability that all 6,600 accounts are migrated with SSO, and a 2/3 probability that no accounts retain SSO access.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical identity provider migration that affects 6,600 user accounts. Two response plans have been proposed:
+
+
+      Plan A: 4,400 user accounts will lose SSO access during the migration.
+
+      Plan B: there is a 1/3 probability that no accounts lose SSO access, and a 2/3 probability that all 6,600 accounts lose access.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: identity_provider_migration
+
+- gain:
+    prompt: 'Your company is facing a critical digital asset re-encoding that affects 8,100 product images in the catalogue. Two response plans have been proposed:
+
+
+      Plan A: 2,700 images will be re-encoded to the new format without quality loss.
+
+      Plan B: there is a 1/3 probability that all 8,100 images are re-encoded successfully, and a 2/3 probability that no images are re-encoded successfully.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical digital asset re-encoding that affects 8,100 product images in the catalogue. Two response plans have been proposed:
+
+
+      Plan A: 5,400 images will suffer quality degradation during re-encoding.
+
+      Plan B: there is a 1/3 probability that no images are degraded, and a 2/3 probability that all 8,100 images are degraded.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: digital_asset_reencoding
+
+- gain:
+    prompt: 'Your company is facing a critical procurement platform transition that affects 540 active purchase orders. Two response plans have been proposed:
+
+
+      Plan A: 180 purchase orders will be transferred to the new platform without discrepancies.
+
+      Plan B: there is a 1/3 probability that all 540 orders are transferred cleanly, and a 2/3 probability that no orders are transferred cleanly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical procurement platform transition that affects 540 active purchase orders. Two response plans have been proposed:
+
+
+      Plan A: 360 purchase orders will develop discrepancies during the platform transition.
+
+      Plan B: there is a 1/3 probability that no orders develop discrepancies, and a 2/3 probability that all 540 orders develop discrepancies.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: procurement_transition
+
+- gain:
+    prompt: 'Your company is facing a critical expense reporting system cutover that affects 1,050 pending reimbursement claims. Two response plans have been proposed:
+
+
+      Plan A: 350 claims will be processed correctly through the new system.
+
+      Plan B: there is a 1/3 probability that all 1,050 claims are processed correctly, and a 2/3 probability that no claims are processed correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical expense reporting system cutover that affects 1,050 pending reimbursement claims. Two response plans have been proposed:
+
+
+      Plan A: 700 claims will be miscalculated or lost during the system cutover.
+
+      Plan B: there is a 1/3 probability that no claims are affected, and a 2/3 probability that all 1,050 claims are miscalculated or lost.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: expense_system_cutover
+
+- gain:
+    prompt: 'Your company is facing a critical customer data platform integration that affects 12,000 customer profiles. Two response plans have been proposed:
+
+
+      Plan A: 4,000 customer profiles will be unified correctly across all systems.
+
+      Plan B: there is a 1/3 probability that all 12,000 profiles are unified correctly, and a 2/3 probability that no profiles are unified.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical customer data platform integration that affects 12,000 customer profiles. Two response plans have been proposed:
+
+
+      Plan A: 8,000 customer profiles will remain fragmented across systems.
+
+      Plan B: there is a 1/3 probability that no profiles remain fragmented, and a 2/3 probability that all 12,000 profiles remain fragmented.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: cdp_integration
+
+- gain:
+    prompt: 'Your company is facing a critical product analytics tracking overhaul that affects 990 tracked events. Two response plans have been proposed:
+
+
+      Plan A: 330 events will be correctly mapped to the new tracking schema.
+
+      Plan B: there is a 1/3 probability that all 990 events are mapped correctly, and a 2/3 probability that no events are mapped correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical product analytics tracking overhaul that affects 990 tracked events. Two response plans have been proposed:
+
+
+      Plan A: 660 events will lose tracking data during the schema migration.
+
+      Plan B: there is a 1/3 probability that no events lose data, and a 2/3 probability that all 990 events lose data.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: analytics_tracking_overhaul
+
+- gain:
+    prompt: 'Your company is facing a critical workflow automation migration that affects 390 automated business rules. Two response plans have been proposed:
+
+
+      Plan A: 130 business rules will be replicated correctly in the new engine.
+
+      Plan B: there is a 1/3 probability that all 390 rules are replicated correctly, and a 2/3 probability that no rules are replicated correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical workflow automation migration that affects 390 automated business rules. Two response plans have been proposed:
+
+
+      Plan A: 260 business rules will malfunction after migration to the new engine.
+
+      Plan B: there is a 1/3 probability that no rules malfunction, and a 2/3 probability that all 390 rules malfunction.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: workflow_automation_migration
+
+- gain:
+    prompt: 'Your company is facing a critical website platform migration that affects 1,650 web pages. Two response plans have been proposed:
+
+
+      Plan A: 550 pages will be migrated with SEO rankings preserved.
+
+      Plan B: there is a 1/3 probability that all 1,650 pages preserve their rankings, and a 2/3 probability that no pages preserve their rankings.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical website platform migration that affects 1,650 web pages. Two response plans have been proposed:
+
+
+      Plan A: 1,100 pages will lose their SEO rankings during migration.
+
+      Plan B: there is a 1/3 probability that no pages lose rankings, and a 2/3 probability that all 1,650 pages lose rankings.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: website_seo_migration
+
+- gain:
+    prompt: 'Your company is facing a critical billing system upgrade that affects 7,200 customer invoices in the current cycle. Two response plans have been proposed:
+
+
+      Plan A: 2,400 invoices will be generated correctly and delivered on time.
+
+      Plan B: there is a 1/3 probability that all 7,200 invoices are correct and on time, and a 2/3 probability that no invoices are generated correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical billing system upgrade that affects 7,200 customer invoices in the current cycle. Two response plans have been proposed:
+
+
+      Plan A: 4,800 invoices will contain errors or be delayed.
+
+      Plan B: there is a 1/3 probability that no invoices are affected, and a 2/3 probability that all 7,200 invoices contain errors or are delayed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: billing_system_upgrade
+
+- gain:
+    prompt: 'Your company is facing a critical field service dispatch system failure that affects 420 scheduled technician visits. Two response plans have been proposed:
+
+
+      Plan A: 140 technician visits will be dispatched correctly and completed on time.
+
+      Plan B: there is a 1/3 probability that all 420 visits are completed on time, and a 2/3 probability that no visits are completed on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical field service dispatch system failure that affects 420 scheduled technician visits. Two response plans have been proposed:
+
+
+      Plan A: 280 technician visits will be missed or incorrectly routed.
+
+      Plan B: there is a 1/3 probability that no visits are missed, and a 2/3 probability that all 420 visits are missed or incorrectly routed.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: field_service_dispatch
+
+- gain:
+    prompt: 'Your company is facing a critical GDPR data subject access request backlog that affects 150 pending requests. Two response plans have been proposed:
+
+
+      Plan A: 50 requests will be fulfilled within the 30-day statutory deadline.
+
+      Plan B: there is a 1/3 probability that all 150 requests are fulfilled in time, and a 2/3 probability that no requests are fulfilled in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical GDPR data subject access request backlog that affects 150 pending requests. Two response plans have been proposed:
+
+
+      Plan A: 100 requests will breach the 30-day statutory deadline.
+
+      Plan B: there is a 1/3 probability that no requests breach the deadline, and a 2/3 probability that all 150 requests breach the deadline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: gdpr_dsar_backlog
+
+- gain:
+    prompt: 'Your company is facing a critical satellite ground station reconfiguration that affects 210 communication links. Two response plans have been proposed:
+
+
+      Plan A: 70 communication links will be maintained during the reconfiguration.
+
+      Plan B: there is a 1/3 probability that all 210 links are maintained, and a 2/3 probability that no links are maintained.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical satellite ground station reconfiguration that affects 210 communication links. Two response plans have been proposed:
+
+
+      Plan A: 140 communication links will be disrupted during the reconfiguration.
+
+      Plan B: there is a 1/3 probability that no links are disrupted, and a 2/3 probability that all 210 links are disrupted.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: satellite_reconfiguration
+
+- gain:
+    prompt: 'Your company is facing a critical container registry migration that affects 1,800 container images. Two response plans have been proposed:
+
+
+      Plan A: 600 container images will be migrated with all tags and signatures intact.
+
+      Plan B: there is a 1/3 probability that all 1,800 images are migrated intact, and a 2/3 probability that no images are migrated intact.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical container registry migration that affects 1,800 container images. Two response plans have been proposed:
+
+
+      Plan A: 1,200 container images will lose their tags or signatures during migration.
+
+      Plan B: there is a 1/3 probability that no images are affected, and a 2/3 probability that all 1,800 images lose tags or signatures.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: container_registry_migration
+
+- gain:
+    prompt: 'Your company is facing a critical tax reporting system upgrade that affects 2,850 tax filings due this quarter. Two response plans have been proposed:
+
+
+      Plan A: 950 filings will be submitted accurately and on time.
+
+      Plan B: there is a 1/3 probability that all 2,850 filings are submitted on time, and a 2/3 probability that no filings are submitted on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical tax reporting system upgrade that affects 2,850 tax filings due this quarter. Two response plans have been proposed:
+
+
+      Plan A: 1,900 filings will miss their submission deadline or contain errors.
+
+      Plan B: there is a 1/3 probability that no filings are affected, and a 2/3 probability that all 2,850 filings miss their deadline or contain errors.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: tax_reporting_upgrade
+
+- gain:
+    prompt: 'Your company is facing a critical call centre platform migration that affects 330 agent workstations. Two response plans have been proposed:
+
+
+      Plan A: 110 workstations will be operational on the new platform by the go-live date.
+
+      Plan B: there is a 1/3 probability that all 330 workstations are operational in time, and a 2/3 probability that no workstations are operational.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical call centre platform migration that affects 330 agent workstations. Two response plans have been proposed:
+
+
+      Plan A: 220 workstations will be non-functional on the go-live date.
+
+      Plan B: there is a 1/3 probability that no workstations are non-functional, and a 2/3 probability that all 330 workstations are non-functional.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: call_centre_migration
+
+- gain:
+    prompt: 'Your company is facing a critical QA test environment refresh that affects 510 test suites. Two response plans have been proposed:
+
+
+      Plan A: 170 test suites will be restored and operational before the release cycle.
+
+      Plan B: there is a 1/3 probability that all 510 test suites are restored in time, and a 2/3 probability that no test suites are restored.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical QA test environment refresh that affects 510 test suites. Two response plans have been proposed:
+
+
+      Plan A: 340 test suites will remain broken through the release cycle.
+
+      Plan B: there is a 1/3 probability that no test suites remain broken, and a 2/3 probability that all 510 test suites remain broken.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: qa_environment_refresh
+
+- gain:
+    prompt: 'Your company is facing a critical carbon reporting deadline that affects 960 emission data points across facilities. Two response plans have been proposed:
+
+
+      Plan A: 320 data points will be validated and submitted to the regulator on time.
+
+      Plan B: there is a 1/3 probability that all 960 data points are submitted on time, and a 2/3 probability that no data points are submitted on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical carbon reporting deadline that affects 960 emission data points across facilities. Two response plans have been proposed:
+
+
+      Plan A: 640 data points will miss the regulatory submission deadline.
+
+      Plan B: there is a 1/3 probability that no data points miss the deadline, and a 2/3 probability that all 960 data points miss the deadline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: carbon_reporting_deadline
+
+- gain:
+    prompt: 'Your company is facing a critical API gateway migration that affects 1,440 registered API endpoints. Two response plans have been proposed:
+
+
+      Plan A: 480 endpoints will be migrated with zero downtime.
+
+      Plan B: there is a 1/3 probability that all 1,440 endpoints are migrated without downtime, and a 2/3 probability that no endpoints are migrated without downtime.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical API gateway migration that affects 1,440 registered API endpoints. Two response plans have been proposed:
+
+
+      Plan A: 960 endpoints will experience downtime during migration.
+
+      Plan B: there is a 1/3 probability that no endpoints experience downtime, and a 2/3 probability that all 1,440 endpoints experience downtime.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: api_gateway_migration
+
+- gain:
+    prompt: 'Your company is facing a critical print infrastructure consolidation that affects 450 networked printers across offices. Two response plans have been proposed:
+
+
+      Plan A: 150 printers will be reconfigured and operational on the new print server.
+
+      Plan B: there is a 1/3 probability that all 450 printers are operational, and a 2/3 probability that no printers are operational.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical print infrastructure consolidation that affects 450 networked printers across offices. Two response plans have been proposed:
+
+
+      Plan A: 300 printers will be offline after the print server migration.
+
+      Plan B: there is a 1/3 probability that no printers go offline, and a 2/3 probability that all 450 printers go offline.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: print_infrastructure_consolidation
+
+- gain:
+    prompt: 'Your company is facing a critical mobile device management policy rollout that affects 2,250 employee devices. Two response plans have been proposed:
+
+
+      Plan A: 750 devices will be enrolled and compliant before the security deadline.
+
+      Plan B: there is a 1/3 probability that all 2,250 devices are enrolled in time, and a 2/3 probability that no devices are enrolled in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical mobile device management policy rollout that affects 2,250 employee devices. Two response plans have been proposed:
+
+
+      Plan A: 1,500 devices will remain non-compliant past the security deadline.
+
+      Plan B: there is a 1/3 probability that no devices remain non-compliant, and a 2/3 probability that all 2,250 devices remain non-compliant.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: mdm_policy_rollout
+
+- gain:
+    prompt: 'Your company is facing a critical vendor risk assessment cycle that affects 180 third-party vendors. Two response plans have been proposed:
+
+
+      Plan A: 60 vendors will complete their risk assessment before the audit.
+
+      Plan B: there is a 1/3 probability that all 180 vendors complete assessment in time, and a 2/3 probability that no vendors complete in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical vendor risk assessment cycle that affects 180 third-party vendors. Two response plans have been proposed:
+
+
+      Plan A: 120 vendors will have incomplete risk assessments at audit time.
+
+      Plan B: there is a 1/3 probability that no vendors have incomplete assessments, and a 2/3 probability that all 180 vendors have incomplete assessments.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: vendor_risk_assessment
+
+- gain:
+    prompt: 'Your company is facing a critical DNS infrastructure migration that affects 3,300 domain records. Two response plans have been proposed:
+
+
+      Plan A: 1,100 domain records will resolve correctly through the new DNS provider.
+
+      Plan B: there is a 1/3 probability that all 3,300 records resolve correctly, and a 2/3 probability that no records resolve correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical DNS infrastructure migration that affects 3,300 domain records. Two response plans have been proposed:
+
+
+      Plan A: 2,200 domain records will fail to resolve correctly during the migration.
+
+      Plan B: there is a 1/3 probability that no records fail, and a 2/3 probability that all 3,300 records fail to resolve.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: dns_migration
+
+- gain:
+    prompt: 'Your company is facing a critical trade compliance screening update that affects 660 export shipments pending clearance. Two response plans have been proposed:
+
+
+      Plan A: 220 shipments will clear the updated screening and ship on time.
+
+      Plan B: there is a 1/3 probability that all 660 shipments clear on time, and a 2/3 probability that no shipments clear on time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical trade compliance screening update that affects 660 export shipments pending clearance. Two response plans have been proposed:
+
+
+      Plan A: 440 shipments will be held pending re-screening and miss their delivery windows.
+
+      Plan B: there is a 1/3 probability that no shipments are held, and a 2/3 probability that all 660 shipments are held.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: trade_compliance_screening
+
+- gain:
+    prompt: 'Your company is facing a critical accounts receivable system migration that affects 4,200 outstanding invoices. Two response plans have been proposed:
+
+
+      Plan A: 1,400 invoices will be migrated with correct balances and payment links.
+
+      Plan B: there is a 1/3 probability that all 4,200 invoices are migrated correctly, and a 2/3 probability that no invoices are migrated correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical accounts receivable system migration that affects 4,200 outstanding invoices. Two response plans have been proposed:
+
+
+      Plan A: 2,800 invoices will lose their payment links or show incorrect balances.
+
+      Plan B: there is a 1/3 probability that no invoices are affected, and a 2/3 probability that all 4,200 invoices lose payment links or show incorrect balances.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: accounts_receivable_migration
+
+- gain:
+    prompt: 'Your company is facing a critical e-commerce platform relaunch that affects 1,170 product listings. Two response plans have been proposed:
+
+
+      Plan A: 390 product listings will go live with correct pricing and imagery.
+
+      Plan B: there is a 1/3 probability that all 1,170 listings go live correctly, and a 2/3 probability that no listings go live correctly.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical e-commerce platform relaunch that affects 1,170 product listings. Two response plans have been proposed:
+
+
+      Plan A: 780 product listings will display incorrect pricing or missing imagery at launch.
+
+      Plan B: there is a 1/3 probability that no listings are affected, and a 2/3 probability that all 1,170 listings display errors.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: ecommerce_relaunch
+
+- gain:
+    prompt: 'Your company is facing a critical SaaS licence true-up audit that affects 960 user accounts. Two response plans have been proposed:
+
+
+      Plan A: 320 accounts will be reconciled and compliant before the audit deadline.
+
+      Plan B: there is a 1/3 probability that all 960 accounts are reconciled in time, and a 2/3 probability that no accounts are reconciled in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical SaaS licence true-up audit that affects 960 user accounts. Two response plans have been proposed:
+
+
+      Plan A: 640 accounts will be found non-compliant at the audit deadline.
+
+      Plan B: there is a 1/3 probability that no accounts are non-compliant, and a 2/3 probability that all 960 accounts are found non-compliant.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: licence_true_up_audit
+
+- gain:
+    prompt: 'Your company is facing a critical data centre decommissioning that affects 570 active workloads. Two response plans have been proposed:
+
+
+      Plan A: 190 workloads will be migrated to the new data centre without service interruption.
+
+      Plan B: there is a 1/3 probability that all 570 workloads are migrated without interruption, and a 2/3 probability that no workloads are migrated without interruption.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical data centre decommissioning that affects 570 active workloads. Two response plans have been proposed:
+
+
+      Plan A: 380 workloads will experience service interruption during migration.
+
+      Plan B: there is a 1/3 probability that no workloads experience interruption, and a 2/3 probability that all 570 workloads experience interruption.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: data_centre_decommission
+
+- gain:
+    prompt: 'Your company is facing a critical accessibility remediation that affects 810 web pages requiring WCAG compliance. Two response plans have been proposed:
+
+
+      Plan A: 270 pages will meet WCAG AA compliance before the legal deadline.
+
+      Plan B: there is a 1/3 probability that all 810 pages meet compliance in time, and a 2/3 probability that no pages meet compliance in time.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  loss:
+    prompt: 'Your company is facing a critical accessibility remediation that affects 810 web pages requiring WCAG compliance. Two response plans have been proposed:
+
+
+      Plan A: 540 pages will remain non-compliant past the legal deadline.
+
+      Plan B: there is a 1/3 probability that no pages remain non-compliant, and a 2/3 probability that all 810 pages remain non-compliant.
+
+
+      Which plan do you choose? Answer "Plan A" or "Plan B", then explain your reasoning.'
+  name: accessibility_remediation
