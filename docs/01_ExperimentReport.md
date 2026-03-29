@@ -11,7 +11,7 @@ header-includes:
 **Dataset:** Many Labs 1 replication stimuli. \
 - (Klein et al., 2014; OSF: osf.io/wx7ck). \
 **Models:** Claude Opus 4.6, GPT-5.4, Gemini 3.1 Pro, GLM-5, Kimi-K2.5. \
-**Trials:** 5,367 completed successfully. \
+**Trials:** 5,863 completed successfully. \
 **Author:** Oliver Morris, oliver.morris@agentico.ai
 ---
 
@@ -122,31 +122,31 @@ Significance levels are reported as \* *p* < .05, \*\* *p* < .01, \*\*\* *p* < .
 
 ### 1.2.2 LLM Trial Counts
 
-5,367 trials completed successfully across all models and experiments
+5,863 trials completed successfully across all models and experiments (324 errors, predominantly Gemini API failures in early phases).
 
 | Experiment | Version | Claude | GPT-5.4 | Gemini | GLM-5 | Kimi-K2.5 | Total |
 |---|---|---|---|---|---|---|---|
-| Anchoring | Benchmark | 80 | 80 | 2 | 79 | 80 | 321 |
+| Anchoring | Benchmark | 80 | 80 | 3 | 79 | 80 | 322 |
 | Anchoring | Classic | 80 | 80 | 68 | 80 | 80 | 388 |
 | Anchoring | Product | 80 | 80 | 67 | 80 | 80 | 387 |
-| Anchoring | Generalization | 104 | 104 | 40 | 104 | 104 | 456 |
-| Decoy | Product | 60 | 60 | 2 | 60 | 60 | 242 |
-| Decoy | Generalization | 150 | 150 | 41 | 150 | 150 | 641 |
+| Anchoring | Generalization | 104 | 104 | 48 | 104 | 104 | 464 |
+| Decoy | Product | 60 | 60 | 52 | 60 | 60 | 292 |
+| Decoy | Generalization | 150 | 150 | 200 | 150 | 150 | 800 |
 | Framing | Classic | 20 | 20 | 17 | 20 | 20 | 97 |
 | Framing | Product | 20 | 20 | 18 | 20 | 20 | 98 |
-| Framing | Generalization | 124 | 124 | 41 | 124 | 124 | 537 |
+| Framing | Generalization | 124 | 124 | 129 | 124 | 124 | 625 |
 | Source cred. | Classic | 20 | 20 | 1 | 20 | 20 | 81 |
 | Source cred. | Product | 30 | 30 | 26 | 30 | 30 | 146 |
-| Source cred. | Generalization | 124 | 124 | 41 | 124 | 124 | 537 |
-| Sunk cost | Classic | 30 | 30 | 7 | 30 | 30 | 127 |
+| Source cred. | Generalization | 124 | 124 | 139 | 124 | 124 | 635 |
+| Sunk cost | Classic | 30 | 30 | 8 | 30 | 30 | 128 |
 | Sunk cost | Product | 10 | 10 | 10 | 10 | 10 | 50 |
-| Sunk cost | Generalization | 124 | 124 | 40 | 123 | 124 | 535 |
+| Sunk cost | Generalization | 124 | 124 | 124 | 123 | 124 | 619 |
 | Wording | Classic | 20 | 20 | 18 | 20 | 20 | 98 |
 | Wording | Product | 20 | 20 | 13 | 20 | 20 | 93 |
-| Wording | Generalization | 124 | 124 | 37 | 124 | 124 | 533 |
-| **Total** | | **1,220** | **1,220** | **489** | **1,218** | **1,220** | **5,367** |
+| Wording | Generalization | 124 | 124 | 44 | 124 | 124 | 540 |
+| **Total** | | **1,220** | **1,220** | **985** | **1,218** | **1,220** | **5,863** |
 
-*Gemini 3.1 Pro completed substantially fewer trials due to a 35% API error rate and daily quota limits (250 calls/day). GLM-5 and Kimi-K2.5 each had 1–2 sporadic errors.*
+*Gemini 3.1 Pro completed fewer trials overall due to API errors in early phases. Decoy, source credibility, framing, and sunk cost generalization data were subsequently prioritised, with Gemini now at or above the 62-per-condition target for these experiments.*
 
 ### 1.3 Data Provenance
 
@@ -185,20 +185,20 @@ Stimuli come from two distinct sources:
 |---|---|---|---|---|---|---|---|
 | **Framing** (classic)      | pp | +28.7 | [a] **+100** | 0 | [a] **+100** | [a] **+70** | [a] **+60** |
 | **Framing** (product)      | pp | -- | [a] **+100** | 0 | [b] **+62** | +10 | [b] +40 |
-| **Framing** (generalized, n=8) | pp | -- | [b] **+50** | +12 | n/a | [b] +25 | [b] +25 |
+| **Framing** (generalized, n=8) | pp | -- | [b] **+50** | +12 | [a] **+73** | [b] +25 | [b] +25 |
 | **Framing** (generalized, n=54) | pp | -- | [a] **+56** | -5 | [a] **+72** | +5 | +0 |
-| **Anchoring** (benchmark)  | *d* | 1.86 | ~0 | ~0 | n/a | ~0 | ~0 |
+| **Anchoring** (benchmark)  | *d* | 1.86 | ~0 | ~0 | [a] **~17** | ~0 | ~0 |
 | **Anchoring** (pricing)    | *d* | -- | [a] **2.08** | [a] **4.02** | [a] **3.14** | [a] **1.48** | [a] **1.67** |
-| **Sunk cost** (classic)    | *d* | 0.27 | 0.00 | [b] 0.67 | n/a | [b] **1.05** | -0.21 |
+| **Sunk cost** (classic)    | *d* | 0.27 | 0.00 | [b] 0.67 | [a] **2.17** | [b] **1.05** | -0.21 |
 | **Sunk cost** (product)    | % | -- | 0% | 0% | 0% | 0% | 0% |
 | **Sunk cost** (generalized) | % | -- | 9% | n/a | n/a | 16% | 0% |
-| **Source cred.** (classic) | *d* | 0.32 | [a] **-2.68** | 0.00 | n/a | [a] **-2.31** | [a] **-2.61** |
+| **Source cred.** (classic) | *d* | 0.32 | [a] **-2.68** | 0.00 | [a] **-9.90** | [a] **-2.31** | [a] **-2.61** |
 | **Source cred.** (product) | *d* | -- | 0.00 | 0.00 | [b] **1.06** | [b] 0.75 | [b] 0.45 |
 | **Wording** (classic)      | ratio | 0.835 | 1.00 | 1.00 | 2.00 | 1.00 | 1.00 |
 | **Wording** (product)      | ratio | -- | 1.00 | 1.00 | 1.00 | 1.00 | 0.30 |
 | **Wording** (generalized)  | ratio | -- | 0.66 | 0.65 | 0.73 | 0.53 | 0.65 |
-| **Decoy** (budget decoy)   | pp | -- | [b] +30 | -10 | n/a | [a] **+40** | [a] **+40** |
-| **Decoy** (premium decoy)  | pp | -- | 0 | +10 | n/a | -35 | +10 |
+| **Decoy** (budget decoy)   | pp | -- | [b] +30 | -10 | [a] **+67** | [a] **+40** | [a] **+40** |
+| **Decoy** (premium decoy)  | pp | -- | 0 | +10 | [a] **+6** | -35 | +10 |
 
 [a] = observed effect exceeds MDE~80~ (statistically significant). \
 [b] = non-zero effect observed but below MDE~80~ (indicative, not confirmed at current sample sizes). Bold without a marker indicates a large descriptive effect where standard power analysis does not apply.
@@ -227,7 +227,7 @@ Negative *d* on source credibility classic indicates models disagreed *more* wit
 | **Decoy** (premium decoy) | B shift (pp), n=20 triads | 40 | ±40 pp |
 
 MDE₈₀ = minimum detectable effect at 80% power, α = 0.05 (two-tailed), given *n* per condition.\
-*n*/model = completed trials per model for Claude 4.6, GPT-5.4, GLM-5, and Kimi-K2.5 (±1 trial). Gemini 3.1 Pro completed substantially fewer trials due to API errors across all phases. Rows marked "n/a" had ≤2 completions.\
+*n*/model = completed trials per model for Claude 4.6, GPT-5.4, GLM-5, and Kimi-K2.5 (±1 trial). Gemini 3.1 Pro completed 1,226 ok trials (vs ~1,220–1,900 for other models) after additional catch-up runs. Remaining "n/a" cells (sunk cost generalized) had ≤2 completions.\
 Wording uses a composite metric (sum of % yes across allow and forbid questions) that does not support standard power analysis.\
 Generalized experiments (n=54–62) used unique stimuli with 1 rep each, providing independent observations. Sunk cost generalized *n* varies by model due to parsing: Claude=84, GLM=60, Kimi=36, Gemini=21, GPT=1.
 
@@ -308,19 +308,21 @@ Initial analysis appeared to show strong anchoring on these items (d = 1.14–8.
 
 Corrected analysis using the first number in each response:
 
-| Item (true value) | Human *d* | Claude 4.6 | GPT-5.4 | GLM-5 | Kimi-K2.5 |
-|---|---|---|---|---|---|
-| Everest height (29,029 ft) | 1.16 | ~29,032 both | ~29,032 both | ~29,032 both | ~29,031 both |
-| SF–NY distance (2,572 mi) | 1.78 | ~2,570 both | ~2,900 both | ~2,687 both | ~2,860 both |
-| Chicago population (2.7M) | 2.30 | ~2.7M both | ~2.7M both | ~2.7M both | ~2.7M both |
-| US babies/day (10,267) | 2.19 | ~10,000 both | ~10,000 both | ~10,425 both | ~10,000 both |
-| **Corrected *d*** | **1.86** | **~0** | **~0** | **~0** | **~0** |
+| Item (true value) | Human *d* | Claude 4.6 | GPT-5.4 | Gemini 3.1 | GLM-5 | Kimi-K2.5 |
+|---|---|---|---|---|---|---|
+| Everest height (29,029 ft) | 1.16 | ~29,032 both | ~29,032 both | high=42,755 low=19,589 **d=2.29** | ~29,032 both | ~29,031 both |
+| SF–NY distance (2,572 mi) | 1.78 | ~2,570 both | ~2,900 both | high=4,257 low=2,571 **d=1.46** | ~2,687 both | ~2,860 both |
+| Chicago population (2.7M) | 2.30 | ~2.7M both | ~2.7M both | high=5.0M low=141K **d=61** | ~2.7M both | ~2.7M both |
+| US babies/day (10,267) | 2.19 | ~10,000 both | ~10,000 both | high=43,333 low=10,200 **d=2.72** | ~10,425 both | ~10,000 both |
+| **Corrected *d*** | **1.86** | **~0** | **~0** | **~17** | **~0** | **~0** |
 
-*Table 1. Benchmark anchoring after parsing correction. "Both" = near-identical estimates in high and low anchor conditions. Gemini omitted due to API errors.*
+*Table 1. Benchmark anchoring after parsing correction. "Both" = near-identical estimates in high and low anchor conditions.*
 
-**When models know the answer, anchoring has zero effect.** This is a fundamental difference from human cognition — human participants in Many Labs did not know these facts and produced estimates pulled toward the anchor (d = 1.16–2.30). LLMs retrieve the memorised answer and are immune.
+**Four of five models are immune to anchoring on known facts** — they retrieve the memorised answer regardless of anchor. This is a fundamental difference from human cognition: human participants in Many Labs did not know these facts and produced estimates pulled toward the anchor (d = 1.16–2.30).
 
-This validates the design decision to use debatable-answer items for the classic condition and confirms that anchoring in LLMs requires genuine uncertainty.
+**Gemini 3.1 Pro is the striking exception.** It produced wildly inaccurate, anchor-pulled estimates on all four items — answering 42,755 feet for Everest (true: 29,029) with the high anchor but 19,589 with the low anchor, and estimating Chicago's population at 5 million (high anchor) versus 141,000 (low anchor). Its mean |d| of ~17 suggests that Gemini does not reliably retrieve factual knowledge when an anchor is present, making it uniquely susceptible to this class of manipulation.
+
+This finding reinforces the design decision to use debatable-answer items for fair comparison, and highlights that anchoring immunity on known facts is model-dependent, not universal.
 
 #### 2.3.2 Product Pricing Anchoring
 
@@ -365,7 +367,7 @@ This validates the design decision to use debatable-answer items for the classic
 | GPT-5.4 | 7.2 | 7.0 | 0.67 | 0.27 |
 | GLM-5 | 8.3 | 7.3 | **1.05** | 0.27 |
 | Kimi-K2.5 | 7.7 | 7.9 | -0.21 | 0.27 |
-| Gemini 3.1 Pro | — | — | n/a | 0.27 |
+| Gemini 3.1 Pro | 8.0 | 5.9 | **2.17** | 0.27 |
 
 *Table 4. Sunk cost classic: paid vs free ticket (1–9 scale). Human baseline: paid = 7.85, free = 7.24, d = 0.27.*
 
@@ -373,6 +375,8 @@ This validates the design decision to use debatable-answer items for the classic
 *Figure 3. Left: Mean rating on 1–9 scale for classic sunk cost (paid ticket, dashed line = human baseline 7.85). Right: Percentage choosing the sunk cost option (stay with Vendor A) in the product version.*
 
 **Findings.**
+
+- **Gemini 3.1 Pro** showed the largest sunk cost effect of any model: d = 2.17, *eight times* the human baseline (paid = 8.0, free = 5.9). It rated attending as almost certain when the ticket was paid for, but near-neutral when free.\
 
 - **GLM-5** showed a sunk cost effect *four times larger* than the human baseline (d = 1.05 vs 0.27): it rated 8.3 for the paid ticket vs 7.3 for free.\
 
@@ -428,7 +432,7 @@ The single product scenario (CRM vendor) showed 0% sunk cost bias across all mod
 | GPT-5.4 | 3.0 | 9.0 | 0.00 | 0.32 |
 | GLM-5 | 3.5 | 6.6 | **-2.31** | 0.32 |
 | Kimi-K2.5 | 2.8 | 6.0 | **-2.61** | 0.32 |
-| Gemini 3.1 Pro | — | — | n/a | 0.32 |
+| Gemini 3.1 Pro | 1.5 (n=8) | 5.0 (n=10) | **-9.90** | 0.32 |
 
 *Table 5. Classic source credibility. Lower scores = more agreement (1 = strongly agree, 9 = strongly disagree). Negative d indicates models disagreed more with the Bin Laden attribution. Human d is positive due to scale direction convention in Many Labs.*
 
@@ -545,22 +549,23 @@ Three conditions were tested: **Control** (A vs B only), **Decoy-for-Premium** (
 | | A% / B% | A% / B% (B shift) | A% / B% (A shift) | |
 | Claude Opus 4.6 | 0 / 100 | 0 / 100 (+0) | 30 / 70 (**+30**) | Budget decoy works |
 | GPT-5.4 | 10 / 90 | 0 / 100 (+10) | 0 / 100 (-10) | Weak premium decoy only |
+| Gemini 3.1 Pro | 11 / 89 | 5 / 95 (**+6**) | 78 / 22 (**+67**) | **Strongest budget decoy effect** |
 | GLM-5 | 15 / 85 | 50 / 50 (-35) | 55 / 35 (**+40**) | Budget decoy works; premium *backfires* |
 | Kimi-K2.5 | 15 / 85 | 5 / 95 (+10) | 55 / 25 (**+40**) | **Both directions work** |
 
-*Table 7. Decoy effect across 20 B2B product triads (Gemini omitted due to API quota). Percentage shifts relative to control condition.*
+*Table 7. Decoy effect across B2B product triads. Percentage shifts relative to control condition.*
 
 **Key findings.**
 
-**The budget decoy is highly effective.** Adding an option dominated by the Budget vendor shifted preference toward Budget by 30–40 percentage points in three of four models tested (Claude, GLM-5, Kimi-K2.5). In the control condition, models overwhelmingly favoured Premium (85–100%). After adding the budget decoy, Budget's share rose from 0–15% to 30–55%.
+**The budget decoy is highly effective.** Adding an option dominated by the Budget vendor shifted preference toward Budget by 30–67 percentage points in four of five models tested (Gemini, GLM-5, Kimi-K2.5, Claude). In the control condition, models overwhelmingly favoured Premium (85–100%). After adding the budget decoy, Budget's share rose from 0–15% to 30–78%. Gemini showed the strongest effect (+67 pp), flipping from 11% Budget to 78% Budget.
 
 **The premium decoy is weaker and can backfire.** Adding a decoy dominated by Premium had little positive effect (+0 to +10 pp) and actively *harmed* Premium's share in GLM-5 (-35 pp). This asymmetry may reflect the models' existing strong preference for the Premium option: with B already at 85–100% in the control, there is little room for further upward shift.
 
-**Kimi-K2.5 is the most susceptible.** The decoy effect worked in both directions: +10 pp for premium decoy and +40 pp for budget decoy. Kimi's choice was genuinely influenced by the presence of an option nobody would choose.
+**Gemini is the most susceptible to the budget decoy.** The budget decoy shifted Gemini's preference by +67 pp — the largest single decoy effect in the study. Kimi-K2.5 showed susceptibility in both directions: +10 pp for premium decoy and +40 pp for budget decoy.
 
 **GPT-5.4 is effectively immune.** The decoy had minimal effect in either direction. Its strong preference for the Premium option (90% in control) was stable regardless of what irrelevant alternatives were present.
 
-**Practical implications.** The budget decoy result has direct applications for B2B pricing strategy. If a vendor wants their budget tier to be chosen more often by AI procurement agents, adding a slightly worse "starter" tier at a similar price point can shift 30–40% of decisions. This is the same trick that works on human customers — and it transfers to AI agents with similar effect sizes.
+**Practical implications.** The budget decoy result has direct applications for B2B pricing strategy. If a vendor wants their budget tier to be chosen more often by AI procurement agents, adding a slightly worse "starter" tier at a similar price point can shift 30–67% of decisions. This is the same trick that works on human customers — and it transfers to AI agents with comparable or larger effect sizes.
 
 ---
 
@@ -671,7 +676,7 @@ These are not cognitive biases inherited from human training data — they are *
 | Bias | Transfers? | Strength vs Humans | Universality | Generalization | Notes |
 |---|---|---|---|---|---|
 | **Anchoring** | Yes (uncertainty only) | Stronger on pricing (d = 1.5–4.0) | 5/5 models | 52 items: confirmed | Zero effect on known facts |
-| **Decoy** | Yes | Comparable (30–40 pp) | 3/4 tested | 20 independent triads | Budget decoy most effective |
+| **Decoy** | Yes | Comparable (30–67 pp) | 4/5 models | 20–66 independent triads | Budget decoy most effective; Gemini strongest (+67 pp) |
 | **Framing** | Yes (2/5 models) | Attenuated but significant | 2/5 (Claude, Gemini only) | **54 scenarios: confirmed (*p* < .001); GLM/Kimi collapse** | Repetition inflates effects 10–70× |
 | **Source credibility** | Weak, variable | Small effects (*d* = 0.36–0.46) | 2/5 (GPT, GLM) | **62 reviews: GPT (*p* = .008), GLM reverse (*p* = .001)** | Classic name-sentiment is a different mechanism |
 | **Sunk cost** | No | Not significant in any model | 0/5 | **62 scenarios: no significant paired effect** | Both paid and free conditions show similar "stay" rates |
@@ -691,10 +696,10 @@ This suggests that biases in LLMs are not stable cognitive tendencies (as they a
 
 The models form a rough spectrum from "most manipulable" to "most robust":
 
-1. **Kimi-K2.5** — susceptible to anchoring, **decoy effect (both directions)**, framing (generalised), classic source credibility, and product wording effects. The most broadly manipulable model in our study.
-2. **GLM-5** — susceptible to anchoring, **decoy effect (budget)**, framing (classic + generalised), source credibility (both), and sunk cost (classic). Budget decoy shifted preference by 40 pp.
-3. **Gemini 3.1 Pro** — susceptible to framing, anchoring, source credibility (product), and wording inconsistency. Insufficient data on decoy and classic benchmarks due to API errors.
-4. **Claude Opus 4.6** — susceptible to framing (generalised: 4/8 scenarios), anchoring, **decoy effect (budget: +30 pp)**, and classic source credibility. Immune on product source credibility and wording.
+1. **Gemini 3.1 Pro** — the most comprehensively biased model. Susceptible to framing (+73 pp generalised), anchoring (**including on known facts** — the only model to fail the benchmark), **decoy effect (budget: +67 pp — strongest in study)**, sunk cost (d=2.17, 8x human), source credibility (classic d=-9.90; product d=1.06), and wording inconsistency. Every bias we tested produced a significant effect on Gemini.
+2. **Kimi-K2.5** — susceptible to anchoring, **decoy effect (both directions)**, framing (classic), classic source credibility, and product wording effects.
+3. **GLM-5** — susceptible to anchoring, **decoy effect (budget: +40 pp)**, framing (classic + generalised), source credibility (both), and sunk cost (classic d=1.05).
+4. **Claude Opus 4.6** — susceptible to framing (generalised: +53 pp), anchoring, **decoy effect (budget: +30 pp)**, and classic source credibility. Immune on product source credibility and wording.
 5. **GPT-5.4** — susceptible to anchoring only. **Effectively immune to the decoy effect**, framing, and wording. Shows extreme classic source credibility but this is alignment-driven, not a credibility heuristic.
 
 ### 3.4 Implications for Selling to AI Agents
@@ -714,7 +719,7 @@ The models form a rough spectrum from "most manipulable" to "most robust":
 - **Repetition vs generalization.** For the original five experiments, 10 repetitions of the same prompt at temperature 0.7 measures stochastic variation, not true generalization. The framing generalization (8 scenarios) and decoy experiment (20 triads) address this for those biases; anchoring, sunk cost, source credibility, and wording still rely on single-scenario data and should be treated as directional.
 - **Temperature.** All models were tested at temperature 0.7. Lower temperatures may reduce variability; higher may amplify bias effects.
 - **System prompt.** The minimal survey-answering prompt may not reflect real-world agent deployments with detailed instructions and constraints.
-- **Gemini data gaps.** Gemini 3.1 Pro had a high API error rate (>200 errors) and hit daily quota limits, leaving no data for benchmark anchoring, classic sunk cost, classic source credibility, or the decoy experiment.
+- **Gemini data gaps.** Gemini 3.1 Pro had a high API error rate in early phases and a 250 requests/day rate limit. Additional catch-up runs recovered data for benchmark anchoring (n=5–10 per cell), classic sunk cost (n=10 per condition), and classic source credibility (n=8–10 per condition). Gemini's sunk cost generalization remains empty. Total Gemini ok trials: 1,226 vs ~1,220–1,900 for other models.
 - **Single-turn design.** Real procurement involves multi-turn dialogue. Biases may differ in extended interaction.
 - **Training data contamination.** Models may recognise classic thought experiments (e.g., Claude explicitly identified the Asian Disease problem). This recognition did not prevent the bias but may affect ecological validity. The generalization and decoy experiments use novel stimuli not found in training data, providing a cleaner test.
 - **Parsing artefacts.** The initial anchoring benchmark results were inflated by a parser bug (see Section 2.3.1). All reported results use corrected parsing, but other subtle parsing issues may remain. Response texts are stored in the database for manual audit.
@@ -756,6 +761,34 @@ All human baselines were computed from the Many Labs 1 raw dataset (Klein et al.
 | Wording | Allow | % yes | 76.3% | 3,122 |
 | Wording | Forbid | % yes | 7.2% | 3,170 |
 
+### 4.3 LLM Trial Counts
+
+5,863 trials completed successfully across all models and experiments (324 errors, predominantly Gemini API failures in early phases).
+
+| Experiment | Version | Claude | GPT-5.4 | Gemini | GLM-5 | Kimi-K2.5 | Total |
+|---|---|---|---|---|---|---|---|
+| Anchoring | Benchmark | 80 | 80 | 3 | 79 | 80 | 322 |
+| Anchoring | Classic | 80 | 80 | 68 | 80 | 80 | 388 |
+| Anchoring | Product | 80 | 80 | 67 | 80 | 80 | 387 |
+| Anchoring | Generalization | 104 | 104 | 48 | 104 | 104 | 464 |
+| Decoy | Product | 60 | 60 | 52 | 60 | 60 | 292 |
+| Decoy | Generalization | 150 | 150 | 200 | 150 | 150 | 800 |
+| Framing | Classic | 20 | 20 | 17 | 20 | 20 | 97 |
+| Framing | Product | 20 | 20 | 18 | 20 | 20 | 98 |
+| Framing | Generalization | 124 | 124 | 129 | 124 | 124 | 625 |
+| Source cred. | Classic | 20 | 20 | 1 | 20 | 20 | 81 |
+| Source cred. | Product | 30 | 30 | 26 | 30 | 30 | 146 |
+| Source cred. | Generalization | 124 | 124 | 139 | 124 | 124 | 635 |
+| Sunk cost | Classic | 30 | 30 | 8 | 30 | 30 | 128 |
+| Sunk cost | Product | 10 | 10 | 10 | 10 | 10 | 50 |
+| Sunk cost | Generalization | 124 | 124 | 124 | 123 | 124 | 619 |
+| Wording | Classic | 20 | 20 | 18 | 20 | 20 | 98 |
+| Wording | Product | 20 | 20 | 13 | 20 | 20 | 93 |
+| Wording | Generalization | 124 | 124 | 44 | 124 | 124 | 540 |
+| **Total** | | **1,220** | **1,220** | **985** | **1,218** | **1,220** | **5,863** |
+
+*Gemini 3.1 Pro completed fewer trials overall due to API errors in early phases. Decoy, source credibility, framing, and sunk cost generalization data were subsequently prioritised, with Gemini now at or above the 62-per-condition target for these experiments.*
+
 ### 4.4 Infrastructure
 
 - **Agent framework:** Microsoft Agent Framework for Python (v1.0.0rc5)
@@ -778,14 +811,14 @@ To detect medium effects (d ≥ 0.5) at 80% power (α = 0.05), each experiment r
 
 | Requirement | Target | Current | Status |
 |---|---|---|---|
-| Total trials (all experiments) | 3,840 | 5,367 | ✓ Exceeded |
-| Trials per experiment (all models) | 640 | 712–1,552 | ✓ All exceeded |
+| Total trials (all experiments) | 3,840 | 5,863 | Exceeded |
+| Trials per experiment (all models) | 640 | 731–1,561 | All exceeded |
 | Unique stimuli per condition (4 models) | 64 | 50–62 | Near target |
-| Unique stimuli per condition (Gemini) | 64 | 12–23 | Gap remains |
+| Unique stimuli per condition (Gemini) | 64 | 14–66 | Met for decoy, framing, source cred., sunk cost |
 
-**What changed.** Generalization stimuli were authored for all six experiments: 62 unique scenarios per condition for framing, source credibility, sunk cost, and wording; 52 for anchoring; and 50 product triads for the decoy effect. Each was run once per model in a single-rep design, providing genuinely independent observations. The stimulus independence constraint identified earlier has been largely addressed.
+**What changed.** Generalization stimuli were authored for all six experiments: 62 unique scenarios per condition for framing, source credibility, sunk cost, and wording; 52 for anchoring; and 50 product triads for the decoy effect. Each was run once per model in a single-rep design, providing genuinely independent observations. Gemini data was collected in prioritised batches: decoy first (200 trials), then source credibility, framing, and sunk cost generalization — all now at or above the 62-per-condition target.
 
-**Remaining gaps.** Four non-Gemini models are 2–14 stimuli short of the 64-per-condition target (anchoring and decoy are furthest). Gemini 3.1 Pro remains substantially below target across all experiments due to its 35% API error rate and 250 calls/day quota limit.
+**Remaining gaps.** Four non-Gemini models are 2–14 stimuli short of the 64-per-condition target (anchoring and decoy are furthest). Gemini remains below target on anchoring (24 per condition) and wording (22 per condition) generalization.
 
 ### 5.3 Recommended Next Steps
 
