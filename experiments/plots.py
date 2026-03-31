@@ -113,47 +113,34 @@ def plot_anchoring(data: dict, out: Path) -> None:
 
 
 def plot_sunk_cost(data: dict, out: Path) -> None:
-    """Sunk cost: classic = mean rating (1-9), product = % sunk cost."""
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5))
+    """Sunk cost: grouped bar chart showing paid vs free ratings."""
+    fig, ax = plt.subplots(figsize=(10, 6))
 
-    # Classic: 1-9 scale bar chart
-    ax = axes[0]
     models = []
-    means = []
+    paid_means = []
+    free_means = []
     for model in MODEL_ORDER:
-        if model in data and "classic" in data[model] and "mean_rating" in data[model]["classic"]:
+        if model in data and "classic" in data[model] and "paid_mean" in data[model]["classic"]:
             models.append(model)
-            means.append(data[model]["classic"]["mean_rating"])
+            paid_means.append(data[model]["classic"]["paid_mean"])
+            free_means.append(data[model]["classic"]["free_mean"])
 
-    y_pos = range(len(models))
-    colors = [MODEL_COLORS.get(m, "grey") for m in models]
-    ax.barh(y_pos, means, color=colors, height=0.6, alpha=0.8)
-    ax.axvline(x=7.85, color="grey", linestyle="--", alpha=0.5, label="Human baseline (paid=7.85)")
+    y_pos = np.arange(len(models))
+    bar_height = 0.35
+
+    ax.barh(y_pos + bar_height/2, paid_means, bar_height, label="Paid ticket",
+            color=[MODEL_COLORS.get(m, "grey") for m in models], alpha=0.9)
+    ax.barh(y_pos - bar_height/2, free_means, bar_height, label="Free ticket",
+            color=[MODEL_COLORS.get(m, "grey") for m in models], alpha=0.4)
+
+    ax.axvline(x=7.85, color="black", linestyle="--", alpha=0.5, label="Human paid (7.85)")
+    ax.axvline(x=7.24, color="black", linestyle=":", alpha=0.5, label="Human free (7.24)")
+
     ax.set_yticks(y_pos)
     ax.set_yticklabels(models)
     ax.set_xlabel("Mean Rating (1=stay home, 9=go to game)")
-    ax.set_title("Sunk Cost — Classic (Paid Ticket)")
+    ax.set_title("Sunk Cost — Classic: Paid vs Free Ticket")
     ax.set_xlim(1, 9)
-    ax.legend(loc="lower right", fontsize=9)
-
-    # Product: binary choice
-    ax = axes[1]
-    models = []
-    pcts = []
-    for model in MODEL_ORDER:
-        if model in data and "product" in data[model] and "pct_sunk_cost" in data[model]["product"]:
-            models.append(model)
-            pcts.append(data[model]["product"]["pct_sunk_cost"])
-
-    y_pos = range(len(models))
-    colors = [MODEL_COLORS.get(m, "grey") for m in models]
-    ax.barh(y_pos, pcts, color=colors, height=0.6, alpha=0.8)
-    ax.axvline(x=0.50, color="grey", linestyle="--", alpha=0.5, label="50% line")
-    ax.set_yticks(y_pos)
-    ax.set_yticklabels(models)
-    ax.set_xlabel("% Choosing Sunk Cost Option (Stay with Vendor A)")
-    ax.set_title("Sunk Cost — Product (CRM Vendor)")
-    ax.set_xlim(0, 1.0)
     ax.legend(loc="lower right", fontsize=9)
 
     plt.tight_layout()
@@ -191,31 +178,45 @@ def plot_source_credibility(data: dict, out: Path) -> None:
 
 
 def plot_wording(data: dict, out: Path) -> None:
-    """Forest plot: wording effect per model."""
-    fig, axes = plt.subplots(1, 2, figsize=(14, 5), sharey=True)
+    """Grouped bar chart: allow→yes% and forbid→yes% per model per version."""
+    versions = [v for v in ["classic", "generalization", "product"]
+                if any(v in data.get(m, {}) for m in MODEL_ORDER)]
+    n_versions = len(versions)
+    fig, axes = plt.subplots(1, n_versions, figsize=(6 * n_versions, 5), sharey=True)
+    if n_versions == 1:
+        axes = [axes]
 
-    for ax, version in zip(axes, ["classic", "product"]):
+    for ax, version in zip(axes, versions):
         models = []
-        effects = []
+        allow_pcts = []
+        forbid_pcts = []
         for model in MODEL_ORDER:
             if model in data and version in data[model]:
                 v = data[model][version]
+                if np.isnan(v.get("pct_yes_allow", float("nan"))):
+                    continue
                 models.append(model)
-                # The wording effect: deviation of sum from 1.0
-                # If allow→yes + forbid→yes = 1.0, no wording effect
-                effects.append(abs(v["sum"] - 1.0) if not np.isnan(v["sum"]) else 0)
+                allow_pcts.append(v["pct_yes_allow"])
+                forbid_pcts.append(v["pct_yes_forbid"])
 
-        y_pos = range(len(models))
-        colors = [MODEL_COLORS.get(m, "grey") for m in models]
+        y_pos = np.arange(len(models))
+        bar_height = 0.35
 
-        ax.barh(y_pos, effects, color=colors, height=0.6, alpha=0.8)
-        ax.axvline(x=0.0, color="grey", linestyle="-", alpha=0.3)
+        ax.barh(y_pos + bar_height / 2, allow_pcts, bar_height, label='"Allow" → yes',
+                color=[MODEL_COLORS.get(m, "grey") for m in models], alpha=0.9)
+        ax.barh(y_pos - bar_height / 2, forbid_pcts, bar_height, label='"Forbid" → yes',
+                color=[MODEL_COLORS.get(m, "grey") for m in models], alpha=0.4)
+
+        # Human baseline lines (Rugg 1941 / Schuman & Presser)
+        ax.axvline(x=0.763, color="black", linestyle="--", alpha=0.5, label="Human allow (76.3%)")
+        ax.axvline(x=0.072, color="black", linestyle=":", alpha=0.5, label="Human forbid (7.2%)")
 
         ax.set_yticks(y_pos)
         ax.set_yticklabels(models)
-        ax.set_xlabel("|allow→yes + forbid→yes − 1.0| (0 = no wording effect)")
-        ax.set_title(f"Wording Effect — {version.title()}")
-        ax.legend(loc="lower right", fontsize=9)
+        ax.set_xlabel("% answering 'yes'")
+        ax.set_title(f"Wording — {version.title()}")
+        ax.set_xlim(0, 1.05)
+        ax.legend(loc="lower right", fontsize=8)
 
     plt.tight_layout()
     fig.savefig(out / "wording_forest.png", dpi=150, bbox_inches="tight")

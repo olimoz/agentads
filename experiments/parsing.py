@@ -114,8 +114,8 @@ def _parse_sunk_cost(text: str, spec: TrialSpec) -> dict:
     """
     lower = text.lower()
 
-    if spec.version == "classic":
-        # Extract a 1-9 rating
+    if spec.version in ("classic", "generalization"):
+        # Extract a 1-9 rating (both classic and generalization use this scale)
         matches = re.findall(r'\b([1-9])\b', text[:200])
         if matches:
             val = int(matches[0])

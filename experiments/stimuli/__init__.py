@@ -312,11 +312,32 @@ def _gen_decoy_specs() -> list[TrialSpec]:
     return specs
 
 
+def _gen_anchoring_pricing_specs() -> list[TrialSpec]:
+    """Load pricing anchoring items (genuine uncertainty, not factual)."""
+    path = STIMULI_DIR / "anchoring_pricing.yaml"
+    if not path.exists():
+        return []
+    items = _load_yaml_list("anchoring_pricing.yaml")
+    specs = []
+    for item in items:
+        for condition in ("high", "low"):
+            specs.append(TrialSpec(
+                experiment="anchoring",
+                version="pricing_gen",
+                condition=condition,
+                format="plain",
+                item=item["name"],
+                stimulus_text=item[condition].strip(),
+            ))
+    return specs
+
+
 def get_generalization_specs() -> list[TrialSpec]:
     """Load all generalization stimuli from the new YAML files."""
     specs = []
     specs.extend(_gen_framing_specs())
     specs.extend(_gen_anchoring_specs())
+    specs.extend(_gen_anchoring_pricing_specs())
     specs.extend(_gen_sunk_cost_specs())
     specs.extend(_gen_source_credibility_specs())
     specs.extend(_gen_wording_specs())

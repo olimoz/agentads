@@ -122,10 +122,18 @@ def analyze_sunk_cost(df: pd.DataFrame) -> dict:
             subset = sc[(sc["model"] == model) & (sc["version"] == version)]
 
             if version == "classic":
-                # 1-9 scale — extract numeric rating
+                # 1-9 scale — extract numeric rating, split by condition
                 ratings = pd.to_numeric(subset["parsed_numeric"], errors="coerce").dropna()
+                paid = pd.to_numeric(
+                    subset[subset["condition"] == "paid"]["parsed_numeric"], errors="coerce"
+                ).dropna()
+                free = pd.to_numeric(
+                    subset[subset["condition"] == "free"]["parsed_numeric"], errors="coerce"
+                ).dropna()
                 model_data[version] = {
                     "mean_rating": ratings.mean() if len(ratings) > 0 else float("nan"),
+                    "paid_mean": paid.mean() if len(paid) > 0 else float("nan"),
+                    "free_mean": free.mean() if len(free) > 0 else float("nan"),
                     "std_rating": ratings.std() if len(ratings) > 1 else float("nan"),
                     "n": len(ratings),
                 }

@@ -50,7 +50,7 @@ cp .env.example .env
 # Run a smoke test (8 trials, framing only)
 uv run python -m experiments --pilot
 
-# Run the full experiment suite (~5,400 trials)
+# Run the full experiment suite (~5,600 trials)
 uv run python -m experiments
 
 # Analyze existing results without re-running
@@ -144,7 +144,7 @@ All trial data (prompts, raw responses, parsed choices, token usage, latency) is
 
 ## Scale
 
-5,367 successful trials across 5 models and 6 experiments, with 50–62 unique generalization scenarios per bias. See Section 4.3 of the report for the full breakdown by model and experiment.
+5,863 successful trials across 5 models and 6 experiments, with 50–66 unique generalization scenarios per bias. See Section 4.3 of the report for the full breakdown by model and experiment.
 
 ## Citation
 

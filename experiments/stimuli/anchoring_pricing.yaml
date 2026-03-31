@@ -1,0 +1,2121 @@
+- domain: Application Performance Monitoring (APM)
+  high: 'Your company is evaluating Application Performance Monitoring (APM) solutions. Enterprise application performance monitoring (apm) solutions typically cost up to $12,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Uptime SLA: 99.95%
+
+    - Alert latency: 8 sec
+
+    - Host limit: 500 hosts
+
+    - Support: 24/7 phone + dedicated CSM
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Application Performance Monitoring (APM) solutions. Basic application performance monitoring (apm) tools start at $240 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Uptime SLA: 99.95%
+
+    - Alert latency: 8 sec
+
+    - Host limit: 500 hosts
+
+    - Support: 24/7 phone + dedicated CSM
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_apm_monitoring
+  premium_price: 2400.0
+- domain: Customer Relationship Management
+  high: 'Your company is evaluating Customer Relationship Management solutions. Enterprise customer relationship management solutions typically cost up to $600 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage per user: 20 GB
+
+    - API rate limit: 25,000 calls/hr
+
+    - Custom fields: 250
+
+    - Support: 24/7 phone, 1hr SLA
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Customer Relationship Management solutions. Basic customer relationship management tools start at $12 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage per user: 20 GB
+
+    - API rate limit: 25,000 calls/hr
+
+    - Custom fields: 250
+
+    - Support: 24/7 phone, 1hr SLA
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_crm_platform
+  premium_price: 120.0
+- domain: Cloud Data Warehouse
+  high: 'Your company is evaluating Cloud Data Warehouse solutions. Enterprise cloud data warehouse solutions typically cost up to $22,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Query concurrency: 100 concurrent
+
+    - Storage included: 100 TB
+
+    - Data retention: Unlimited
+
+    - Support: 4hr response, named engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Cloud Data Warehouse solutions. Basic cloud data warehouse tools start at $450 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Query concurrency: 100 concurrent
+
+    - Storage included: 100 TB
+
+    - Data retention: Unlimited
+
+    - Support: 4hr response, named engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_data_warehouse
+  premium_price: 4500.0
+- domain: CI/CD Pipeline
+  high: 'Your company is evaluating CI/CD Pipeline solutions. Enterprise ci/cd pipeline solutions typically cost up to $6,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Build minutes: 50,000 min
+
+    - Concurrent builds: 25
+
+    - Artifact storage: 250 GB
+
+    - Support: Priority, 2hr SLA
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating CI/CD Pipeline solutions. Basic ci/cd pipeline tools start at $120 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Build minutes: 50,000 min
+
+    - Concurrent builds: 25
+
+    - Artifact storage: 250 GB
+
+    - Support: Priority, 2hr SLA
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_ci_cd_pipeline
+  premium_price: 1200.0
+- domain: Identity & Access Management (IAM/SSO)
+  high: 'Your company is evaluating Identity & Access Management (IAM/SSO) solutions. Enterprise identity & access management (iam/sso) solutions typically cost up to $40 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - MFA options: 7 methods incl FIDO2
+
+    - Directory sync: Real-time
+
+    - Compliance certs: SOC 2, ISO 27001, FedRAMP, HIPAA
+
+    - Support: 24/7 phone + security advisor
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Identity & Access Management (IAM/SSO) solutions. Basic identity & access management (iam/sso) tools start at $1 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - MFA options: 7 methods incl FIDO2
+
+    - Directory sync: Real-time
+
+    - Compliance certs: SOC 2, ISO 27001, FedRAMP, HIPAA
+
+    - Support: 24/7 phone + security advisor
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_iam_sso
+  premium_price: 8.0
+- domain: Transactional Email API
+  high: 'Your company is evaluating Transactional Email API solutions. Enterprise transactional email api solutions typically cost up to $3,750 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Emails included: 1,000,000
+
+    - Delivery SLA: 99.2% inbox rate
+
+    - Analytics retention: 365 days
+
+    - Support: Dedicated deliverability consultant
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Transactional Email API solutions. Basic transactional email api tools start at $75 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Emails included: 1,000,000
+
+    - Delivery SLA: 99.2% inbox rate
+
+    - Analytics retention: 365 days
+
+    - Support: Dedicated deliverability consultant
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_email_platform
+  premium_price: 750.0
+- domain: Log Management / SIEM
+  high: 'Your company is evaluating Log Management / SIEM solutions. Enterprise log management / siem solutions typically cost up to $18 per GB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Retention: 365 days
+
+    - Search speed: 1.2 sec avg
+
+    - Alert rules: Unlimited
+
+    - Support: 24/7 SOC + IR team
+
+
+    Based on these specifications, what would you expect to pay per GB? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Log Management / SIEM solutions. Basic log management / siem tools start at $0 per GB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Retention: 365 days
+
+    - Search speed: 1.2 sec avg
+
+    - Alert rules: Unlimited
+
+    - Support: 24/7 SOC + IR team
+
+
+    Based on these specifications, what would you expect to pay per GB? Provide a single number in dollars as your estimate.'
+  name: pricing_siem_logging
+  premium_price: 3.5
+- domain: Project & Portfolio Management
+  high: 'Your company is evaluating Project & Portfolio Management solutions. Enterprise project & portfolio management solutions typically cost up to $500 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active projects: Unlimited
+
+    - Automations: 500 rules
+
+    - Support: 24/7 phone + success manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Project & Portfolio Management solutions. Basic project & portfolio management tools start at $10 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active projects: Unlimited
+
+    - Automations: 500 rules
+
+    - Support: 24/7 phone + success manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_project_management
+  premium_price: 100.0
+- domain: Video Conferencing
+  high: 'Your company is evaluating Video Conferencing solutions. Enterprise video conferencing solutions typically cost up to $200 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Max participants: 1,000
+
+    - Recording storage: 100 GB + AI transcription
+
+    - Duration limit: 24 hours
+
+    - Support: 24/7 phone, 1hr SLA
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Video Conferencing solutions. Basic video conferencing tools start at $4 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Max participants: 1,000
+
+    - Recording storage: 100 GB + AI transcription
+
+    - Duration limit: 24 hours
+
+    - Support: 24/7 phone, 1hr SLA
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_video_conferencing
+  premium_price: 40.0
+- domain: Content Delivery Network (CDN)
+  high: 'Your company is evaluating Content Delivery Network (CDN) solutions. Enterprise content delivery network (cdn) solutions typically cost up to $425 per TB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Points of presence: 180 PoPs
+
+    - Cache hit rate SLA: 98.5%
+
+    - DDoS protection: Advanced (L3-L7 + WAF + bot mgmt)
+
+    - Support: 24/7 NOC + solutions architect
+
+
+    Based on these specifications, what would you expect to pay per TB? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Content Delivery Network (CDN) solutions. Basic content delivery network (cdn) tools start at $8 per TB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Points of presence: 180 PoPs
+
+    - Cache hit rate SLA: 98.5%
+
+    - DDoS protection: Advanced (L3-L7 + WAF + bot mgmt)
+
+    - Support: 24/7 NOC + solutions architect
+
+
+    Based on these specifications, what would you expect to pay per TB? Provide a single number in dollars as your estimate.'
+  name: pricing_cdn_edge
+  premium_price: 85.0
+- domain: Endpoint Detection & Response (EDR)
+  high: 'Your company is evaluating Endpoint Detection & Response (EDR) solutions. Enterprise endpoint detection & response (edr) solutions typically cost up to $70 per endpoint per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Detection speed: 45 sec avg
+
+    - Endpoint limit: 25,000
+
+    - Forensic retention: 1 year
+
+    - Support: 24/7 managed detection + IR team
+
+
+    Based on these specifications, what would you expect to pay per endpoint per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Endpoint Detection & Response (EDR) solutions. Basic endpoint detection & response (edr) tools start at $1 per endpoint per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Detection speed: 45 sec avg
+
+    - Endpoint limit: 25,000
+
+    - Forensic retention: 1 year
+
+    - Support: 24/7 managed detection + IR team
+
+
+    Based on these specifications, what would you expect to pay per endpoint per month? Provide a single number in dollars as your estimate.'
+  name: pricing_endpoint_security
+  premium_price: 14.0
+- domain: Subscription Billing Platform
+  high: 'Your company is evaluating Subscription Billing Platform solutions. Enterprise subscription billing platform solutions typically cost up to $10,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Transactions included: 100,000
+
+    - Revenue recognition: Full ASC 606 / IFRS 15 engine
+
+    - Payment gateways: 15 gateways
+
+    - Support: 24/7 phone + billing architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Subscription Billing Platform solutions. Basic subscription billing platform tools start at $200 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Transactions included: 100,000
+
+    - Revenue recognition: Full ASC 606 / IFRS 15 engine
+
+    - Payment gateways: 15 gateways
+
+    - Support: 24/7 phone + billing architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_billing_platform
+  premium_price: 2000.0
+- domain: Knowledge Management / Internal Wiki
+  high: 'Your company is evaluating Knowledge Management / Internal Wiki solutions. Enterprise knowledge management / internal wiki solutions typically cost up to $90 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage: 500 GB
+
+    - Search: AI semantic search + auto-tagging
+
+    - Version history: Unlimited + diff
+
+    - Support: 4hr email + onboarding specialist
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Knowledge Management / Internal Wiki solutions. Basic knowledge management / internal wiki tools start at $2 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage: 500 GB
+
+    - Search: AI semantic search + auto-tagging
+
+    - Version history: Unlimited + diff
+
+    - Support: 4hr email + onboarding specialist
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_knowledge_base
+  premium_price: 18.0
+- domain: Expense Management
+  high: 'Your company is evaluating Expense Management solutions. Enterprise expense management solutions typically cost up to $110 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - OCR accuracy: 99.2%
+
+    - ERP integrations: 12 + custom API
+
+    - Policy rules: Unlimited + ML anomaly detection
+
+    - Support: 24/7 phone + finance ops consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Expense Management solutions. Basic expense management tools start at $2 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - OCR accuracy: 99.2%
+
+    - ERP integrations: 12 + custom API
+
+    - Policy rules: Unlimited + ML anomaly detection
+
+    - Support: 24/7 phone + finance ops consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_expense_management
+  premium_price: 22.0
+- domain: Cloud Backup & Disaster Recovery
+  high: 'Your company is evaluating Cloud Backup & Disaster Recovery solutions. Enterprise cloud backup & disaster recovery solutions typically cost up to $325 per TB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - RTO: 15 minutes
+
+    - RPO: 1 hour
+
+    - Backup frequency: Continuous (CDP)
+
+    - Support: 24/7 + quarterly DR drills
+
+
+    Based on these specifications, what would you expect to pay per TB? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Cloud Backup & Disaster Recovery solutions. Basic cloud backup & disaster recovery tools start at $6 per TB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - RTO: 15 minutes
+
+    - RPO: 1 hour
+
+    - Backup frequency: Continuous (CDP)
+
+    - Support: 24/7 + quarterly DR drills
+
+
+    Based on these specifications, what would you expect to pay per TB? Provide a single number in dollars as your estimate.'
+  name: pricing_cloud_backup
+  premium_price: 65.0
+- domain: Customer Support / Helpdesk
+  high: 'Your company is evaluating Customer Support / Helpdesk solutions. Enterprise customer support / helpdesk solutions typically cost up to $395 per agent per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Automations: 500 rules + AI triage
+
+    - Channels: Email, web, phone, SMS, WhatsApp, social
+
+    - SLA tracking: Advanced + escalation chains
+
+    - Support: 24/7 phone, 1hr SLA
+
+
+    Based on these specifications, what would you expect to pay per agent per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Customer Support / Helpdesk solutions. Basic customer support / helpdesk tools start at $8 per agent per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Automations: 500 rules + AI triage
+
+    - Channels: Email, web, phone, SMS, WhatsApp, social
+
+    - SLA tracking: Advanced + escalation chains
+
+    - Support: 24/7 phone, 1hr SLA
+
+
+    Based on these specifications, what would you expect to pay per agent per month? Provide a single number in dollars as your estimate.'
+  name: pricing_helpdesk
+  premium_price: 79.0
+- domain: Marketing Automation
+  high: 'Your company is evaluating Marketing Automation solutions. Enterprise marketing automation solutions typically cost up to $7,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Contacts included: 200,000
+
+    - Active flows: Unlimited + AI send times
+
+    - A/B testing: Subject, body, time, segment
+
+    - Support: Phone 2hr SLA + strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Marketing Automation solutions. Basic marketing automation tools start at $150 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Contacts included: 200,000
+
+    - Active flows: Unlimited + AI send times
+
+    - A/B testing: Subject, body, time, segment
+
+    - Support: Phone 2hr SLA + strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_marketing_automation
+  premium_price: 1500.0
+- domain: Cloud Cost Management / FinOps
+  high: 'Your company is evaluating Cloud Cost Management / FinOps solutions. Enterprise cloud cost management / finops solutions typically cost up to $11,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Cloud accounts: Unlimited
+
+    - Anomaly detection: Real-time + ML forecasting
+
+    - Savings recommendations: Automated RI/SP purchasing + rightsizing
+
+    - Support: 24/7 phone + FinOps advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Cloud Cost Management / FinOps solutions. Basic cloud cost management / finops tools start at $220 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Cloud accounts: Unlimited
+
+    - Anomaly detection: Real-time + ML forecasting
+
+    - Savings recommendations: Automated RI/SP purchasing + rightsizing
+
+    - Support: 24/7 phone + FinOps advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_finops
+  premium_price: 2200.0
+- domain: Document Management
+  high: 'Your company is evaluating Document Management solutions. Enterprise document management solutions typically cost up to $1,000,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage: 10 TB
+
+    - Version history: Unlimited
+
+    - Support: 24/7 phone + dedicated rep
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Document Management solutions. Basic document management tools start at $20,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage: 10 TB
+
+    - Version history: Unlimited
+
+    - Support: 24/7 phone + dedicated rep
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_document_management
+  premium_price: 200000.0
+- domain: ETL / Data Pipeline
+  high: 'Your company is evaluating ETL / Data Pipeline solutions. Enterprise etl / data pipeline solutions typically cost up to $11,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Connectors: 300+ sources
+
+    - Sync frequency: Every 5 min
+
+    - Row throughput: 500M rows/day
+
+    - Support: 24/7 phone + data engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating ETL / Data Pipeline solutions. Basic etl / data pipeline tools start at $220 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Connectors: 300+ sources
+
+    - Sync frequency: Every 5 min
+
+    - Row throughput: 500M rows/day
+
+    - Support: 24/7 phone + data engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_etl_data_pipeline
+  premium_price: 2200.0
+- domain: Form Builder
+  high: 'Your company is evaluating Form Builder solutions. Enterprise form builder solutions typically cost up to $1,000,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active forms: Unlimited
+
+    - Integrations: 100+
+
+    - Support: 24/7 live chat + phone
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Form Builder solutions. Basic form builder tools start at $20,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active forms: Unlimited
+
+    - Integrations: 100+
+
+    - Support: 24/7 live chat + phone
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_form_builder
+  premium_price: 200000.0
+- domain: VPN / Zero Trust Network Access
+  high: 'Your company is evaluating VPN / Zero Trust Network Access solutions. Enterprise vpn / zero trust network access solutions typically cost up to $90 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Concurrent tunnels: Unlimited
+
+    - PoP locations: 80+
+
+    - Throughput: 1 Gbps
+
+    - Support: 24/7 phone + security advisor
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating VPN / Zero Trust Network Access solutions. Basic vpn / zero trust network access tools start at $2 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Concurrent tunnels: Unlimited
+
+    - PoP locations: 80+
+
+    - Throughput: 1 Gbps
+
+    - Support: 24/7 phone + security advisor
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_vpn_ztna
+  premium_price: 18.0
+- domain: Time Tracking & Attendance
+  high: 'Your company is evaluating Time Tracking & Attendance solutions. Enterprise time tracking & attendance solutions typically cost up to $70 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Tracking methods: GPS, biometric, geofence, timer
+
+    - Reporting depth: Real-time dashboards + custom
+
+    - Integrations: 80+ apps
+
+    - Support: 24/7 phone + account manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Time Tracking & Attendance solutions. Basic time tracking & attendance tools start at $1 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Tracking methods: GPS, biometric, geofence, timer
+
+    - Reporting depth: Real-time dashboards + custom
+
+    - Integrations: 80+ apps
+
+    - Support: 24/7 phone + account manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_time_tracking
+  premium_price: 14.0
+- domain: Payroll Processing
+  high: 'Your company is evaluating Payroll Processing solutions. Enterprise payroll processing solutions typically cost up to $110 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Pay schedules: All frequencies + on-demand
+
+    - Tax jurisdictions: 50+ countries
+
+    - Direct deposit speed: Same day
+
+    - Support: 24/7 phone + payroll specialist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Payroll Processing solutions. Basic payroll processing tools start at $2 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Pay schedules: All frequencies + on-demand
+
+    - Tax jurisdictions: 50+ countries
+
+    - Direct deposit speed: Same day
+
+    - Support: 24/7 phone + payroll specialist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_payroll_platform
+  premium_price: 22.0
+- domain: Fleet Management
+  high: 'Your company is evaluating Fleet Management solutions. Enterprise fleet management solutions typically cost up to $325 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - GPS update interval: 5 sec
+
+    - Geofence alerts: Unlimited zones
+
+    - Maintenance tracking: Predictive + OBD-II integration
+
+    - Support: 24/7 phone + fleet advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Fleet Management solutions. Basic fleet management tools start at $6 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - GPS update interval: 5 sec
+
+    - Geofence alerts: Unlimited zones
+
+    - Maintenance tracking: Predictive + OBD-II integration
+
+    - Support: 24/7 phone + fleet advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_fleet_management
+  premium_price: 65.0
+- domain: Translation & Localization
+  high: 'Your company is evaluating Translation & Localization solutions. Enterprise translation & localization solutions typically cost up to $7,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Languages supported: 120+
+
+    - Machine translation quality: 95% BLEU score
+
+    - Glossary terms: Unlimited
+
+    - Support: 24/7 phone + localization manager
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Translation & Localization solutions. Basic translation & localization tools start at $150 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Languages supported: 120+
+
+    - Machine translation quality: 95% BLEU score
+
+    - Glossary terms: Unlimited
+
+    - Support: 24/7 phone + localization manager
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_translation_localization
+  premium_price: 1500.0
+- domain: A/B Testing & Experimentation
+  high: 'Your company is evaluating A/B Testing & Experimentation solutions. Enterprise a/b testing & experimentation solutions typically cost up to $6,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Concurrent experiments: Unlimited
+
+    - Monthly tracked users: 5,000,000
+
+    - Statistical engine: Bayesian + frequentist + CUPED
+
+    - Support: 24/7 phone + data scientist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating A/B Testing & Experimentation solutions. Basic a/b testing & experimentation tools start at $120 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Concurrent experiments: Unlimited
+
+    - Monthly tracked users: 5,000,000
+
+    - Statistical engine: Bayesian + frequentist + CUPED
+
+    - Support: 24/7 phone + data scientist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_ab_testing
+  premium_price: 1200.0
+- domain: Chatbot / Conversational AI
+  high: 'Your company is evaluating Chatbot / Conversational AI solutions. Enterprise chatbot / conversational ai solutions typically cost up to $1,000,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - NLU accuracy: 96%
+
+    - Channels supported: 12 (incl. voice, WhatsApp, Slack)
+
+    - Support: 24/7 phone + conversational designer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Chatbot / Conversational AI solutions. Basic chatbot / conversational ai tools start at $20,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - NLU accuracy: 96%
+
+    - Channels supported: 12 (incl. voice, WhatsApp, Slack)
+
+    - Support: 24/7 phone + conversational designer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_chatbot_platform
+  premium_price: 200000.0
+- domain: Knowledge Base
+  high: 'Your company is evaluating Knowledge Base solutions. Enterprise knowledge base solutions typically cost up to $60 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Articles limit: Unlimited
+
+    - Search accuracy: AI semantic search
+
+    - Version history: Unlimited
+
+    - Support: 24/7 phone + success manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Knowledge Base solutions. Basic knowledge base tools start at $1 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Articles limit: Unlimited
+
+    - Search accuracy: AI semantic search
+
+    - Version history: Unlimited
+
+    - Support: 24/7 phone + success manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_knowledge_base
+  premium_price: 12.0
+- domain: Digital Asset Management
+  high: 'Your company is evaluating Digital Asset Management solutions. Enterprise digital asset management solutions typically cost up to $6,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage: 5 TB
+
+    - File formats supported: 200+
+
+    - AI auto-tagging: Advanced (25 tags + facial recognition)
+
+    - Support: 24/7 phone + asset librarian
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Digital Asset Management solutions. Basic digital asset management tools start at $120 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Storage: 5 TB
+
+    - File formats supported: 200+
+
+    - AI auto-tagging: Advanced (25 tags + facial recognition)
+
+    - Support: 24/7 phone + asset librarian
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_digital_asset_management
+  premium_price: 1200.0
+- domain: Contract Lifecycle Management
+  high: 'Your company is evaluating Contract Lifecycle Management solutions. Enterprise contract lifecycle management solutions typically cost up to $9,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active contracts: Unlimited
+
+    - Clause library: 2,000+ AI-suggested
+
+    - Approval workflows: Unlimited with conditional logic
+
+    - Support: 24/7 phone + legal ops consultant
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Contract Lifecycle Management solutions. Basic contract lifecycle management tools start at $180 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active contracts: Unlimited
+
+    - Clause library: 2,000+ AI-suggested
+
+    - Approval workflows: Unlimited with conditional logic
+
+    - Support: 24/7 phone + legal ops consultant
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_contract_lifecycle
+  premium_price: 1800.0
+- domain: Procurement
+  high: 'Your company is evaluating Procurement solutions. Enterprise procurement solutions typically cost up to $12,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Supplier directory: Unlimited vendors
+
+    - Purchase order automation: AI-driven with 3-way match
+
+    - Spend analytics: Real-time dashboards + anomaly detection
+
+    - Support: 24/7 phone + procurement advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Procurement solutions. Basic procurement tools start at $250 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Supplier directory: Unlimited vendors
+
+    - Purchase order automation: AI-driven with 3-way match
+
+    - Spend analytics: Real-time dashboards + anomaly detection
+
+    - Support: 24/7 phone + procurement advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_procurement_platform
+  premium_price: 2500.0
+- domain: Expense Management
+  high: 'Your company is evaluating Expense Management solutions. Enterprise expense management solutions typically cost up to $90 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Receipt capture: AI OCR auto-extract
+
+    - Policy enforcement: ML-powered anomaly detection
+
+    - Reimbursement speed: Next business day
+
+    - Support: 24/7 phone + finance consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Expense Management solutions. Basic expense management tools start at $2 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Receipt capture: AI OCR auto-extract
+
+    - Policy enforcement: ML-powered anomaly detection
+
+    - Reimbursement speed: Next business day
+
+    - Support: 24/7 phone + finance consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_expense_management
+  premium_price: 18.0
+- domain: Learning Management System
+  high: 'Your company is evaluating Learning Management System solutions. Enterprise learning management system solutions typically cost up to $75 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Course capacity: Unlimited
+
+    - Content formats: Video, PDF, SCORM, xAPI, interactive
+
+    - Completion tracking: AI-adaptive paths + compliance audit
+
+    - Support: 24/7 phone + learning consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Learning Management System solutions. Basic learning management system tools start at $2 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Course capacity: Unlimited
+
+    - Content formats: Video, PDF, SCORM, xAPI, interactive
+
+    - Completion tracking: AI-adaptive paths + compliance audit
+
+    - Support: 24/7 phone + learning consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_lms_platform
+  premium_price: 15.0
+- domain: Customer Data Platform
+  high: 'Your company is evaluating Customer Data Platform solutions. Enterprise customer data platform solutions typically cost up to $17,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Tracked profiles: 10,000,000
+
+    - Identity resolution: Deterministic + probabilistic
+
+    - Data sources: 200+ connectors
+
+    - Support: 24/7 phone + data strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Customer Data Platform solutions. Basic customer data platform tools start at $350 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Tracked profiles: 10,000,000
+
+    - Identity resolution: Deterministic + probabilistic
+
+    - Data sources: 200+ connectors
+
+    - Support: 24/7 phone + data strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_customer_data_platform
+  premium_price: 3500.0
+- domain: Product Analytics
+  high: 'Your company is evaluating Product Analytics solutions. Enterprise product analytics solutions typically cost up to $10,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Monthly events: 1 billion
+
+    - Funnel depth: Unlimited
+
+    - Data retention: 24 months
+
+    - Support: 24/7 phone + analytics engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Product Analytics solutions. Basic product analytics tools start at $200 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Monthly events: 1 billion
+
+    - Funnel depth: Unlimited
+
+    - Data retention: 24 months
+
+    - Support: 24/7 phone + analytics engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_product_analytics
+  premium_price: 2000.0
+- domain: Workflow Automation
+  high: 'Your company is evaluating Workflow Automation solutions. Enterprise workflow automation solutions typically cost up to $5,000,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active workflows: Unlimited
+
+    - Connectors: 400+ apps
+
+    - Support: 24/7 phone + automation architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Workflow Automation solutions. Basic workflow automation tools start at $100,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Active workflows: Unlimited
+
+    - Connectors: 400+ apps
+
+    - Support: 24/7 phone + automation architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_workflow_automation
+  premium_price: 1000000.0
+- domain: Website Builder
+  high: 'Your company is evaluating Website Builder solutions. Enterprise website builder solutions typically cost up to $375 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Page limit: Unlimited
+
+    - Bandwidth: Unlimited
+
+    - Templates: 500+ with custom CSS/JS
+
+    - Support: 24/7 live chat + phone
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Website Builder solutions. Basic website builder tools start at $8 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Page limit: Unlimited
+
+    - Bandwidth: Unlimited
+
+    - Templates: 500+ with custom CSS/JS
+
+    - Support: 24/7 live chat + phone
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_website_builder
+  premium_price: 75.0
+- domain: Field Service Management
+  high: 'Your company is evaluating Field Service Management solutions. Enterprise field service management solutions typically cost up to $425 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Work order management: AI-powered auto-dispatch
+
+    - Route optimization: Multi-constraint (time, skills, parts)
+
+    - Offline mode: Full read/write + sync
+
+    - Support: 24/7 phone + field operations manager
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Field Service Management solutions. Basic field service management tools start at $8 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Work order management: AI-powered auto-dispatch
+
+    - Route optimization: Multi-constraint (time, skills, parts)
+
+    - Offline mode: Full read/write + sync
+
+    - Support: 24/7 phone + field operations manager
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_field_service
+  premium_price: 85.0
+- domain: Compliance Management
+  high: 'Your company is evaluating Compliance Management solutions. Enterprise compliance management solutions typically cost up to $11,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Frameworks supported: 30+ (incl. FedRAMP, NIST, CMMC)
+
+    - Evidence collection: Automated from 100+ integrations
+
+    - Audit preparation: Continuous monitoring + auditor portal
+
+    - Support: 24/7 phone + compliance advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Compliance Management solutions. Basic compliance management tools start at $220 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Frameworks supported: 30+ (incl. FedRAMP, NIST, CMMC)
+
+    - Evidence collection: Automated from 100+ integrations
+
+    - Audit preparation: Continuous monitoring + auditor portal
+
+    - Support: 24/7 phone + compliance advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_compliance_management
+  premium_price: 2200.0
+- domain: Visitor Management
+  high: 'Your company is evaluating Visitor Management solutions. Enterprise visitor management solutions typically cost up to $1,750 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Check-in methods: Tablet, facial recognition, QR code
+
+    - Pre-registration: Calendar sync + automated workflows
+
+    - Badge printing: Auto-print with photo
+
+    - Support: 24/7 phone + facilities coordinator
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Visitor Management solutions. Basic visitor management tools start at $35 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Check-in methods: Tablet, facial recognition, QR code
+
+    - Pre-registration: Calendar sync + automated workflows
+
+    - Badge printing: Auto-print with photo
+
+    - Support: 24/7 phone + facilities coordinator
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_visitor_management
+  premium_price: 350.0
+- domain: Data Loss Prevention
+  high: 'Your company is evaluating Data Loss Prevention solutions. Enterprise data loss prevention solutions typically cost up to $60 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Detection methods: ML classifiers + fingerprinting + keyword
+
+    - Channels monitored: Email, file, clipboard, USB, cloud apps
+
+    - Policy templates: 200+ with auto-tuning
+
+    - Support: 24/7 phone + security engineer
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Data Loss Prevention solutions. Basic data loss prevention tools start at $1 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Detection methods: ML classifiers + fingerprinting + keyword
+
+    - Channels monitored: Email, file, clipboard, USB, cloud apps
+
+    - Policy templates: 200+ with auto-tuning
+
+    - Support: 24/7 phone + security engineer
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_data_loss_prevention
+  premium_price: 12.0
+- domain: Email Marketing Automation
+  high: 'Your company is evaluating Email Marketing Automation solutions. Enterprise email marketing automation solutions typically cost up to $3,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Subscriber limit: 500,000
+
+    - Automation workflows: Unlimited
+
+    - A/B test variants: 10 + multivariate
+
+    - Support: 24/7 phone + deliverability expert
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Email Marketing Automation solutions. Basic email marketing automation tools start at $60 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Subscriber limit: 500,000
+
+    - Automation workflows: Unlimited
+
+    - A/B test variants: 10 + multivariate
+
+    - Support: 24/7 phone + deliverability expert
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_email_marketing
+  premium_price: 600.0
+- domain: Database Monitoring & Optimization
+  high: 'Your company is evaluating Database Monitoring & Optimization solutions. Enterprise database monitoring & optimization solutions typically cost up to $5,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Monitored instances: 100
+
+    - Query analysis: Full execution plan + AI recommendations
+
+    - Alerting: PagerDuty, Slack, SMS, webhooks
+
+    - Support: 24/7 phone + DBA consultant
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Database Monitoring & Optimization solutions. Basic database monitoring & optimization tools start at $110 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Monitored instances: 100
+
+    - Query analysis: Full execution plan + AI recommendations
+
+    - Alerting: PagerDuty, Slack, SMS, webhooks
+
+    - Support: 24/7 phone + DBA consultant
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_database_monitoring
+  premium_price: 1100.0
+- domain: SMS & Messaging Platform
+  high: 'Your company is evaluating SMS & Messaging Platform solutions. Enterprise sms & messaging platform solutions typically cost up to $1,000,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Delivery rate: 99.5%
+
+    - Channels: SMS, MMS, RCS, WhatsApp
+
+    - Support: 24/7 phone + messaging strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating SMS & Messaging Platform solutions. Basic sms & messaging platform tools start at $20,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Delivery rate: 99.5%
+
+    - Channels: SMS, MMS, RCS, WhatsApp
+
+    - Support: 24/7 phone + messaging strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_sms_messaging
+  premium_price: 200000.0
+- domain: Log Archival & Cold Storage
+  high: 'Your company is evaluating Log Archival & Cold Storage solutions. Enterprise log archival & cold storage solutions typically cost up to $60 per TB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Retrieval time: 15 minutes
+
+    - Retention policies: Fully custom + legal hold
+
+    - Compliance certifications: SOC 2, HIPAA, FedRAMP, SEC 17a-4
+
+    - Support: 24/7 phone + compliance engineer
+
+
+    Based on these specifications, what would you expect to pay per TB? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Log Archival & Cold Storage solutions. Basic log archival & cold storage tools start at $1 per TB.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Retrieval time: 15 minutes
+
+    - Retention policies: Fully custom + legal hold
+
+    - Compliance certifications: SOC 2, HIPAA, FedRAMP, SEC 17a-4
+
+    - Support: 24/7 phone + compliance engineer
+
+
+    Based on these specifications, what would you expect to pay per TB? Provide a single number in dollars as your estimate.'
+  name: pricing_log_archival
+  premium_price: 12.0
+- domain: Appointment Scheduling
+  high: 'Your company is evaluating Appointment Scheduling solutions. Enterprise appointment scheduling solutions typically cost up to $150 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Booking pages: Unlimited
+
+    - Calendar integrations: All major + custom CalDAV
+
+    - Reminder channels: Email, SMS, WhatsApp
+
+    - Support: 24/7 phone + onboarding manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Appointment Scheduling solutions. Basic appointment scheduling tools start at $3 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Booking pages: Unlimited
+
+    - Calendar integrations: All major + custom CalDAV
+
+    - Reminder channels: Email, SMS, WhatsApp
+
+    - Support: 24/7 phone + onboarding manager
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_scheduling_platform
+  premium_price: 30.0
+- domain: Enterprise Password Manager
+  high: 'Your company is evaluating Enterprise Password Manager solutions. Enterprise enterprise password manager solutions typically cost up to $45 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Shared vaults: Unlimited
+
+    - Password audit: Real-time breach monitoring
+
+    - SSO integrations: 25+ with SCIM provisioning
+
+    - Support: 24/7 phone + security advisor
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Enterprise Password Manager solutions. Basic enterprise password manager tools start at $1 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Shared vaults: Unlimited
+
+    - Password audit: Real-time breach monitoring
+
+    - SSO integrations: 25+ with SCIM provisioning
+
+    - Support: 24/7 phone + security advisor
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_password_manager
+  premium_price: 9.0
+- domain: Screen Recording & Video Messaging
+  high: 'Your company is evaluating Screen Recording & Video Messaging solutions. Enterprise screen recording & video messaging solutions typically cost up to $125 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Recording length: Unlimited
+
+    - Cloud storage: 1 TB
+
+    - Editing tools: Full editor + captions + chapters
+
+    - Support: 24/7 phone + video strategist
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Screen Recording & Video Messaging solutions. Basic screen recording & video messaging tools start at $2 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Recording length: Unlimited
+
+    - Cloud storage: 1 TB
+
+    - Editing tools: Full editor + captions + chapters
+
+    - Support: 24/7 phone + video strategist
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_screen_recording
+  premium_price: 25.0
+- domain: Status Page & Incident Communication
+  high: 'Your company is evaluating Status Page & Incident Communication solutions. Enterprise status page & incident communication solutions typically cost up to $1,750 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Components monitored: Unlimited
+
+    - Subscriber notifications: Email, SMS, Slack, webhook
+
+    - Incident templates: Unlimited with runbooks
+
+    - Support: 24/7 phone + SRE advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Status Page & Incident Communication solutions. Basic status page & incident communication tools start at $35 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Components monitored: Unlimited
+
+    - Subscriber notifications: Email, SMS, Slack, webhook
+
+    - Incident templates: Unlimited with runbooks
+
+    - Support: 24/7 phone + SRE advisor
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_status_page
+  premium_price: 350.0
+- domain: Vulnerability Scanning
+  high: 'Your company is evaluating Vulnerability Scanning solutions. Enterprise vulnerability scanning solutions typically cost up to $7,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Scan targets: Unlimited
+
+    - Scan frequency: Continuous
+
+    - Vulnerability database: Zero-day + CVE, real-time
+
+    - Support: 24/7 phone + security analyst
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Vulnerability Scanning solutions. Basic vulnerability scanning tools start at $150 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Scan targets: Unlimited
+
+    - Scan frequency: Continuous
+
+    - Vulnerability database: Zero-day + CVE, real-time
+
+    - Support: 24/7 phone + security analyst
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_vulnerability_scanning
+  premium_price: 1500.0
+- domain: Cloud Migration Platform
+  high: 'Your company is evaluating Cloud Migration Platform solutions. Enterprise cloud migration platform solutions typically cost up to $20,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Workloads supported: Unlimited
+
+    - Migration speed: 1 TB/hr
+
+    - Rollback capability: Automated instant rollback
+
+    - Support: 24/7 phone + migration architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Cloud Migration Platform solutions. Basic cloud migration platform tools start at $400 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Workloads supported: Unlimited
+
+    - Migration speed: 1 TB/hr
+
+    - Rollback capability: Automated instant rollback
+
+    - Support: 24/7 phone + migration architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_cloud_migration
+  premium_price: 4000.0
+- domain: Social Media Management
+  high: 'Your company is evaluating Social Media Management solutions. Enterprise social media management solutions typically cost up to $1,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Social profiles: Unlimited
+
+    - Scheduled posts: Unlimited
+
+    - Analytics depth: Sentiment analysis + competitive benchmarks
+
+    - Support: 24/7 phone + social strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Social Media Management solutions. Basic social media management tools start at $30 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Social profiles: Unlimited
+
+    - Scheduled posts: Unlimited
+
+    - Analytics depth: Sentiment analysis + competitive benchmarks
+
+    - Support: 24/7 phone + social strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_social_media_management
+  premium_price: 300.0
+- domain: Secrets Management
+  high: 'Your company is evaluating Secrets Management solutions. Enterprise secrets management solutions typically cost up to $4,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Secrets stored: Unlimited
+
+    - Rotation policy: Automated + custom schedules
+
+    - Audit logging: Unlimited retention + SIEM export
+
+    - Support: 24/7 phone + security engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Secrets Management solutions. Basic secrets management tools start at $80 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Secrets stored: Unlimited
+
+    - Rotation policy: Automated + custom schedules
+
+    - Audit logging: Unlimited retention + SIEM export
+
+    - Support: 24/7 phone + security engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_secrets_management
+  premium_price: 800.0
+- domain: Data Catalog & Governance
+  high: 'Your company is evaluating Data Catalog & Governance solutions. Enterprise data catalog & governance solutions typically cost up to $12,500 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Cataloged assets: Unlimited
+
+    - Lineage tracking: Column-level + cross-platform
+
+    - Data quality checks: Unlimited with ML anomaly detection
+
+    - Support: 24/7 phone + data governance architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Data Catalog & Governance solutions. Basic data catalog & governance tools start at $250 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Cataloged assets: Unlimited
+
+    - Lineage tracking: Column-level + cross-platform
+
+    - Data quality checks: Unlimited with ML anomaly detection
+
+    - Support: 24/7 phone + data governance architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_data_catalog
+  premium_price: 2500.0
+- domain: DNS Management
+  high: 'Your company is evaluating DNS Management solutions. Enterprise dns management solutions typically cost up to $1,250 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Hosted zones: Unlimited
+
+    - Query volume: Unlimited
+
+    - DNS failover: Automatic with health checks
+
+    - Support: 24/7 phone + DNS specialist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating DNS Management solutions. Basic dns management tools start at $25 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Hosted zones: Unlimited
+
+    - Query volume: Unlimited
+
+    - DNS failover: Automatic with health checks
+
+    - Support: 24/7 phone + DNS specialist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_dns_management
+  premium_price: 250.0
+- domain: Push Notification Service
+  high: 'Your company is evaluating Push Notification Service solutions. Enterprise push notification service solutions typically cost up to $1,750 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Monthly pushes: 10,000,000
+
+    - Segmentation: Unlimited + ML-optimized timing
+
+    - Delivery speed: Within 5 sec
+
+    - Support: 24/7 phone + engagement strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Push Notification Service solutions. Basic push notification service tools start at $35 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Monthly pushes: 10,000,000
+
+    - Segmentation: Unlimited + ML-optimized timing
+
+    - Delivery speed: Within 5 sec
+
+    - Support: 24/7 phone + engagement strategist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_push_notification
+  premium_price: 350.0
+- domain: ERP (Enterprise Resource Planning)
+  high: 'Your company is evaluating ERP (Enterprise Resource Planning) solutions. Enterprise erp (enterprise resource planning) solutions typically cost up to $750 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Modules included: 12 (full suite + manufacturing)
+
+    - Custom workflows: Unlimited + scripting
+
+    - Data export formats: CSV, PDF, XML, API, EDI
+
+    - Support: 24/7 phone + ERP consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating ERP (Enterprise Resource Planning) solutions. Basic erp (enterprise resource planning) tools start at $15 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Modules included: 12 (full suite + manufacturing)
+
+    - Custom workflows: Unlimited + scripting
+
+    - Data export formats: CSV, PDF, XML, API, EDI
+
+    - Support: 24/7 phone + ERP consultant
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_erp_platform
+  premium_price: 150.0
+- domain: Event Streaming Platform
+  high: 'Your company is evaluating Event Streaming Platform solutions. Enterprise event streaming platform solutions typically cost up to $9,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Throughput: 1,000,000 events/sec
+
+    - Partitions: Unlimited
+
+    - Retention: 30 days + tiered storage
+
+    - Support: 24/7 phone + streaming architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Event Streaming Platform solutions. Basic event streaming platform tools start at $180 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Throughput: 1,000,000 events/sec
+
+    - Partitions: Unlimited
+
+    - Retention: 30 days + tiered storage
+
+    - Support: 24/7 phone + streaming architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_event_streaming
+  premium_price: 1800.0
+- domain: Load Testing & Performance
+  high: 'Your company is evaluating Load Testing & Performance solutions. Enterprise load testing & performance solutions typically cost up to $5,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Virtual users: 100,000
+
+    - Test duration: Unlimited
+
+    - Geo-distributed regions: 20+
+
+    - Support: 24/7 phone + performance engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Load Testing & Performance solutions. Basic load testing & performance tools start at $100 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Virtual users: 100,000
+
+    - Test duration: Unlimited
+
+    - Geo-distributed regions: 20+
+
+    - Support: 24/7 phone + performance engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_load_testing
+  premium_price: 1000.0
+- domain: API Documentation
+  high: 'Your company is evaluating API Documentation solutions. Enterprise api documentation solutions typically cost up to $1,250 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - API specs hosted: Unlimited
+
+    - Interactive playground: Full sandbox + mock server
+
+    - Versioning: Auto-versioned with diff view
+
+    - Support: 24/7 phone + developer relations manager
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating API Documentation solutions. Basic api documentation tools start at $25 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - API specs hosted: Unlimited
+
+    - Interactive playground: Full sandbox + mock server
+
+    - Versioning: Auto-versioned with diff view
+
+    - Support: 24/7 phone + developer relations manager
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_api_documentation
+  premium_price: 250.0
+- domain: Robotic Process Automation (RPA)
+  high: 'Your company is evaluating Robotic Process Automation (RPA) solutions. Enterprise robotic process automation (rpa) solutions typically cost up to $3,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Attended bots: Unlimited
+
+    - Process recordings: AI-discovered + custom
+
+    - Execution scheduling: Event-driven + cron + queue
+
+    - Support: 24/7 phone + automation architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Robotic Process Automation (RPA) solutions. Basic robotic process automation (rpa) tools start at $60 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Attended bots: Unlimited
+
+    - Process recordings: AI-discovered + custom
+
+    - Execution scheduling: Event-driven + cron + queue
+
+    - Support: 24/7 phone + automation architect
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_robotic_process_automation
+  premium_price: 600.0
+- domain: Infrastructure as Code
+  high: 'Your company is evaluating Infrastructure as Code solutions. Enterprise infrastructure as code solutions typically cost up to $6,000 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Managed resources: Unlimited
+
+    - State management: Encrypted + versioned + locking
+
+    - Drift detection: Continuous + auto-remediation
+
+    - Support: 24/7 phone + platform engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Infrastructure as Code solutions. Basic infrastructure as code tools start at $120 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Managed resources: Unlimited
+
+    - State management: Encrypted + versioned + locking
+
+    - Drift detection: Continuous + auto-remediation
+
+    - Support: 24/7 phone + platform engineer
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_infrastructure_as_code
+  premium_price: 1200.0
+- domain: Employee Engagement & Pulse Survey
+  high: 'Your company is evaluating Employee Engagement & Pulse Survey solutions. Enterprise employee engagement & pulse survey solutions typically cost up to $30 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Survey frequency: Weekly + event-triggered
+
+    - Question bank: 500 validated items + custom
+
+    - Analytics: Individual trends + predictive attrition
+
+    - Support: 24/7 phone + organizational psychologist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Employee Engagement & Pulse Survey solutions. Basic employee engagement & pulse survey tools start at $1 per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Survey frequency: Weekly + event-triggered
+
+    - Question bank: 500 validated items + custom
+
+    - Analytics: Individual trends + predictive attrition
+
+    - Support: 24/7 phone + organizational psychologist
+
+
+    Based on these specifications, what would you expect to pay per month? Provide a single number in dollars as your estimate.'
+  name: pricing_employee_engagement
+  premium_price: 6.0
+- domain: Sales Enablement Platform
+  high: 'Your company is evaluating Sales Enablement Platform solutions. Enterprise sales enablement platform solutions typically cost up to $375 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Content library: Unlimited + AI recommendations
+
+    - Buyer engagement tracking: Full journey analytics
+
+    - Playbooks: Unlimited + AI-coached
+
+    - Support: 24/7 phone + sales ops strategist
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  low: 'Your company is evaluating Sales Enablement Platform solutions. Basic sales enablement platform tools start at $8 per user per month.
+
+
+    A vendor has submitted a proposal with the following specifications:
+
+    - Content library: Unlimited + AI recommendations
+
+    - Buyer engagement tracking: Full journey analytics
+
+    - Playbooks: Unlimited + AI-coached
+
+    - Support: 24/7 phone + sales ops strategist
+
+
+    Based on these specifications, what would you expect to pay per user per month? Provide a single number in dollars as your estimate.'
+  name: pricing_sales_enablement
+  premium_price: 75.0
