@@ -738,14 +738,21 @@ The models form a rough spectrum from "most manipulable" to "most robust":
 ### 3.4 Implications for Selling to AI Agents
 
 **Model-agnostic strategy** (ranked by universality and reliability):
-1. **Use a decoy tier on your pricing page** — adding a dominated "starter" option near your budget tier shifts 54–64% of decisions toward budget; works on 4/5 models across 50 independent product triads. This is the most practically actionable finding: it requires no knowledge of the evaluating model and mirrors standard SaaS pricing design.
-2. **Frame benefits positively** — works on 3/5 models; generalises across 62 unique B2B scenarios (effect attenuates from ~80 pp to ~40–73 pp but remains statistically significant)
-3. **Price anchoring works on most products but is unpredictable** — a high reference price shifts estimates upward on 46–86% of products (depending on model), but the magnitude varies enormously per product. It is a probabilistic strategy: more likely to help than hurt, but not reliably large.
-4. **Do not rely on sunk cost arguments** — ineffective in professional contexts across all models
-5. **Source attribution is powerful but context-dependent** — works on morally loaded content but may not help on neutral product evaluations
-6. **Wording effects are alignment-driven, not exploitable** — all models show a conservative bias (sum 0.53–0.73) driven by safety training, but this affects all wordings equally and cannot be directionally exploited
 
-**Model-dependent strategy:** When the evaluating model is known, tailor the approach. Use gain framing for Claude/Gemini/GLM-5, use decoy tiers for all models except GPT-5.4, and cite prestigious sources for Gemini/GLM-5/Kimi in product contexts.
+1. **Use a decoy tier on your pricing page** 
+- adding a dominated "starter" option near your budget tier shifts 54–64% of decisions toward budget; works on 4/5 models across 50 independent product triads. This is the most practically actionable finding: it requires no knowledge of the evaluating model and mirrors standard SaaS pricing design.\
+2. **Frame benefits positively** 
+- works on 3/5 models; generalises across 62 unique B2B scenarios (effect attenuates from ~80 pp to ~37–71 pp but remains statistically significant)\
+3. **Price anchoring works on most products but is unpredictable** 
+- a high reference price shifts estimates upward on 46–81% of products (depending on model), but the magnitude varies enormously per product. It is a probabilistic strategy: more likely to help than hurt, but not reliably large.\
+4. **Do not rely on sunk cost arguments** 
+- ineffective in professional contexts across all models\
+5. **Source attribution is powerful but context-dependent** 
+- works on morally loaded content but may not help on neutral product evaluations\
+6. **Wording effects are alignment-driven, not exploitable** 
+- all models show a conservative bias (sum 0.53–0.68) driven by safety training, but this affects all wordings equally and cannot be directionally exploited\
+
+**Model-dependent strategy:** When the evaluating model is known, tailor the approach. Use gain framing for Claude/Gemini/GLM-5, use decoy tiers for all models except GPT-5.4, and cite prestigious sources for GPT-5.4/GLM-5 (the only models with significant source credibility effects on neutral product reviews; d ≈ 0.33–0.35, p < .01).
 
 ### 3.5 Limitations
 
