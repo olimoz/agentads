@@ -1,23 +1,23 @@
 # Agent Ads: Do AI Agents Fall for the Same Persuasion Techniques as Humans?
 
-**3 out of 5 frontier AI models approved a product they had just rejected — using the same specs, different ad copy.**
+**3 out of 5 frontier AI models approved a product they had just rejected — same specs, different ad copy.**
 
-This repository contains the code, stimuli, and results for an experimental study testing whether large language models exhibit the same cognitive biases that decades of behavioural research have documented in humans. We replicated five classic experiments from the [Many Labs 1](https://osf.io/wx7ck/) project, added the **decoy effect** (the foundation of every SaaS pricing page), and demonstrated that experimentally identified weaknesses can be exploited with tailored ad copy.
+This repository contains the code, stimuli, and results for an experimental study testing whether large language models exhibit the same cognitive biases that decades of behavioural research have documented in humans. We replicated five classic experiments from the [Many Labs 1](https://osf.io/wx7ck/) project (n = 6,344), added the **decoy effect**, and demonstrated that experimentally identified weaknesses can be exploited with tailored ad copy.
 
 ## Key Findings
 
-As at 27 March 2026
+As at 31 March 2026
 
 | Bias | Transfers to AI? | Effect vs Humans | Models Affected |
 |---|---|---|---|
-| **Price Anchoring** | Yes | *Stronger* (d = 1.5-4.0) | All 5 models |
-| **Decoy Effect** | Yes | Comparable (30-40 pp shift) | 3/4 tested |
-| **Gain/Loss Framing** | Partially | Stronger when present | 4/5 models |
-| **Source Credibility** | Different mechanism | Alignment-driven, not credibility | 4/5 (classic) |
-| **Sunk Cost** | Context-dependent | 0-4x human (personal) / zero (professional) | 2/5 |
-| **Wording** | No | Mostly immune | 0/5 |
+| **Decoy Effect** | Yes | Comparable or stronger (54-64 pp shift) | 4/5 models (all except GPT-5.4) |
+| **Gain/Loss Framing** | Partially | 37-71 pp (human ~29 pp) | 3/5 (Claude, Gemini, GLM-5) |
+| **Price Anchoring** | Yes | Unpredictable magnitude (46-81% of products) | All 5, varies by model |
+| **Wording Effect** | Yes | 2-3x human effect (all models) | 5/5 |
+| **Source Credibility** | Weak on neutral content | Small effects (d = 0.30-0.35) | 2/5 (GPT-5.4, GLM-5) |
+| **Sunk Cost** | No (business contexts) | Near zero | 1/5 (GLM-5 only, d = 0.40) |
 
-Read the full experiment report: **[docs/02_ExperimentReport.md](docs/02_ExperimentReport.md)**
+Read the full experiment report: **[docs/01_ExperimentReport.md](docs/01_ExperimentReport.md)**
 
 ## The Tailored Ad Test
 
@@ -31,7 +31,15 @@ We created a deliberately poor monitoring platform (95% uptime, no SOC 2, £3,00
 | GLM-5 | Sunk cost + decoy + price anchor | **YES** |
 | Kimi-K2.5 | Loss framing (risk of inaction) + decoy | **YES** |
 
-The product specs didn't change. Only the ad copy did.
+The product specs didn't change. Only the ad copy did. Claude acknowledged the framing manipulation and approved anyway. GLM-5 named the sunk cost fallacy while falling for it.
+
+## Susceptibility Heatmaps
+
+![Absolute susceptibility](docs/blog_chart_susceptibility.png)
+*Absolute effect sizes across 718 downsampled trials per model.*
+
+![Relative susceptibility](docs/blog_chart_susceptibility_relative.png)
+*Each cell scored as a ratio of the human baseline (1.0x = identical to humans).*
 
 ## Quick Start
 
@@ -50,17 +58,17 @@ cp .env.example .env
 # Run a smoke test (8 trials, framing only)
 uv run python -m experiments --pilot
 
-# Run the full experiment suite (~5,600 trials)
+# Run the full experiment suite (~8,000 trials)
 uv run python -m experiments
 
 # Analyze existing results without re-running
 uv run python -m experiments --analyze
 
+# Generate susceptibility heatmap charts
+uv run python -m experiments.chart_susceptibility
+
 # Run the tailored ad demonstration
 uv run python -m experiments.demo_tailored_ads
-
-# Run the decoy experiment only
-uv run python -m experiments --reps 1  # new stimuli only (resume skips completed)
 ```
 
 ## Project Structure
@@ -72,9 +80,10 @@ agentads/
 ├── .env.example                       # API key template
 │
 ├── docs/
-│   ├── 00_your-next-customer-isnt-human.md   # Original brief
-│   ├── 01_ExperimentProposal.md              # Experiment design
-│   ├── 02_ExperimentReport.md                # Full results & analysis
+│   ├── 01_ExperimentReport.md                # Full results & analysis
+│   ├── 01_ExperimentReport.pdf               # PDF version
+│   ├── blog_chart_susceptibility.png         # Absolute effect heatmap
+│   ├── blog_chart_susceptibility_relative.png # Relative-to-human heatmap
 │   └── figures/                              # Charts referenced by report
 │
 ├── experiments/
@@ -86,21 +95,23 @@ agentads/
 │   ├── parsing.py                     # Response parsers (regex)
 │   ├── analysis.py                    # Statistical analysis (Cohen's d)
 │   ├── plots.py                       # Forest plots + bar charts
-│   ├── generate_stimuli.py            # Generate decoy + generalization YAML
+│   ├── chart_susceptibility.py        # Heatmap chart generation
+│   ├── generate_stimuli.py            # Generate generalization YAML
+│   ├── generate_anchoring_pricing.py  # Generate pricing anchoring YAML
 │   ├── demo_tailored_ads.py           # Tailored ad demonstration
-│   ├── demo_persuasion.py             # Earlier persuasion prototype
 │   └── stimuli/
-│       ├── framing.yaml                       # Gain/loss + 8 B2B generalization
+│       ├── framing.yaml                       # Gain/loss classic + product
 │       ├── framing_generalization_new.yaml    # 62 generalization scenarios
-│       ├── anchoring.yaml                     # Benchmark + debatable + product pricing
+│       ├── anchoring.yaml                     # Classic + product pricing
 │       ├── anchoring_new.yaml                 # 52 generalization scenarios
+│       ├── anchoring_pricing.yaml             # 63 pricing generalization items
 │       ├── sunk_cost.yaml                     # Paid/free ticket + CRM vendor
 │       ├── sunk_cost_new.yaml                 # 62 generalization scenarios
-│       ├── source_credibility.yaml            # Washington/Bin Laden + product review
+│       ├── source_credibility.yaml            # Classic + product review
 │       ├── source_credibility_new.yaml        # 62 generalization scenarios
-│       ├── wording.yaml                       # Allow/forbid + SaaS audit
+│       ├── wording.yaml                       # Allow/forbid classic + product
 │       ├── wording_new.yaml                   # 62 generalization scenarios
-│       └── decoy.yaml                         # 20 B2B product triads + 50 generalization
+│       ├── decoy.yaml                         # 20 B2B product triads
 │       └── decoy_new.yaml                     # 50 generalization triads
 │
 └── data/
@@ -144,7 +155,7 @@ All trial data (prompts, raw responses, parsed choices, token usage, latency) is
 
 ## Scale
 
-5,863 successful trials across 5 models and 6 experiments, with 50–66 unique generalization scenarios per bias. See Section 4.3 of the report for the full breakdown by model and experiment.
+8,265 successful trials across 5 models and 6 experiments, with 50-62 unique generalization scenarios per bias. Effect sizes in the heatmap charts use only deduplicated generalization data, downsampled to equal n per model (718 trials per model).
 
 ## Citation
 
